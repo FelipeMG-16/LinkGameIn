@@ -28,7 +28,6 @@ body{
     text-align: center;
     color: #e42527;
 }
-
 .btn-outline-danger {
     --bs-btn-color: #e42527;
     --bs-btn-border-color: #e42527;
@@ -52,7 +51,6 @@ body{
     background-color: #e42527;
     border-color: #e42527;
 }
-
 .form-floating label {
     color: black;
 }
