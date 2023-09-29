@@ -1,0 +1,59 @@
+    #logo {
+        width: 150px;
+}
+
+
+#buscar {
+    width: 50%;
+}
+
+#perfil {
+    max-width: 30px;
+    border-radius: 90px;
+    /* position:fixed;
+    right: 15px;    
+    top: 15px; */
+}
+
+
+.container-fluid{
+    background-color: #8a8a8a;
+    border: 300px;
+}
+
+body{
+    background-color: black;
+}
+
+#navbarSupportedContent{
+    text-align: center;
+}
+
+#dash{
+    background-color: black;
+    text-decoration: aliceblue;
+}
+
+#juegos{
+    background-color: #8a8a8a;
+    position: sticky;
+}
+
+#amigos{
+    background-color: blueviolet;
+}
+
+.borde{
+    position: sticky;
+}
+
+#publi{
+    background-color: #8a8a8a;
+    border-radius: 10px ;
+    padding: 10px;
+}
+
+#adjuntables{
+    padding-top: 25px;
+}
+
