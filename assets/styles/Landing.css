@@ -1,0 +1,113 @@
+body {
+    /*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
+    background-image: url("../images/Fondo2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+}
+
+.navbar {
+    background-color: #a8a8a8;
+    opacity: .5;
+}
+
+
+.navbar-toggle {
+    float: right !important;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.modal-nav-content {
+    width: 30%;
+    height: auto;
+}
+
+.modal-nav-body {
+    margin-top: 100px;
+}
+
+.modal-nav-body ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.modal-nav-body ul li {
+    text-align: center;
+    font-size: 70%;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.overlay {
+
+    height: 50%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 30%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
