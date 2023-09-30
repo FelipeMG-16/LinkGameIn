@@ -1,5 +1,6 @@
 body {
     background-color: #000000;
+    color: aliceblue;
 }
 
 /* Barra de navegación */
@@ -19,7 +20,7 @@ body {
 
 .perfil {
     margin-right: 20px;
-    width: 50px;
+    width: 60px;
     border-radius: 50%
 }
 
@@ -69,7 +70,7 @@ body {
     .fondoPerfil {
         width: 100%;
         position: relative;
-        margin-top: -550px;
+        margin-top: -180px;
     }
     .container-FotoPerfil {
         margin-top: -250px;
@@ -87,4 +88,42 @@ body {
         color: white;
         font-size: 70px;
     }
+}
+
+.containerJuegosLogros{
+    margin-top: 150px;
+}
+
+.containerJuegosLogros h1{
+    margin-left: 100px;
+}
+
+.scrollmenu {
+    margin-top: 30px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Muestra los elementos en línea */
+}
+
+.menu li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.menu img {
+    width: 250px;
+    margin-inline: 50px;
+}
+
+#verMas{
+    width: 150px;
+    margin-inline: 50px;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
 }
