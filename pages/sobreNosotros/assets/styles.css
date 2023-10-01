@@ -32,7 +32,6 @@ nav {
 }
 
 
-
 body{
 background-color: black;
 }
@@ -47,18 +46,12 @@ font-family: 'Poppins';
     padding: 20px; /* Añade espaciado interior para separar el carrusel de otros elementos */
 }
 
-
-/* Ajusta el texto dentro del carrusel para que sea legible */
-.carousel-inner .carousel-item {
-    color: #fff; /* Cambia el color del texto si es necesario */
-}
-
-.card {
-    width: 18rem; /* Ancho de las tarjetas */
-    height: 42rem;
-    margin: 0 auto; /* Centra las tarjetas horizontalmente */
+.card{
     background-color: #000;
     border-color: #e42527;
+    width: 800px; /* Ancho de las tarjetas */
+    height: 250px; /* Ealtura para todas las tarjetas */
+
 }
 
 .card-title {
@@ -110,6 +103,38 @@ h3{
 }
 
 
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* pone menú debajo de la imagen de perfil */
+    right: 0; /* menú a la dercha de la imagen de la bruja */
+    background-color: #a8a8a8; 
+    box-shadow: 0 0 10px #000000; /*sombra al menú creo*/
+    z-index: 1; /* menu encima */
+}
+
+.config-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.config-menu ul li {
+    padding: 10px;
+    text-align: left; 
+}
+
+.config-menu ul li a {
+    text-decoration: none;
+    color: #000000; 
+    display: block;
+    font-size: medium;
+}
+
+/* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
+.config-menu ul li a:hover {
+    background-color: #e425282a; /* color de fondo al pasar el ratón */
+}
 
 
 
