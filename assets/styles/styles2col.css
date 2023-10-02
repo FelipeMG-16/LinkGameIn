@@ -1,0 +1,152 @@
+body {
+    background-color: #000000;
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #8a8a8a80;
+    position: sticky;
+    top: 0;
+    
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+
+.perfil {
+    width: 45px;
+    border-radius: 50%
+}
+
+.containerProfile {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Personal info */
+.containerFondoPerfil {
+    height: 400px; /* Alto deseado del contenedor */
+    overflow: hidden;
+    position: relative;
+    margin-top: -120px;
+    z-index: -1;
+}
+.fondoPerfil {
+    width: 100%;
+    position: relative;
+    margin-top: -200px;
+}
+.containerFotoPerfil {
+    margin-top: -100px;
+    margin-left: 100px;
+}
+.containerFotoPerfil img{
+    border-radius: 50%;
+    width: 200px;
+}
+.containerNickname {
+    margin-top: -105px;
+    margin-left: 320px;
+}
+.containerNickname h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.col-xl-6{
+    margin-top: 60px;
+}
+
+.containerJuegosLogros h2{
+    margin-left: 50px;
+}
+
+.menuJuegos {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Muestra los elementos en línea */
+}
+
+.menuJuegos li {
+    display: inline-block; /* Muestra los elementos en línea */
+}
+
+.juego {
+    width: 180px;
+    margin-inline: 20px;
+}
+
+
+
+#verMasJuegos {
+    width: 100px;
+    margin-inline: 20px;
+    vertical-align: baseline;
+    margin-bottom: 50%;
+
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.containerAmigos{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.containerAmigos h2{
+    margin-left: 50px;
+}
+
+.menuAmigos {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Muestra los elementos en línea */
+}
+
+.menuAmigos li {
+    display: inline-block; /* Muestra los elementos en línea */
+}
+
+.menuAmigos img {
+    width: 120px;
+    margin-inline: 20px;
+    border-radius: 50%;
+}
+#verMasAmigos {
+    border-radius: 10%;
+    width: 100px;
+    margin-inline: 20px;
+}
+
+.containerPubli {
+    background-color: #8a8a8a5f;
+    margin-inline: 30px;
+    border-radius: 20px;
+}
+
+.containerPubli h3 {
+    padding-top: 20px;
+    padding-left: 40px;
+    color: rgba(255, 255, 255, 0.353);
+}
+
+.containerPubli img {
+    width:80px;
+    margin-top: 60px;
+    margin-left: 750px;
+    margin-bottom: 20px;
+}

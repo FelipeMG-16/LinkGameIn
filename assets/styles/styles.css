@@ -8,90 +8,62 @@ body {
     background-color: #8a8a8a80;
     position: sticky;
     top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 
 .logo {
     margin-left: 20px;
-    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
     text-align: left;
 }
 
 .perfil {
-    margin-right: 20px;
-    width: 60px;
+    width: 45px;
     border-radius: 50%
 }
 
+.containerProfile {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* Personal info */
-
-/* Estilos para pantallas pequeñas (hasta 576px de ancho) */
-@media (max-width: 576px) {
-    .containerFondoPerfil {
-        height: 400px; /* Alto deseado del contenedor */
-        overflow: hidden;
-        position: relative;
-        margin-top: -120px;
-        z-index: -1;
-    }
-    .fondoPerfil {
-        width: 100%;
-        position: relative;
-        margin-top: -50px;
-    }
+.containerFondoPerfil {
+    height: 400px; /* Alto deseado del contenedor */
+    overflow: hidden;
+    position: relative;
+    margin-top: -120px;
+    z-index: -1;
 }
-
-/* Estilos para pantallas medianas (de 577px a 991px) */
-@media (min-width: 577px) and (max-width: 991px) {
-    .containerFondoPerfil {
-        height: 40rem; /* Alto deseado del contenedor */
-        overflow: hidden;
-        position: relative;
-        margin-top: -120px;
-        z-index: -1;
-    }
-    .fondoPerfil {
-        width: 100%;
-        position: relative;
-        margin-top: -50px;
-    }
+.fondoPerfil {
+    width: 100%;
+    position: relative;
+    margin-top: -200px;
 }
-
-/* Estilos para pantallas grandes (a partir de 992px) */
-@media (min-width: 992px) {
-    .containerFondoPerfil {
-        height: 450px; /* Alto deseado del contenedor */
-        overflow: hidden;
-        position: relative;
-        margin-top: -120px;
-        z-index: -1;
-    }
-    .fondoPerfil {
-        width: 100%;
-        position: relative;
-        margin-top: -180px;
-    }
-    .container-FotoPerfil {
-        margin-top: -250px;
-        margin-left: 100px;
-    }
-    .container-FotoPerfil img{
-        border-radius: 50%;
-        width: 350px;
-    }
-    .container-Nickname {
-        margin-top: -200px;
-        margin-left: 480px;
-    }
-    .container-Nickname h1 {
-        color: white;
-        font-size: 70px;
-    }
+.container-FotoPerfil {
+    margin-top: -100px;
+    margin-left: 100px;
+}
+.container-FotoPerfil img{
+    border-radius: 50%;
+    width: 200px;
+}
+.container-Nickname {
+    margin-top: -105px;
+    margin-left: 320px;
+}
+.container-Nickname h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .containerJuegosLogros{
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-inline: 300px;
 }
 
 .containerJuegosLogros h1{
@@ -114,7 +86,7 @@ body {
 }
 
 .menu img {
-    width: 250px;
+    width: 200px;
     margin-inline: 50px;
 }
 
