@@ -1,10 +1,10 @@
-html{
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-.containerprofile img{
+.containerprofile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -20,65 +20,68 @@ font-family: 'Poppins', sans-serif;
 nav {
     font-style: bold;
     font-family: 'Poppins';
-    
+
 }
 
 .custom-navbar {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #a8a8a87c;  /* Cambia el color de fondo */
+    background-color: #a8a8a87c;
+    /* Cambia el color de fondo */
     padding: 2px;
 }
 
 
-body{
-background-color: black;
+body {
+    background-color: black;
 }
 
-h1{
-color: white;
-text-align: center;
-font-family: 'Poppins';
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
 }
 
 #cardCarousel {
-    padding: 20px; /* Añade espaciado interior para separar el carrusel de otros elementos */
+    padding: 20px;
+    /* Añade espaciado interior para separar el carrusel de otros elementos */
 }
 
-.card{
+.card {
     background-color: #000;
     border-color: #e42527;
-    width: 800px; /* Ancho de las tarjetas */
-    height: 250px; /* Ealtura para todas las tarjetas */
+    max-width: 700px;
 
 }
 
 .card-title {
-    font-size: 2rem; /* Tamaño de fuente del título */
+    font-size: 2rem;
+    /* Tamaño de fuente del título */
     font-family: 'Poppins';
     color: #a8a8a8;
 }
 
 .card-text {
-    font-size: 1rem; /* Tamaño de fuente del texto */
+    font-size: 1rem;
+    /* Tamaño de fuente del texto */
     font-family: 'Montserrat';
     color: white;
 }
 
-#vision{
+#vision {
     width: 500px;
     height: 400px;
     padding-left: 30px;
 
 }
 
-#mision{
+#mision {
     width: 500px;
     height: 400px;
 }
 
-h3{
+h3 {
     color: white;
     font-family: 'Poppins';
     padding: 20px;
@@ -97,7 +100,7 @@ h3{
     text-align: justify;
     color: white;
     font-family: 'Montserrat';
-    font-size:large;
+    font-size: large;
     padding: 20px;
     margin: auto;
 }
@@ -106,11 +109,15 @@ h3{
 .config-menu {
     display: none;
     position: absolute;
-    top: 100%; /* pone menú debajo de la imagen de perfil */
-    right: 0; /* menú a la dercha de la imagen de la bruja */
-    background-color: #5d5d5d; 
-    box-shadow: 0 0 10px #000000; /*sombra al menú creo*/
-    z-index: 1; /* menu encima */
+    top: 100%;
+    /* pone menú debajo de la imagen de perfil */
+    right: 0;
+    /* menú a la dercha de la imagen de la bruja */
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    /*sombra al menú creo*/
+    z-index: 1;
+    /* menu encima */
 }
 
 .config-menu ul {
@@ -121,19 +128,20 @@ h3{
 
 .config-menu ul li {
     padding: 10px;
-    text-align: left; 
+    text-align: left;
 }
 
 .config-menu ul li a {
     text-decoration: none;
-    color: #000000; 
+    color: #000000;
     display: block;
     font-size: medium;
 }
 
 /* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
 .config-menu ul li a:hover {
-    background-color: #e425282a; /* color de fondo al pasar el ratón */
+    background-color: #e425282a;
+    /* color de fondo al pasar el ratón */
 }
 
 
@@ -188,7 +196,3 @@ footer {
     font-weight: bold;
 
 }
-
-
-
-/*jeje*/
