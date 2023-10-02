@@ -22,65 +22,40 @@
 
 
             </a>
-            <div hidden id="myNav" class="overlay">
-
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-
+            <!-- Overlay content -->
+            <div id="config-menu" class="config-menu">
+                <!-- elementos de menú de configuración -->
+                <ul>
+                    <li><a href="#">Iniciar Sesion</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                    <hr>
+                    <li><a href="./pages/AboutUs.html">About us</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <!-- editar elementos del menu -->
+                </ul>
             </div>
+
+
 
             <!-- Use any element to open/show the overlay navigation menu -->
             <div class="containerprofile">
-                <img src="./assets/images/usuario.png" onclick="openNav()" alt="Perfil">
+                <img src="./assets/images/usuario.png" alt="Perfil" id="profile-img">
             </div>
-
 
     </nav>
 
 
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto vel, ducimus atque ut quidem aut debitis labore
-        voluptatum corporis rem numquam perferendis architecto delectus! Quo alias aliquam vel enim modi.</p>
-    <br><br><br><br><br><br>
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c; /* Cambia el color de fondo */
-    padding: 2px;<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora odio tempore laboriosam
-        quo velit dolor voluptas nobis, vero debitis explicabo aliquid dicta aspernatur voluptates natus. Laboriosam
-        voluptate animi ut.</p>
-    <br><br><br><br><br><br>
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c; /* Cambia el color de fondo */
-    padding: 2px;<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora odio tempore laboriosam
-        quo velit dolor voluptas nobis, vero debitis explicabo aliquid dicta aspernatur voluptates natus. Laboriosam
-        voluptate animi ut.</p>
-    <br><br><br><br><br><br>
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c; /* Cambia el color de fondo */
-    padding: 2px;<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora odio tempore laboriosam
-        quo velit dolor voluptas nobis, vero debitis explicabo aliquid dicta aspernatur voluptates natus. Laboriosam
-        voluptate animi ut.</p>
-    <br><br><br><br><br><br>
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c; /* Cambia el color de fondo */
-    padding: 2px;<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora odio tempore laboriosam
-        quo velit dolor voluptas nobis, vero debitis explicabo aliquid dicta aspernatur voluptates natus. Laboriosam
-        voluptate animi ut.</p>
+
+    <div class="card">
+        <img src="./assets/img/alex.png" class="card-img-top" alt="" />
+        <div class="card-body d-flex flex-column">
+            <div><img src="./assets/images/usuario.png" alt="" srcset=""></div>
+            <h5 class="card-title">Alejandro Camarillo</h5>
+            <p class="card-text">Contenido de la tarjeta 2.</p>
+        </div>
+    </div>
+
 
     <footer>
         <div class="footer-container">
@@ -103,9 +78,11 @@
             <img src="./assets/images/Logo.svg" alt="logo" class="footerlogo">
 
 
+
+
             <div class="row links">
                 <div class="col-4">
-                    <a href="#">Acerca de nosotros</a>
+                    <a href="./pages/AboutUs.html">Acerca de nosotros</a>
                 </div>
                 <div class="col-4">
                     <a href="#">Terminos y condiciones</a>
@@ -117,7 +94,7 @@
         </div>
     </footer>
 
-    <script src="./assets/scripts/navbar.js"></script>
+    <script src="./assets/scripts/scriptsMenuNavbar.js"></script>
 </body>
 
 </html>
