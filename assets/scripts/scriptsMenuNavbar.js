@@ -17,6 +17,7 @@ document.addEventListener('click', (e) => {
     if (e.target !== profileImg && e.target !== configMenu) {
         configMenu.style.display = 'none';
     }
+
 });
 
 
@@ -58,4 +59,3 @@ if (isLoggedIn) {
     </ul>
     `;
 }
-
