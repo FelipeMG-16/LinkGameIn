@@ -120,9 +120,6 @@ body {
 
 /* Estilo para el footer */
 footer {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
     background-color: #a8a8a8;
     color: white;
     padding: 10px;
