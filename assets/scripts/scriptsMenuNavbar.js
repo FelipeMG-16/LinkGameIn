@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // referencia a la imagen de perfil y al menú de configuración
     const profileImg = document.getElementById('profile-img');
     const configMenu = document.getElementById('config-menu');
-
     //evento a la imagen 
     profileImg.addEventListener('click', () => {
         // visibilidad del menú de configuración 
