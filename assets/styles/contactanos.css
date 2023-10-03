@@ -1,81 +1,112 @@
-
 /* Agregamos la imagen de fondo en el body*/
 
 body {
-    background-color: black;
-    background-image: url(../images/Fondo\ Contactanos.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/IMG_20230921_231755\ \(1\).png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
-
-
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
-.containerprofile img{
+nav {
+    margin-bottom: 20px;
+}
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #8a8a8a80;
+    /* Cambia el color de fondo */
+    padding: 2px;
+}
+#logo {
+    margin-left: 20px;
+    width: 150px;
+}
+.containerprofile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-#logo {
-    margin-left: 20px;
-    width: 150px;
+#form-register-user {
+    max-width: 600px;
+    height: auto;
+    background-color: black;
+    border-radius: 30px;
+    opacity: 0.8;
+    padding: 10px 50px;
+    margin: 0 auto; 
+}
+#title-contact {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #e42527;
+    margin: 20px 0;
+}
+#input-comment {
+    height: auto;
+    min-height: 50px;
+}
+#btn-register {
+    margin: 20px 0;
+}
+.form-floating label {
+    color: black;
 }
 
 
-nav {
-    font-style: bold;
-    font-family: 'Poppins';
-
+/* Estilo para el footer */
+footer {
+    background-color: #8a8a8a80;
+    padding: 10px;
+    margin-top: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
-.custom-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c;  /* Cambia el color de fondo */
-    padding: 2px;
+/* Contenedor principal del footer */
+.footer-container {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-
-
-
-.card-body {
- margin: 20px;
- background-position: 2em;
-
-    
+/* Estilo para el logo en el footer */
+.footerlogo {
+    width: 100px;
+    margin: 0 auto;
+    /* Centrar horizontalmente */
 }
 
-.text-center {
-    background-color: #000;
-    opacity: .6;
-    margin: 150px;
-   
-    
+/* Estilo para las divisiones entre el logo y los íconos */
+.divider {
+    margin-top: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
 }
 
-.card-title{
-    color: white;
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+    margin-top: 20px;
 }
 
-.card-text{
-    color: white;
+/* Estilo para las imágenes de íconos de redes sociales */
+.social-icon img {
+    width: 30px;
+    height: 30px;
 }
 
-.boton{
-    background-color: #030303;
-    color: red;
-    border-radius: 10px;
-   cursor: pointer;
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
 }
-
-
-
-
-
-
-
