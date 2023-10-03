@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@400;600;700&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     background-image: url('../images/axville-WcrqKjgMPfI-unsplash.jpg');
     background-size: cover;
     background-position: center;
@@ -9,99 +9,45 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 .background {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
+    background-color: black;
+    opacity: 0.8;
+    width: 500px;
+    height: 520px;
+    border-radius: 30px;
     text-align: center;
     color: white;
 }
-
 .tarjeta {
     background-color: transparent;
-    padding: 20px;
     text-align: center;
+    padding: 10px 50px;
 }
-
-.logo img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 1000px;
-}
-
-.input {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 3px solid black;
-    background-color: #333;
-    color: #ddd;
-    border-radius: 1000px
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-}
-
-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    pointer-events: none;
-    color: #666;
-    transition: 0.3s;
-}
-
 .sinContraseña {
     color: white;
     text-decoration: none;
     display: block;
 }
-
 .sinContraseña:hover {
     text-decoration: underline;
 }
-
-.boton {
-    background-color: #333;
-    border: 2px solid black;
-    color: red;
-    padding: 10px 20px;
-    border-radius: 1000px;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    background-color: red;
-    color: white;
-    opacity: 1;
-    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.5);
-}
-
 .registro{
     margin-top: 20px;
     display: inline-block;
 }
-
 .sinCuenta{
     color: white;
 }
-
 .linkRegistro {
-    color: red;
+    color: #e42527;
     text-decoration: none;
 }
-
 .linkRegistro:hover {
     text-decoration: underline;
+}
+.form-floating label {
+    color: black;
 }
