@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // referencia a la imagen de perfil y al menú de configuración
     const profileImg = document.getElementById('profile-img');
     const configMenu = document.getElementById('config-menu');
-    
     //evento a la imagen 
     profileImg.addEventListener('click', () => {
         // visibilidad del menú de configuración 
@@ -21,6 +20,7 @@ const menuElement = document.getElementById('config-menu'); //elemento del menuc
 if (isLoggedIn) {
     // Menucito para usuarios con sesión iniciada
     menuElement.innerHTML = `
+    "
     <ul>
     <li><a href="#">Detalles de Perfil</a></li> 
     <li><a href="#">Notificaciónes</a></li> 
@@ -34,12 +34,11 @@ if (isLoggedIn) {
     <li><a href="/pages/contactanos.html">Contáctanos</a></li>
 
     <li><a href="#">Cerrar sesión</a></li> 
-
-</ul>
-    `;
+    </ul>`
+    ;
 } else {
     // Menuito para usuarios sin sesión
-    menuElement.innerHTML = `
+    menuElement.innerHTML = 
         <ul>
         
         <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
@@ -50,6 +49,6 @@ if (isLoggedIn) {
         <li><a href="/pages/login.html">Iniciar sesión</a></li>
         
     </ul>
-    `;
+    ;
 }
 })
