@@ -1,3 +1,4 @@
+
 document.addEventListener(
     'DOMContentLoaded', () => {
         // Elementos del DOM
