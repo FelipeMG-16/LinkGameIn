@@ -19,6 +19,8 @@ body {
     background-color: #8a8a8a80;
     position: sticky;
     top: 0;
+    z-index: 1;
+    /*Add this*/
 }
 
 .logo {
@@ -36,6 +38,15 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.profile-img {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
+}
+
 
 .perfil {
     /* Estilo para la imagen de perfil en la barra de navegación */
