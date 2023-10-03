@@ -39,16 +39,72 @@ h1 {
     font-family: 'Poppins';
 }
 
+h3{
+    color: #a8a8a8;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+p{
+    color: #757575;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#inicial{
+    color: #a8a8a8;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Poppins';
+    color: #ea25273c;
+}
 
 
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* pone menú debajo de la imagen de perfil */
+    right: 0;
+    /* menú a la dercha de la imagen de la bruja */
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    /*sombra al menú creo*/
+    z-index: -1;
+    /* menu encima */
+}
 
+.config-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.config-menu ul li {
+    padding: 10px;
+    text-align: left;
+}
 
+.config-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: medium;
+}
 
-
-
-
-
+/* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
+.config-menu ul li a:hover {
+    background-color: #e425282a;
+    /* color de fondo al pasar el ratón */
+}
 
 
 

@@ -106,17 +106,12 @@ h3 {
 
 
 .config-menu {
-    display: none;
     position: absolute;
     top: 100%;
-    /* pone menú debajo de la imagen de perfil */
     right: 0;
-    /* menú a la dercha de la imagen de la bruja */
     background-color: #5d5d5d;
     box-shadow: 0 0 10px #000000;
-    /*sombra al menú creo*/
     z-index: 1;
-    /* menu encima */
 }
 
 .config-menu ul {
