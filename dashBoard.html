@@ -9,6 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Estilos personales CSS -->
     <link rel="stylesheet" href="/assets/styles/estilosDeDashBoard.css">
+    <!-- Modificadores Sass -->
+    <link rel="stylesheet" href="/assets/styles/Styles.scss">
     <title>Dashboard</title>
 </head>
 
@@ -30,7 +32,7 @@
                 <!-- Vista colapsada de busqueda -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style=" margin-left: 400px;">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar en LinkGameIn"
+                        <input class="form-control me-2 d-grid gap-2" type="search" placeholder="Buscar en LinkGameIn"
                             aria-label="Search">
                         <button class="btn btn-outline-danger" type="submit">Buscar</button>
                     </form>
@@ -51,102 +53,82 @@
 
 
     <div class="container text-center">
-        <!-- columna de juegos -->
-        <div class="row" id="juegos">
+
+        <div class="row">
 
             <!-- Cloumna de juegos -->
-            <div class="col-lg-2" id="juegos" class="borde">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt earum unde, sapiente accusamus
-                    voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi
-                    exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima earum molestiae aperiam vel tempore dignissimos minus fuga rerum consectetur laboriosam
-                    nihil, ipsum tempora expedita numquam. </p>
+            <div class="col-lg-3 borde" id="juegos">
+                <p> </p>
             </div>
 
             <!-- Cloumna de dashboard  -->
-            <div class="col-lg-8" id="dash">
+            <div class="col-lg-6" id="dash">
 
-                <div class="container" class="publicaciones" class="d-grid gap-2 col-12 mx-12" id="publi">
+                <!-- Container de barra superior para publicar -->
+                <div class="container" id="publi">
+                    <!-- zona de publicación -->
                     <div class="row" id="publicar">
-                        <div class="col-lg-3">
+                        <!-- Imagen de perfil -->
+                        <div class="col-lg-2">
                             <a href="#"><img src="/assets/images/Cyberpunk 2077 icon.png" alt="imagen de perfil"
                                     id="perfil"></a>
-                        </div>
+                        </div> <!-- Cierre de imagen de perfil -->
 
-                        <div class="col-lg-9" class="d-grid gap-2 col-6 mx-auto">
+                        <!-- Zona para publicar -->
+                        <div class="col-lg-9 d-grid gap-2">
                             <button class="btn btn-light" type="button">¿Que quieres publicar?</button>
-                        </div>
-                    </div>
+                        </div> <!-- Fin zona para publicar -->
+                    </div> <!-- Fin zona de publicaciones -->
 
+                    <!-- Zona de adjuntables -->
                     <div class="row">
+                        <!-- Logo multimedia -->
                         <div class="col" id="adjuntables">
                             <a href="#"><img src="/assets/images/logo_multimedia.png" alt="imagen de perfil"
                                     id="izq"></a>
-                        </div>
+                        </div> <!-- Fin logo multimedia -->
 
+                        <!-- Logo logros -->
                         <div class="col" id="adjuntables">
-                            <a href="#"><img src="/assets/images/logo_logros.png" alt="imagen de perfil"
-                                    id="der"></a>
-                        </div>
-                    </div>
+                            <a href="#"><img src="/assets/images/logo_logros.png" alt="imagen de perfil" id="der"></a>
+                        </div> <!-- Fin logo logros -->
+                    </div> <!-- Fin adjuntables -->
 
+                </div> <!-- Fin de barra superior para publicar -->
+
+                <!-- Zona de publicaciones -->
+                <div class="container">
+                    <div>
+                        <div class="card" id="historias">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                            </div> <!--  -->
+                        </div> <!-- Fin tarjeta de publicaciones -->
+
+                        <!-- Tarjetas de publicaciones -->
+                        <div class="card text-bg-secondary mb-3 " id="historias">
+                            <div class="card-header"><img
+                                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
+                                    class="card-img-top" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Secondary card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div> <!-- Fin tarjeta de publicaciones -->
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt earum unde, sapiente accusamus
-                    voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi
-                    exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima earum molestiae aperiam vel tempore dignissimos minus fuga rerum consectetur laboriosam
-                    nihil, ipsum tempora expedita numquam. Recusandae nobis tenetur illo quam. Lorem ipsum dolor sit
-                    amet consectetur, adipisicing elit. Laborum repudiandae incidunt, laudantium est qui, accusamus
-                    tempore, soluta in nostrum culpa nulla laboriosam ad pariatur commodi consectetur reprehenderit
-                    voluptatum voluptas quidem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt
-                    earum unde, sapiente accusamus voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus
-                    laboriosam, itaque ratione sequi exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Minima earum molestiae aperiam vel tempore dignissimos minus fuga
-                    rerum consectetur laboriosam nihil, ipsum tempora expedita numquam. Recusandae nobis tenetur illo
-                    quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum repudiandae incidunt,
-                    laudantium est qui, accusamus tempore, soluta in nostrum culpa nulla laboriosam ad pariatur commodi
-                    consectetur reprehenderit voluptatum voluptas quidem!Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolore sunt earum unde, sapiente accusamus voluptatibus quidem iste molestiae.
-                    Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi exercitationem aut. Dolores, at
-                    laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum molestiae aperiam
-                    vel tempore dignissimos minus fuga rerum consectetur laboriosam nihil, ipsum tempora expedita
-                    numquam. Recusandae nobis tenetur illo quam. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Laborum repudiandae incidunt, laudantium est qui, accusamus tempore, soluta in nostrum culpa
-                    nulla laboriosam ad pariatur commodi consectetur reprehenderit voluptatum voluptas quidem!Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt earum unde, sapiente accusamus
-                    voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi
-                    exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima earum molestiae aperiam vel tempore dignissimos minus fuga rerum consectetur laboriosam
-                    nihil, ipsum tempora expedita numquam. Recusandae nobis tenetur illo quam. Lorem ipsum dolor sit
-                    amet consectetur, adipisicing elit. Laborum repudiandae incidunt, laudantium est qui, accusamus
-                    tempore, soluta in nostrum culpa nulla laboriosam ad pariatur commodi consectetur reprehenderit
-                    voluptatum voluptas quidem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt
-                    earum unde, sapiente accusamus voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus
-                    laboriosam, itaque ratione sequi exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Minima earum molestiae aperiam vel tempore dignissimos minus fuga
-                    rerum consectetur laboriosam nihil, ipsum tempora expedita numquam. Recusandae nobis tenetur illo
-                    quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum repudiandae incidunt,
-                    laudantium est qui, accusamus tempore, soluta in nostrum culpa nulla laboriosam ad pariatur commodi
-                    consectetur reprehenderit voluptatum voluptas quidem!Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolore sunt earum unde, sapiente accusamus voluptatibus quidem iste molestiae.
-                    Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi exercitationem aut. Dolores, at
-                    laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum molestiae aperiam
-                    vel tempore dignissimos minus fuga rerum consectetur laboriosam nihil, ipsum tempora expedita
-                    numquam. Recusandae nobis tenetur illo quam. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Laborum repudiandae incidunt, laudantium est qui, accusamus tempore, soluta in nostrum culpa
-                    nulla laboriosam ad pariatur commodi consectetur reprehenderit voluptatum voluptas quidem!</p>
+                <!-- Tarjetas de publicaciones -->
+
             </div>
 
             <!-- Cloumna de amigos -->
-            <div class="col-lg-2" id="amigos" class="borde">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt earum unde, sapiente accusamus
-                    voluptatibus quidem iste molestiae. Perspiciatis ea voluptatibus laboriosam, itaque ratione sequi
-                    exercitationem aut. Dolores, at laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima earum molestiae aperiam vel tempore dignissimos minus fuga rerum consectetur laboriosam
-                    nihil, ipsum tempora expedita numquam. Recusandae nobis tenetur illo quam. Lorem ipsum dolor sit
-                    amet consectetur, adipisicing elit. Laborum repudiandae incidunt, laudantium est qui, accusamus
-                    tempore, soluta in nostrum culpa nulla laboriosam ad pariatur commodi consectetur reprehenderit
-                    voluptatum voluptas quidem!</p>
+            <div class="col-lg-3 borde" id="amigos">
+                <p></p>
             </div>
         </div>
     </div>
