@@ -20,56 +20,59 @@
 
     <!-- Barra de navegación -->
     <nav class="custom-navbar d-flex justify-content-between">
-        <a class="navbar-brand" href="/dashBoard.html">
-            <img src="../assets/images/Logo.svg" alt="logo" class="logo">
-        </a>
-
-        <div id="profile-img" class="containerProfile position-relative">
-            <img src="../assets/images/perfil.jpg" alt="" class="border border-dark perfil">
-            <span class="position-absolute bottom-0 start-0 p-2 bg-success border border-dark rounded-circle"></span>
-        </div> <!--cierra container profile-->
-    </nav> <!--cierre de navbar-->
+        <!-- Contenedor Logo -->
+        <div id="Logo">
+            <a class="navbar-brand" href="/dashBoard.html">
+                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+        </div>  <!-- Cierre de contenedor logo -->
+        <!-- Contenedor de Imagen Login/Logout -->
+        <div class="containerProfile position-relative" id="profile-img" >
+        </div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+        <div class="config-menu" id="config-menu" >
+        </div> <!-- Cierre div de menu -->
+    </nav> <!-- Cierre de Barra de navegación -->
 
 
     <div class="container">
 
-		<form class="row" id="form-register-user">
-			<div class="col" id="title-contact">
-				Contactanos
-			</div>
-			<div class="col-12 mb-3">
-				<div class="form-floating">
-					<input type="text" class="form-control" id="input-name" placeholder="">
-					<label for="input-name">Nombre</label>
-				</div>
-			</div>
-			<div class="col-12 mb-3">
-				<div class="form-floating">
-					<input type="email" class="form-control" id="input-email" placeholder="">
-					<label for="input-email">correo@ejemplo.com</label>
-				</div>
-			</div>
-			<div class="col-12 mb-3">
-				<div class="form-floating">
-					<input type="phone" class="form-control" id="input-phone" placeholder="">
-					<label for="input-phone">Teléfono</label>
-				</div>
-			</div>
-			<div class="col-12 mb-3">
-				<div class="form-floating">
-					<textarea type="text" class="form-control" id="input-comment" rows="10" placeholder=""></textarea>
-					<label for="input-comment">Escribe un mensaje...</label>
-				</div>
-			</div>
-			<div class="d-grid gap-2 col-4 mx-auto" id="btn-register">
-				<button type="submit" class="btn btn-outline-danger  btn-lg">Enviar</button>
-			</div>
-		</form>
+        <form class="row" id="form-register-user">
+            <div class="col" id="title-contact">
+                Contactanos
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="input-name" placeholder="">
+                    <label for="input-name">Nombre</label>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="input-email" placeholder="">
+                    <label for="input-email">correo@ejemplo.com</label>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <input type="phone" class="form-control" id="input-phone" placeholder="">
+                    <label for="input-phone">Teléfono</label>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <textarea type="text" class="form-control" id="input-comment" rows="10" placeholder=""></textarea>
+                    <label for="input-comment">Escribe un mensaje...</label>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-4 mx-auto" id="btn-register">
+                <button type="submit" class="btn btn-outline-danger  btn-lg">Enviar</button>
+            </div>
+        </form>
 
-	</div>
+    </div>
 
 
-	<footer>
+    <footer>
         <div class="footer-container">
 
             <div class="row">
@@ -109,7 +112,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/scripts/scriptsMenuNavbar.js"></script>
+    <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
 
 </body>
 
