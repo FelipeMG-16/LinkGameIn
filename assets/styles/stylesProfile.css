@@ -13,6 +13,7 @@ body {
     position: sticky;
     top: 0;
 }
+
 .logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
@@ -61,51 +62,59 @@ body {
 
 /* Personal info */
 .containerFondoPerfil {
-    height: 400px; /* Alto deseado del contenedor */
+    height: 400px;
+    /* Alto deseado del contenedor */
     overflow: hidden;
     position: relative;
     margin-top: -120px;
     z-index: -1;
 }
+
 .fondoPerfil {
     width: 100%;
     position: relative;
     margin-top: -200px;
 }
+
 .containerFotoPerfil {
     margin-top: -100px;
     margin-left: 100px;
 }
-.containerFotoPerfil img{
+
+.containerFotoPerfil img {
     border-radius: 50%;
     width: 200px;
 }
+
 .containerNickname {
     margin-top: -105px;
     margin-left: 320px;
 }
+
 .containerNickname h1 {
     color: white;
     font-size: 40px;
     font-weight: bold;
 }
 
-.col-xl-6{
+.col-xl-6 {
     margin-top: 60px;
 }
 
-.containerJuegosLogros h2{
+.containerJuegosLogros h2 {
     margin-left: 50px;
 }
 
 .menuJuegos {
     list-style-type: none;
     padding: 0;
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuJuegos li {
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .juego {
@@ -143,23 +152,25 @@ div.scrollmenu {
     margin-top: 10px;
 }
 
-.containerAmigos{
+.containerAmigos {
     margin-top: 15px;
     margin-right: 20px;
 }
 
-.containerAmigos h2{
+.containerAmigos h2 {
     margin-left: 50px;
 }
 
 .menuAmigos {
     list-style-type: none;
     padding: 0;
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuAmigos li {
-    display: inline-block; /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
 }
 
 .menuAmigos img {
@@ -167,6 +178,7 @@ div.scrollmenu {
     margin-inline: 20px;
     border-radius: 50%;
 }
+
 #verMasAmigos {
     border-radius: 10%;
     width: 100px;
@@ -186,7 +198,7 @@ div.scrollmenu {
 }
 
 .containerPubli img {
-    width:80px;
+    width: 80px;
     margin-top: 60px;
     margin-left: 750px;
     margin-bottom: 20px;
