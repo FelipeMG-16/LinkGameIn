@@ -11,10 +11,20 @@ document.addEventListener(
         // Eventos
         profileImg.addEventListener(    // Evento para mostrar menú de configuración
             'click', () => {
+                event.stopPropagation();    // Evitar que el evento se propague
                 if (configMenu.style.display === 'block') {   // Si el menú está visible, se oculta
                     configMenu.style.display = 'none';
                 } else {    // Si el menú está oculto, se muestra
                     configMenu.style.display = 'block';
+                }
+            }
+        );
+
+        // Evento para cerrar el menú de configuración haciendo clic afuera
+        document.addEventListener(
+            'click', (e) => {
+                if (e.target !== profileImg && e.target !== configMenu) {
+                    configMenu.style.display = 'none';
                 }
             }
         );
@@ -36,12 +46,12 @@ document.addEventListener(
                 <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
                 <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
                 <li><a href="/pages/contactanos.html">Contáctanos</a></li>
-                <li><a href="#">Cerrar sesión</a></li> 
+                <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             `;
         } else { // Menu para usuarios sin sesión iniciada
             profileImg.innerHTML = `
-            <img src="../assets/images/usuario.png" alt="" class="border border-dark perfil" id="profile-img">
+            <img src="../assets/images/usuario.png" alt="" class="perfil" id="profile-img">
             `;
             configMenu.innerHTML = `
             <ul>
