@@ -1,24 +1,16 @@
-// referencia a la imagen de perfil y al menú de configuración
-const profileImg = document.getElementById('profile-img');
-const configMenu = document.getElementById('config-menu');
-
-//evento a la imagen 
-profileImg.addEventListener('click', () => {
-    // visibilidad del menú de configuración 
-    if (configMenu.style.display === 'block') {
-        configMenu.style.display = 'none';
-    } else {
-        configMenu.style.display = 'block';
-    }
-});
-
-// Para cerrar el menú de configuración haciendo clicks afuerita 
-document.addEventListener('click', (e) => {
-    if (e.target !== profileImg && e.target !== configMenu) {
-        configMenu.style.display = 'none';
-    }
-
-});
+document.addEventListener('DOMContentLoaded', () => {
+    // referencia a la imagen de perfil y al menú de configuración
+    const profileImg = document.getElementById('profile-img');
+    const configMenu = document.getElementById('config-menu');
+    //evento a la imagen 
+    profileImg.addEventListener('click', () => {
+        // visibilidad del menú de configuración 
+        if (configMenu.style.display === 'block') {
+            configMenu.style.display = 'none';
+        } else {
+            configMenu.style.display = 'block';
+        }
+    });
 
 
 
@@ -29,6 +21,7 @@ if (isLoggedIn) {
     // Menucito para usuarios con sesión iniciada
 
     menuElement.innerHTML = `
+    "
     <ul>
     <li><a href="#">Detalles de Perfil</a></li> 
     <li><a href="#">Notificaciónes</a></li> 
@@ -38,30 +31,31 @@ if (isLoggedIn) {
     <hr> 
     <li><a href="#">Cuenta y seguridad</a></li> 
     <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
-    <li><a href="#">Términos y condiciones</a></li>
+
+    <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
+
     <li><a href="/pages/contactanos.html">Contáctanos</a></li>
 
     <li><a href="#">Cerrar sesión</a></li> 
-
-</ul>
-    `;
+    </ul>`
+    ;
 } else {
     // Menuito para usuarios sin sesión
 
-    menuElement.innerHTML = `
+    menuElement.innerHTML = 
         <ul>
-
+        
         <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
-        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
         <li><a href="/pages/contactanos.html">Contáctanos</a></li>
         <hr>
-        <li><a href="../../pages/registrarUsuario.html">Registrarse</a></li>
-        <li><a href="../../pages/login.html">Iniciar sesión</a></li>
+        <li><a href="/pages/registrarUsuario.html">Registrarse</a></li>
+        <li><a href="/pages/login.html">Iniciar sesión</a></li>
+
         
     </ul>
-    `;
+    ;
 }
 
-
-
+})
 
