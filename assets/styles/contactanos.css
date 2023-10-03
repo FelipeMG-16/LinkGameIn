@@ -16,21 +16,49 @@ body {
     position: sticky;
     top: 0;
 }
-.logo {
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-.containerProfile {
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.perfil{
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: medium;
+}
+.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e425282a;
 }
 
 
@@ -44,21 +72,21 @@ body {
     padding: 10px 50px;
     margin: 20px auto; 
 }
-#title-contact {
+#title-contact {    /* Estilo para el título del formulario */
     font-weight: 600;
     font-size: 30px;
     text-align: center;
     color: #e42527;
     margin: 20px 0;
 }
-#input-comment {
+#input-comment {    /* Estilo para el input de comentario */
     height: auto;
     min-height: 50px;
 }
-#btn-register {
+#btn-register { /* Estilo para el botón de enviar */
     margin: 20px 0;
 }
-.form-floating label {
+.form-floating label {  /* Estilo para el label de los inputs */
     color: black;
 }
 
