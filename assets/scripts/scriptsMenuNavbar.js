@@ -22,11 +22,12 @@ document.addEventListener('click', (e) => {
 
 
 
-const isLoggedIn = false; // inicio de sesión
+const isLoggedIn = true; // inicio de sesión
 const menuElement = document.getElementById('config-menu'); //elemento del menucito
-
+const profile = document.getElementById('containerprofile');
 if (isLoggedIn) {
     // Menucito para usuarios con sesión iniciada
+
     menuElement.innerHTML = `
     <ul>
     <li><a href="#">Detalles de Perfil</a></li> 
@@ -36,9 +37,9 @@ if (isLoggedIn) {
     <li><a href="#">Logros</a></li> 
     <hr> 
     <li><a href="#">Cuenta y seguridad</a></li> 
-    <li><a href="/LinkGameIn/pages/AboutUs.html">Acerca de nosotros</a></li>
+    <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
     <li><a href="#">Términos y condiciones</a></li>
-    <li><a href="/LinkGameIn/pages/contactanos.html">Contáctanos</a></li>
+    <li><a href="/pages/contactanos.html">Contáctanos</a></li>
 
     <li><a href="#">Cerrar sesión</a></li> 
 
@@ -46,16 +47,21 @@ if (isLoggedIn) {
     `;
 } else {
     // Menuito para usuarios sin sesión
+
     menuElement.innerHTML = `
         <ul>
-        
-        <li><a href="/LinkGameIn/pages/AboutUs.html">Acerca de nosotros</a></li>
+
+        <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
         <li><a href="#">Términos y condiciones</a></li>
-        <li><a href="/LinkGameIn/pages/contactanos.html">Contáctanos</a></li>
+        <li><a href="/pages/contactanos.html">Contáctanos</a></li>
         <hr>
-        <li><a href="/LinkGameIn/pages/registrarUsuario.html">Registrarse</a></li>
-        <li><a href="/LinkGameIn/pages/login.html">Iniciar sesión</a></li>
+        <li><a href="../../pages/registrarUsuario.html">Registrarse</a></li>
+        <li><a href="../../pages/login.html">Iniciar sesión</a></li>
         
     </ul>
     `;
 }
+
+
+
+
