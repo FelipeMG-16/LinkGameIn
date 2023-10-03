@@ -1,73 +1,67 @@
-/* Agregamos la imagen de fondo en el body*/
-
-body {
-    background-image: url(../images/IMG_20230921_231755\ \(1\).png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
-nav {
-    margin-bottom: 20px;
-}
-.custom-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #8a8a8a80;
-    /* Cambia el color de fondo */
-    padding: 2px;
-}
-#logo {
-    margin-left: 20px;
-    width: 150px;
-}
+
 .containerprofile img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-#form-register-user {
-    max-width: 600px;
-    height: auto;
+#logo {
+    margin-left: 20px;
+    width: 150px;
+}
+
+
+nav {
+    font-style: bold;
+    font-family: 'Poppins';
+
+}
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #a8a8a87c;
+    /* Cambia el color de fondo */
+    padding: 2px;
+}
+
+
+body {
     background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
-    margin: 0 auto; 
 }
-#title-contact {
-    font-weight: 600;
-    font-size: 30px;
+
+h1 {
+    color: white;
     text-align: center;
-    color: #e42527;
-    margin: 20px 0;
+    font-family: 'Poppins';
 }
-#input-comment {
-    height: auto;
-    min-height: 50px;
-}
-#btn-register {
-    margin: 20px 0;
-}
-.form-floating label {
-    color: black;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Estilo para el footer */
 footer {
-    background-color: #8a8a8a80;
+    background-color: #a8a8a8;
+    color: white;
     padding: 10px;
-    margin-top: 20px;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
 }
 
 /* Contenedor principal del footer */
@@ -98,6 +92,7 @@ footer {
     margin-top: 20px;
 }
 
+
 /* Estilo para las imágenes de íconos de redes sociales */
 .social-icon img {
     width: 30px;
@@ -109,4 +104,5 @@ footer {
     color: black;
     font-size: medium;
     font-weight: bold;
+
 }

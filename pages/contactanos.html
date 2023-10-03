@@ -31,29 +31,78 @@
     </nav>
 
 
-    <div class="card text-center">
 
-        <div class="card-body">
-            <div class="text">
-                <h5 class="card-title">Contactanos</h5>
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <br>
-                <br>
-                <input type="email" name="Correo" placeholder="Correo">
-                <br>
-                <br>
-                <input type="tel" name="Telefono" placeholder="Telefono">
-                <br>
-                <br>
-                <textarea id="comentario" name="Comentario" placeholder="Escribe algo..."></textarea>
-                <br>
-                <br>
-                <a href="#" target="_blank"><button class="boton">Enviar</button></a>
+    <div class="container">
+
+		<form class="row" id="form-register-user">
+			<div class="col" id="title-contact">
+				Contactanos
+			</div>
+			<div class="col-12 mb-3">
+				<div class="form-floating">
+					<input type="text" class="form-control" id="input-name" placeholder="">
+					<label for="input-name">Nombre</label>
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<div class="form-floating">
+					<input type="email" class="form-control" id="input-email" placeholder="">
+					<label for="input-email">correo@ejemplo.com</label>
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<div class="form-floating">
+					<input type="phone" class="form-control" id="input-phone" placeholder="">
+					<label for="input-phone">Teléfono</label>
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<div class="form-floating">
+					<textarea type="text" class="form-control" id="input-comment" rows="10" placeholder=""></textarea>
+					<label for="input-comment">Escribe un mensaje...</label>
+				</div>
+			</div>
+			<div class="d-grid gap-2 col-4 mx-auto" id="btn-register">
+				<button type="submit" class="btn btn-outline-danger  btn-lg">Enviar</button>
+			</div>
+		</form>
+
+	</div>
+
+
+	<footer>
+        <div class="footer-container">
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="divider"></div>
+                </div>
+                <div class="col-4 footer-social">
+                    <a href="#" class="social-icon"><img src="../assets/images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#" class="social-icon"><img src="../assets/images/github-logo.png" alt="GitHub"></a>
+                    <a href="#" class="social-icon"><img src="../assets/images/Discord.svg" alt="Discord"></a>
+                    <!-- Agrega más redes sociales si es necesario -->
+                </div>
+                <div class="col-4">
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+            <img src="../assets/images/Logo.svg" alt="logo" class="footerlogo">
+
+            <div class="row links">
+                <div class="col-4">
+                    <a href="./AboutUs.html">Acerca de nosotros</a>
+                </div>
+                <div class="col-4">
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="col-4">
+                    <a href="./contactanos.html">Contactanos</a>
+                </div>
             </div>
         </div>
-
-    </div>
-
+    </footer>
 
 
 
