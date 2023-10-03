@@ -1,10 +1,11 @@
 
+
 document.addEventListener(
     'DOMContentLoaded', () => {
         // Elementos del DOM
         const profileImg = document.getElementById('profile-img');  // imagen de perfil
         const configMenu = document.getElementById('config-menu');  // menú de configuración
-        
+
         const isLoggedIn = true;    //Prueba de sesión de usuario
 
         // Eventos

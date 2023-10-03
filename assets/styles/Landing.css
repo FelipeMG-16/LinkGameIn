@@ -14,24 +14,33 @@ body {
 
 }
 
-
-.containerprofile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.navbar {
-    font-style: bold;
-    font-family: 'Poppins';
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #8a8a8a80;
     position: sticky;
     top: 0;
-    z-index: 100;
-    background-color: #a8a8a87c;
-    /* Cambia el color de fondo */
-    padding: 2px;
+}
 
+.logo {
+    /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
 }
 
 
