@@ -13,6 +13,7 @@ html {
 }
 
 .logo {
+    /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -21,14 +22,53 @@ html {
 }
 
 .containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
+}
+
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+}
+
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+}
+
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: medium;
+}
+
+.config-menu ul li a:hover {
+    /* color de fondo al pasar el ratón */
+    background-color: #e425282a;
 }
 
 
@@ -83,42 +123,6 @@ h3 {
     padding: 20px;
     margin: auto;
 }
-
-
-.config-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #5d5d5d;
-    box-shadow: 0 0 10px #000000;
-    z-index: 1;
-}
-
-.config-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.config-menu ul li {
-    padding: 10px;
-    text-align: left;
-}
-
-.config-menu ul li a {
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
-}
-
-/* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
-.config-menu ul li a:hover {
-    background-color: #e425282a;
-    /* color de fondo al pasar el ratón */
-}
-
-
 
 
 /* Estilo para el footer */
