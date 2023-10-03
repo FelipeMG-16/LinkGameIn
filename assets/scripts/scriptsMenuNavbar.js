@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const isLoggedIn = true; // inicio de sesión
-const menuElement = document.getElementById('config-menu'); //elemento del menucito
-const profile = document.getElementById('containerprofile');
-if (isLoggedIn) {
-    // Menucito para usuarios con sesión iniciada
+    const isLoggedIn = true; // inicio de sesión
+    const menuElement = document.getElementById('config-menu'); //elemento del menucito
+    const profile = document.getElementById('imgprof');
+    if (isLoggedIn) {
+        // Menucito para usuarios con sesión iniciada
 
-    menuElement.innerHTML = `
+        menuElement.innerHTML = `
     "
     <ul>
     <li><a href="#">Detalles de Perfil</a></li> 
@@ -38,24 +38,26 @@ if (isLoggedIn) {
 
     <li><a href="#">Cerrar sesión</a></li> 
     </ul>`
-    ;
-} else {
-    // Menuito para usuarios sin sesión
+            ;
+        profile.src = "../assets/images/perfil.jpg";
+    } else {
+        // Menuito para usuarios sin sesión
 
-    menuElement.innerHTML = 
-        <ul>
-        
-        <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
-        <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
-        <li><a href="/pages/contactanos.html">Contáctanos</a></li>
-        <hr>
-        <li><a href="/pages/registrarUsuario.html">Registrarse</a></li>
-        <li><a href="/pages/login.html">Iniciar sesión</a></li>
+        menuElement.innerHTML =
+            <ul>
 
-        
-    </ul>
-    ;
-}
+                <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
+                <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
+                <li><a href="/pages/contactanos.html">Contáctanos</a></li>
+                <hr />
+                <li><a href="/pages/registrarUsuario.html">Registrarse</a></li>
+                <li><a href="/pages/login.html">Iniciar sesión</a></li>
+
+
+            </ul>
+            ;
+        profile.src = profile.src = "../assets/images/usuario.png";
+    }
 
 })
 
