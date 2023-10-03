@@ -1,14 +1,18 @@
-/* Agregamos la imagen de fondo en el body*/
+/* Fuentes para todo el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Estilos para el body */
 body {
     background-image: url(../images/IMG_20230921_231755\ \(1\).png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
 
 /* Barra de navegación */
 .custom-navbar {
