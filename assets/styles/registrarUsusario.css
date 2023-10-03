@@ -3,11 +3,14 @@
 body{
     background-image: url("../images/img_registrarUX/BackImg_Dskp_Or.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
     color: white;
     font-family: 'Bree Serif', serif;
     font-family: 'Poppins', sans-serif;
 }
+
 .navbar {
     background-color: #a8a8a8;
     opacity: 0.3;
