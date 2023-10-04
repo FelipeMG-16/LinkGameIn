@@ -12,8 +12,8 @@ body {
     background-color: #8a8a8a80;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
-
 .logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
@@ -36,9 +36,11 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
+    background-color: #8a8a8ad0;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 .config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
@@ -51,12 +53,14 @@ body {
 }
 .config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     display: block;
-    font-size: medium;
+    font-size: large;
+    padding-inline: 5px;
 }
 .config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
+    background-color: #e4252880;
+    border-radius: 5px;
 }
 
 
@@ -185,21 +189,35 @@ div.scrollmenu {
     margin-inline: 20px;
 }
 
-.containerPubli {
-    background-color: #8a8a8a5f;
-    margin-inline: 30px;
-    border-radius: 20px;
+.containerMadePubli {
+    margin-inline: 50px;
+    width: 100%;
+    margin-right: 500px;
+    align-items: center;
 }
-
-.containerPubli h3 {
-    padding-top: 20px;
-    padding-left: 40px;
-    color: rgba(255, 255, 255, 0.353);
+.containerMadePubli textarea{
+    background-color: #8a8a8a80;
+    border: none;
 }
-
-.containerPubli img {
+.containerMadePubli textarea::placeholder {
+    color: white;
+    margin: 50px;
+}
+.containerMadePubli img {
     width: 80px;
-    margin-top: 60px;
-    margin-left: 750px;
+    margin-top: -90px;
+    margin-left: 650px;
     margin-bottom: 20px;
+}
+.containerMadePubli button {
+    margin-top: -90px;
+    margin-left: 760px;
+    margin-bottom: 60px;
+    padding: 15px 20px;
+}
+
+.containerPubli {
+    background-color: white;
+    width: 100px;
+    margin-inline: 50px;
 }

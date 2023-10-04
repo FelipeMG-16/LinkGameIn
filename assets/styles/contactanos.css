@@ -13,6 +13,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos para los títulos */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
 
 /* Barra de navegación */
 .custom-navbar {
@@ -21,67 +28,59 @@ body {
     top: 0;
     z-index: 1;
 }
-
-.logo {
-    /* Estilo para el logo en la barra de navegación */
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-
-.containerProfile {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
-
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
+    background-color: #5d5d5dd0;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
     border-radius: 5px;
     margin-right: 10px;
 }
-
-.config-menu ul {
-    /* Estilo para la lista del menú de configuración */
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 290px;
 }
-
-.config-menu ul li {
-    /* Estilo para los items del menú de configuración */
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
+    align-items: center;
 }
-
-.config-menu ul li a {
-    /* Estilo para los links del menú de configuración */
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
+    font-size: large;
+    color: #ffffff;
 }
-
-.config-menu ul li a:hover {
-    /* color de fondo al pasar el ratón */
+.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
     background-color: #e425282a;
 }
+/*termiman estilos de navbar*/
 
 
 /* Estilo para el formulario de contacto */
@@ -108,6 +107,7 @@ body {
     /* Estilo para el input de comentario */
     height: auto;
     min-height: 50px;
+    padding: 30px 12px 16px 12px;
 }
 
 #btn-register {
