@@ -13,6 +13,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos para los títulos */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
 
 /* Barra de navegación */
 .custom-navbar {
@@ -21,66 +28,64 @@ body {
     top: 0;
     z-index: 1;
 }
-
-.logo {
-    /* Estilo para el logo en la barra de navegación */
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-
-.containerProfile {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
-
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
+    background-color: #5d5d5dd0;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
     border-radius: 5px;
     margin-right: 10px;
 }
-
-.config-menu ul {
-    /* Estilo para la lista del menú de configuración */
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 270px;
 }
-
-.config-menu ul li {
-    /* Estilo para los items del menú de configuración */
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
+    align-items: center;
+    width: auto;
 }
-
-.config-menu ul li a {
-    /* Estilo para los links del menú de configuración */
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
+    color: #ffffff;
+    font-size: large;
 }
-
-.config-menu ul li a:hover {
-    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
 }
 
 
@@ -92,31 +97,24 @@ body {
     border-radius: 30px;
     opacity: 0.8;
     padding: 10px 50px;
-    margin: 20px auto;
+    margin: 20px auto; 
 }
-
-#title-contact {
-    /* Estilo para el título del formulario */
+#title-contact {    /* Estilo para el título del formulario */
     font-weight: 600;
     font-size: 30px;
     text-align: center;
     color: #e42527;
     margin: 20px 0;
 }
-
-#input-comment {
-    /* Estilo para el input de comentario */
+#input-comment {    /* Estilo para el input de comentario */
     height: auto;
     min-height: 50px;
+    padding: 30px 12px 16px 12px;
 }
-
-#btn-register {
-    /* Estilo para el botón de enviar */
+#btn-register { /* Estilo para el botón de enviar */
     margin: 20px 0;
 }
-
-.form-floating label {
-    /* Estilo para el label de los inputs */
+.form-floating label {  /* Estilo para el label de los inputs */
     color: black;
 }
 
@@ -127,42 +125,30 @@ footer {
     color: white;
     padding: 10px;
 }
-
-.footer-container {
-    /* Contenedor principal del footer */
+.footer-container { /* Contenedor principal del footer */
     display: grid;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-.footerlogo {
-    /* Estilo para el logo en el footer */
+.footerlogo {   /* Estilo para el logo en el footer */
     width: 100px;
     margin: 0 auto;
 }
-
-.divider {
-    /* Estilo para las divisiones entre el logo y los íconos */
+.divider {  /* Estilo para las divisiones entre el logo y los íconos */
     margin-top: 10px;
     width: 100%;
     height: 5px;
     background-color: rgb(0, 0, 0);
 }
-
-.social-icons {
-    /* Estilo para los íconos de redes sociales */
+.social-icons { /* Estilo para los íconos de redes sociales */
     margin-top: 20px;
 }
-
-.social-icon img {
-    /* Estilo para las imágenes de íconos de redes sociales */
+.social-icon img {  /* Estilo para las imágenes de íconos de redes sociales */
     width: 30px;
     height: 30px;
 }
-
-.links a {
-    /* Estilo para los links del footer */
+.links a {  /* Estilo para los links del footer */
     text-decoration: none;
     color: black;
     font-size: medium;

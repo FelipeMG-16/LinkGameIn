@@ -1,11 +1,9 @@
-
-
 document.addEventListener(
     'DOMContentLoaded', () => {
         // Elementos del DOM
-        const profileImg = document.getElementById('profile-img');  // imagen de perfil
-        const configMenu = document.getElementById('config-menu');  // menú de configuración
-        const logoGame = document.getElementById('logo-game'); // Logo linkgamein
+        const profileImg = document.getElementById('profileImg');  // imagen de perfil
+        const configMenu = document.getElementById('configMenu');  // menú de configuración
+        const logo = document.getElementById('containerLogo');
 
         const isLoggedIn = false;    //Prueba de sesión de usuario
 
@@ -30,14 +28,19 @@ document.addEventListener(
             }
         );
 
-        if (isLoggedIn) {   // Menu para usuarios con sesión iniciada
+        if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
+            logo.innerHTML = `
+            <a class="navbar-brand" href="./dashBoard.html">
+                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+            `;
             profileImg.innerHTML = `
             <img src="../assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
             <span class="position-absolute bottom-0 start-0 p-2 bg-success border border-dark rounded-circle"></span>
             `;
             configMenu.innerHTML = `
             <ul>
-                <li><a href="#">Detalles de Perfil</a></li> 
+                <li><a href="/pages/profile.html">Perfil</a></li> 
                 <li><a href="#">Notificaciónes</a></li> 
                 <li><a href="#">Publicaciónes</a></li> 
                 <li><a href="#">Tus juegos</a></li>  
@@ -48,35 +51,72 @@ document.addEventListener(
                 <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
                 <li><a href="/pages/contactanos.html">Contáctanos</a></li>
                 <li><a href="#">Cerrar sesión</a></li>
-                </ul>
+            </ul>
             `;
-            logoGame.innerHTML = `<div id="logo-game"> 
-            <a href="/dashBoard.html" class="navbar-brand" >
-            <img src="/assets/images/Logo.svg" alt="logo" class="logo">
+        } else { // Opciones para usuarios sin sesión iniciada
+            logo.innerHTML = `
+            <a class="navbar-brand" href="/index.html">
+                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
             </a>
-            </div>`;
-          
-
-        } else { // Menu para usuarios sin sesión iniciada
+            `;
             profileImg.innerHTML = `
             <img src="../assets/images/usuario.png" alt="" class="perfil" id="profile-img">
             `;
             configMenu.innerHTML = `
             <ul>
-                <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
-                <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
-                <li><a href="/pages/contactanos.html">Contáctanos</a></li>
-                <hr>
-                <li><a href="/pages/registrarUsuario.html">Registrarse</a></li>
-                <li><a href="/pages/login.html">Iniciar sesión</a></li>
+                <li>
+                    <a href="/pages/AboutUs.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/aboutUs.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Acerca de nosotros</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/Terminosycondiciones.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/terminos.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Términos y condiciones</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/contactanos.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/contactanos.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Contáctanos</span>
+                        </div>
+                </li>
+                <a><hr></a>
+                <li>
+                    <a href="/pages/registrarUsuario.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/publicaciones.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Registrarse</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/login.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/cerrarsesion.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Iniciar sesión</span>
+                        </div>
+                </li>
             </ul>
             `;
-
-            logoGame.innerHTML = `<div id="logo-game"> 
-            <a href="/index.html" class="navbar-brand" >
-            <img src="/assets/images/Logo.svg" alt="logo" class="logo">
-            </a>
-            </div>`;
         }
     }
 );

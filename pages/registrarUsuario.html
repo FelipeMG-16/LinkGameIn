@@ -11,78 +11,101 @@
 	<link rel="stylesheet" href="../assets/styles/registrarUsusario.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-	<nav class="navbar navbar-default navbar-fixed-top" id="top">
-		<div class="container-fluid">
-			<a class="navbar-brand">
-				<img src="../assets/images/Logo.svg" alt="Logo" width="150" height="35"
-					class="d-inline-block align-text-top">
-
+	<!-- Barra de navegación -->
+	<nav class="custom-navbar d-flex justify-content-between">
+		<!-- Contenedor Logo -->
+		<div id="Logo">
+			<a class="navbar-brand" href="/dashBoard.html">
+				<img src="../assets/images/Logo.svg" alt="logo" class="logo">
 			</a>
-			<!-- Overlay content -->
-			<div id="config-menu" class="config-menu">
-				<!-- elementos de menú de configuración -->
-				<ul>
-					<li><a href="../pages/AboutUs.html">Acerca de nosotros</a></li>
-					<li><a href="#">Términos y condiciones</a></li>
-					<li><a href="../pages/contactanos.html">Contáctanos</a></li>
-					<hr>
-					<li><a href="../pages/registrarUsuario.html">Registrarse</a></li>
-					<li><a href="../pages/login.html">Iniciar sesión</a></li>
-					<!-- editar elementos del menu -->
-				</ul>
-			</div>
-
-			<!-- Use any element to open/show the overlay navigation menu -->
-			<div class="containerprofile">
-				<img src="../assets/images/usuario.png" alt="Perfil" id="profile-img">
-			</div>
-
-	</nav>
+		</div> <!-- Cierre de contenedor logo -->
+		<!-- Contenedor de Imagen Login/Logout -->
+		<div class="containerProfile position-relative" id="profile-img">
+		</div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+		<div class="config-menu" id="config-menu">
+		</div> <!-- Cierre div de menu -->
+	</nav> <!-- Cierre de Barra de navegación -->
 
 
 	<div class="container">
 
-		<form class="row" id="form-register-user">
+		<form class="row needs-validation" id="form-register-user" novalidate>
 			<div class="col-12" id="title-register">
 				Registro
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 position-relative">
 				<div class="input-group">
 					<div class="form-floating">
-						<input type="text" class="form-control" id="input-name" placeholder="Nombre">
+						<input type="text" class="form-control" id="input-name" placeholder="Nombre" required>
 						<label for="input-name">Nombre</label>
+						<div class="valid-tooltip">
+							Correcto
+						</div>
+						<div class="invalid-tooltip">
+							Es necesario añadir el nombre
+						</div>
 					</div>
 					<div class="form-floating">
-						<input type="text" class="form-control" id="input-last-name" placeholder="Apellido">
+						<input type="text" class="form-control" id="input-last-name" placeholder="Apellido" required>
 						<label for="input-apellido">Apellido</label>
+						<div class="valid-tooltip">
+							Correcto
+						</div>
+						<div class="invalid-tooltip">
+							Es necesario añadir el apellido
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 position-relative">
 				<div class="form-floating">
-					<input type="text" class="form-control" id="input-nickname" placeholder="Apodo">
+					<input type="text" class="form-control" id="input-nickname" placeholder="Apodo" required>
 					<label for="input-nickname">Apodo</label>
+					<div class="valid-tooltip">
+                        Correcto
+                    </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un apodo
+					</div>
 				</div>
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 position-relative">
 				<div class="form-floating">
-					<input type="email" class="form-control" id="input-email" placeholder="correo@ejemplo.com">
+					<input type="email" class="form-control" id="input-email" placeholder="correo@ejemplo.com" required>
 					<label for="input-email">correo@ejemplo.com</label>
+					<div class="valid-tooltip">
+                        Correcto
+                    </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un correo
+					</div>
 				</div>
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 position-relative">
 				<div class="form-floating">
-					<input type="password" class="form-control" id="input-password" placeholder="Contraseña">
+					<input type="password" class="form-control" id="input-password" placeholder="Contraseña" required>
 					<label for="input-password">Contraseña</label>
+					<div class="valid-tooltip">
+                        Correcto
+                    </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir una contraseña
+					</div>
 				</div>
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 position-relative">
 				<div class="form-floating">
 					<input type="password" class="form-control" id="input-password-confirm"
-						placeholder="Confirmar contraseña">
+						placeholder="Confirmar contraseña" required>
 					<label for="input-password-confirm">Confirmar contraseña</label>
+					<div class="valid-tooltip">
+                        Correcto
+                    </div>
+                    <div class="invalid-tooltip">
+                        Es necesario confirmar la contraseña
+					</div>
 				</div>
 			</div>
 			<div class="col-12">
@@ -99,16 +122,22 @@
 						jugadores</label>
 				</div>
 			</div>
-			<div class="col-12">
+			<div class="col-12 position-relative">
 				<div class="form-check">
-					<input type="checkbox" class="form-check-input" id="check-legal-age">
+					<input type="checkbox" class="form-check-input" id="check-legal-age" required>
 					<label for="check-legal-age" class="form-check-label">Soy mayor de 18 años</label>
+                    <div class="invalid-tooltip">
+                        Es necesario que seas mayor de edad
+					</div>
 				</div>
 			</div>
-			<div class="col-12">
+			<div class="col-12 position-relative">
 				<div class="form-check">
-					<input type="checkbox" class="form-check-input" id="check-terms-conditions">
+					<input type="checkbox" class="form-check-input" id="check-terms-conditions" required>
 					<label for="check-terms-conditions" class="form-check-label">Acepto términos y condiciones</label>
+                    <div class="invalid-tooltip">
+                        Es necesario que aceptes los términos y condiciones
+					</div>
 				</div>
 			</div>
 			<div class="d-grid gap-2 col-4 mx-auto" id="btn-register">
@@ -119,9 +148,9 @@
 
 	</div>
 
-	<footer>
+	<!-- Footer -->
+	<footer class="mt-auto">
 		<div class="footer-container">
-
 			<div class="row">
 				<div class="col-4">
 					<div class="divider"></div>
@@ -136,18 +165,16 @@
 					<div class="divider"></div>
 				</div>
 			</div>
-
 			<img src="../assets/images/Logo.svg" alt="logo" class="footerlogo">
-
 			<div class="row links">
 				<div class="col-4">
-					<a href="../pages/AboutUs.html">Acerca de nosotros</a>
+					<a href="./AboutUs.html">Acerca de nosotros</a>
 				</div>
 				<div class="col-4">
-					<a href="#">Terminos y condiciones</a>
+					<a href="./Terminosycondiciones.html">Terminos y condiciones</a>
 				</div>
 				<div class="col-4">
-					<a href="../pages/contactanos.html">Contactanos</a>
+					<a href="./contactanos.html">Contactanos</a>
 				</div>
 			</div>
 		</div>
@@ -158,6 +185,7 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 	<script src="../assets/scripts/scriptsMenuNavbar.js"></script>
+	<script src="../assets/scripts/validaciones.js"></script>
 </body>
 
 </html>
