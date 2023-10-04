@@ -60,13 +60,12 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 270px;
+    width: 260px;
 }
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
-    width: auto;
 }
 .config-menu ul li:hover {    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
