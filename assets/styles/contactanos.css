@@ -19,6 +19,7 @@ body {
     background-color: #8a8a8a80;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
@@ -45,6 +46,8 @@ body {
     background-color: #5d5d5d;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 .config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
@@ -98,11 +101,8 @@ body {
 /* Estilo para el footer */
 footer {
     background-color: #8a8a8a80;
+    color: white;
     padding: 10px;
-    margin-top: 20px;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
 }
 .footer-container { /* Contenedor principal del footer */
     display: grid;
