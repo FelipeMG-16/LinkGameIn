@@ -3,6 +3,7 @@ document.addEventListener(
         // Elementos del DOM
         const profileImg = document.getElementById('profileImg');  // imagen de perfil
         const configMenu = document.getElementById('configMenu');  // menú de configuración
+        const logoGame = document.getElementById('logo-game'); // Logo linkgamein
         const logo = document.getElementById('containerLogo');
 
         const isLoggedIn = false;    //Prueba de sesión de usuario
@@ -53,6 +54,13 @@ document.addEventListener(
                 <li><a href="#">Cerrar sesión</a></li>
             </ul>
             `;
+            logoGame.innerHTML = `<div id="logo-game"> 
+            <a href="/dashBoard.html" class="navbar-brand" >
+            <img src="/assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+            </div>`;
+          
+
         } else { // Opciones para usuarios sin sesión iniciada
             logo.innerHTML = `
             <a class="navbar-brand" href="/index.html">

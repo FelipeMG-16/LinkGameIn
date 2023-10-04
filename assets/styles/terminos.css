@@ -36,6 +36,8 @@ html {
     background-color: #5d5d5d;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 .config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
@@ -53,9 +55,9 @@ html {
     font-size:large;
 }
 .config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
-    background-color: #e4252770;
+    background-color: #e425282a;
 }
-
+/*termiman estilos de navbar*/
 
 
 body {
@@ -95,6 +97,7 @@ h5{
     font-family: 'Poppins';
     color: #ea25273c;
 }
+
 
 
 
