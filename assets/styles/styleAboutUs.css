@@ -3,76 +3,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* Barra de navegación */
-.custom-navbar {
-    background-color: #8a8a8a80;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.logo {
-    /* Estilo para el logo en la barra de navegación */
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 150px;
-    text-align: left;
-}
-
-.containerProfile {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
-    margin-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
-    width: 45px;
-    border-radius: 50%
-}
-
-/* Estilo para el menú de configuración */
-.config-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #5d5d5d;
-    box-shadow: 0 0 10px #000000;
-    z-index: 1;
-}
-
-.config-menu ul {
-    /* Estilo para la lista del menú de configuración */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.config-menu ul li {
-    /* Estilo para los items del menú de configuración */
-    padding: 10px;
-    text-align: left;
-}
-
-.config-menu ul li a {
-    /* Estilo para los links del menú de configuración */
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
-}
-
-.config-menu ul li a:hover {
-    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
-}
-
-
-
 body {
     background-color: black;
     overflow-x: hidden;
@@ -84,100 +14,66 @@ h1 {
     font-family: 'Poppins';
 }
 
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #8a8a8a80;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5d;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size:large;
+}
+.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252770;
+}
+
+
+
+/*carrusel*/
 #cardCarousel {
     padding: 20px;
     /* Añade espaciado interior para separar el carrusel de otros elementos */
 }
-
-#vision {
-    width: 500px;
-    height: 400px;
-    padding-left: 30px;
-
-}
-
-#mision {
-    width: 500px;
-    height: 400px;
-}
-
-h3 {
-    color: white;
-    font-family: 'Poppins';
-    padding: 20px;
-}
-
-.p-mision {
-    text-align: justify;
-    color: white;
-    font-family: 'Montserrat';
-    font-size: large;
-    padding: 20px;
-    margin: auto;
-}
-
-.p-vision {
-    text-align: justify;
-    color: white;
-    font-family: 'Montserrat';
-    font-size: large;
-    padding: 20px;
-    margin: auto;
-}
-
-
-/* Estilo para el footer */
-footer {
-    background-color: #a8a8a8;
-    color: white;
-    padding: 10px;
-}
-
-/* Contenedor principal del footer */
-.footer-container {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Estilo para el logo en el footer */
-.footerlogo {
-    width: 100px;
-    margin: 0 auto;
-    /* Centrar horizontalmente */
-}
-
-/* Estilo para las divisiones entre el logo y los íconos */
-.divider {
-    margin-top: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-}
-
-/* Estilo para los íconos de redes sociales */
-.social-icons {
-    margin-top: 20px;
-}
-
-
-/* Estilo para las imágenes de íconos de redes sociales */
-.social-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.links a {
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-weight: bold;
-
-}
-
-
-
 
 .container .card {
     z-index: 0;
@@ -330,4 +226,81 @@ a {
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
+}
+
+
+#vision {
+    width: 500px;
+    height: 400px;
+    padding-left: 30px;
+
+}
+
+#mision {
+    width: 500px;
+    height: 400px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Poppins';
+    padding: 20px;
+}
+
+.p-mision {
+    text-align: justify;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: large;
+    padding: 20px;
+    margin: auto;
+}
+
+.p-vision {
+    text-align: justify;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: large;
+    padding: 20px;
+    margin: auto;
+}
+
+
+
+/* Estilo para el footer */
+footer {
+    background-color: #8a8a8a80;
+    padding: 10px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.footer-container { /* Contenedor principal del footer */
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footerlogo {   /* Estilo para el logo en el footer */
+    width: 100px;
+    margin: 0 auto;
+}
+.divider {  /* Estilo para las divisiones entre el logo y los íconos */
+    margin-top: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.social-icons { /* Estilo para los íconos de redes sociales */
+    margin-top: 20px;
+}
+.social-icon img {  /* Estilo para las imágenes de íconos de redes sociales */
+    width: 30px;
+    height: 30px;
+}
+.links a {  /* Estilo para los links del footer */
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
 }
