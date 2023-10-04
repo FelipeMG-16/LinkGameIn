@@ -12,27 +12,22 @@
     <title>LinkGameIn - Iniciar Sesión</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="top">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="../assets/images/GRojaNombre.svg" alt="Logo" width="150" height="35"
-                    class="d-inline-block align-text-top">
+<body class="d-flex flex-column min-vh-100">
 
-
-
+    <!-- Barra de navegación -->
+    <nav class="custom-navbar d-flex justify-content-between">
+        <!-- Contenedor Logo -->
+        <div id="Logo">
+            <a class="navbar-brand" href="/dashBoard.html">
+                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
             </a>
-            <!-- Overlay content -->
-            <div id="imgs">
-                <div id="containerprofile" class="containerprofile">
-                    <img src="../assets/images/usuario.png" alt="Perfil" id="profile-img">
-                    <div id="config-menu" class="config-menu">
-
-                    </div> <!--cierra div de menu-->
-                </div> <!--cierra container profile-->
-            </div>
-
-    </nav>
+        </div> <!-- Cierre de contenedor logo -->
+        <!-- Contenedor de Imagen Login/Logout -->
+        <div class="containerProfile position-relative" id="profile-img">
+        </div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+        <div class="config-menu" id="config-menu">
+        </div> <!-- Cierre div de menu -->
+    </nav> <!-- Cierre de Barra de navegación -->
     <div class="background">
 
         <div class="container tarjeta"><!-- Contenedor de la tarjeta -->
@@ -42,13 +37,15 @@
             <form class="row g-3" action="#" method="post" id="login-form"><!-- Inicio del form -->
                 <div class="col-12 mb-3">
                     <div class="form-floating">
-                        <input type="email" name="email" class="form-control" id="input-email" placeholder="correo@ejemplo.com">
+                        <input type="email" name="email" class="form-control" id="input-email"
+                            placeholder="correo@ejemplo.com">
                         <label for="input-email">correo@ejemplo.com</label>
                     </div>
                 </div>
                 <div class="col-12 mb-3">
                     <div class="form-floating">
-                        <input type="password" name="password" class="form-control" id="input-password" placeholder="Contraseña">
+                        <input type="password" name="password" class="form-control" id="input-password"
+                            placeholder="Contraseña">
                         <label for="input-password">Contraseña</label>
                     </div>
                 </div>
@@ -70,9 +67,9 @@
 
 
 
-    <footer>
+    <!-- Footer -->
+    <footer class="mt-auto">
         <div class="footer-container">
-
             <div class="row">
                 <div class="col-4">
                     <div class="divider"></div>
@@ -87,15 +84,13 @@
                     <div class="divider"></div>
                 </div>
             </div>
-
             <img src="../assets/images/Logo.svg" alt="logo" class="footerlogo">
-
             <div class="row links">
                 <div class="col-4">
                     <a href="./AboutUs.html">Acerca de nosotros</a>
                 </div>
                 <div class="col-4">
-                    <a href="#">Terminos y condiciones</a>
+                    <a href="./Terminosycondiciones.html">Terminos y condiciones</a>
                 </div>
                 <div class="col-4">
                     <a href="./contactanos.html">Contactanos</a>
