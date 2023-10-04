@@ -78,7 +78,7 @@ document.addEventListener(
                     <a href="/pages/Terminosycondiciones.html">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
+                                <img src="../assets/images/terminos.svg" alt="">
                             </div>
                         <div class="col-10">
                             <span>Términos y condiciones</span>
@@ -88,7 +88,7 @@ document.addEventListener(
                     <a href="/pages/contactanos.html">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
+                                <img src="../assets/images/contactanos.svg" alt="">
                             </div>
                         <div class="col-10">
                             <span>Contáctanos</span>
@@ -99,7 +99,7 @@ document.addEventListener(
                     <a href="/pages/registrarUsuario.html">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
+                                <img src="../assets/images/publicaciones.svg" alt="">
                             </div>
                         <div class="col-10">
                             <span>Registrarse</span>
@@ -109,7 +109,7 @@ document.addEventListener(
                     <a href="/pages/login.html">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
+                                <img src="../assets/images/cerrarsesion.svg" alt="">
                             </div>
                         <div class="col-10">
                             <span>Iniciar sesión</span>
