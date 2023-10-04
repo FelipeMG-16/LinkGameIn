@@ -5,6 +5,7 @@ document.addEventListener(
         // Elementos del DOM
         const profileImg = document.getElementById('profile-img');  // imagen de perfil
         const configMenu = document.getElementById('config-menu');  // menú de configuración
+        const logoGame = document.getElementById('logo-game'); // Logo linkgamein
 
         const isLoggedIn = false;    //Prueba de sesión de usuario
 
@@ -49,6 +50,13 @@ document.addEventListener(
                 <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             `;
+            logoGame.innerHTML = `<div id="logo-game"> 
+            <a href="/dashBoard.html" class="navbar-brand" >
+            <img src="/assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+            </div>`;
+          
+
         } else { // Menu para usuarios sin sesión iniciada
             profileImg.innerHTML = `
             <img src="../assets/images/usuario.png" alt="" class="perfil" id="profile-img">
@@ -63,6 +71,12 @@ document.addEventListener(
                 <li><a href="/pages/login.html">Iniciar sesión</a></li>
             </ul>
             `;
+
+            logoGame.innerHTML = `<div id="logo-game"> 
+            <a href="/index.html" class="navbar-brand" >
+            <img src="/assets/images/Logo.svg" alt="logo" class="logo">
+            </a>
+            </div>`;
         }
     }
 );
