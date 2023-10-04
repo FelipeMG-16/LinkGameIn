@@ -37,7 +37,7 @@
             
             localStorage.setItem('user', JSON.stringify(userTest));
             setTimeout(function () {
-                window.location.href = "dashBoard.html"; 
+                window.location.href = "profile.html"; 
             }, 300);
         } else {
             let container = document.getElementById('login-form');
