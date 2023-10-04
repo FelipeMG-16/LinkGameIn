@@ -33,7 +33,7 @@ html {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
+    background-color: #5d5d5dd0;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
     border-radius: 5px;
@@ -43,19 +43,31 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 260px;
 }
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
+    align-items: center;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
 }
 .config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
     color: #ffffff;
-    display: block;
-    font-size:large;
+    font-size: large;
 }
-.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
 }
 /*termiman estilos de navbar*/
 
