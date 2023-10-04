@@ -13,6 +13,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos para los títulos */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
 
 /* Barra de navegación */
 .custom-navbar {
@@ -43,7 +50,7 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #5d5d5d;
+    background-color: #5d5d5dd0;
     box-shadow: 0 0 10px #000000;
     z-index: 1;
     border-radius: 5px;
@@ -53,19 +60,31 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 290px;
 }
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
+    align-items: center;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
 }
 .config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
+    color: #ffffff;
+    font-size: large;
 }
-.config-menu ul li a:hover {    /* color de fondo al pasar el ratón */
-    background-color: #e425282a;
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
 }
 
 
@@ -89,6 +108,7 @@ body {
 #input-comment {    /* Estilo para el input de comentario */
     height: auto;
     min-height: 50px;
+    padding: 30px 12px 16px 12px;
 }
 #btn-register { /* Estilo para el botón de enviar */
     margin: 20px 0;
