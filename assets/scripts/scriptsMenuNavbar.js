@@ -5,7 +5,7 @@ document.addEventListener(
         const configMenu = document.getElementById('configMenu');  // menú de configuración
         const logo = document.getElementById('containerLogo');
 
-        const isLoggedIn = true;    //Prueba de sesión de usuario
+        const isLoggedIn = false;    //Prueba de sesión de usuario
 
         // Eventos
         profileImg.addEventListener(    // Evento para mostrar menú de configuración
