@@ -22,7 +22,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    /*Add this*/
 }
 
 .logo {
@@ -41,6 +40,67 @@ body {
     margin-bottom: 5px;
 }
 
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5dd0;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+}
+
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+}
+
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
+}
+
 .profile-img {
     /* Estilo para el contenedor del perfil en la barra de navegación */
     margin: 5px;
@@ -50,11 +110,6 @@ body {
 }
 
 
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
-    width: 45px;
-    border-radius: 50%
-}
 
 
 .TextosLanding {
@@ -221,43 +276,4 @@ footer {
     font-size: medium;
     font-weight: bold;
 
-}
-
-
-.config-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    /* pone menú debajo de la imagen de perfil */
-    right: 0;
-    /* menú a la dercha de la imagen de la bruja */
-    background-color: #5d5d5d;
-    box-shadow: 0 0 10px #000000;
-    /*sombra al menú creo*/
-    z-index: 1;
-    /* menu encima */
-}
-
-.config-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.config-menu ul li {
-    padding: 10px;
-    text-align: left;
-}
-
-.config-menu ul li a {
-    text-decoration: none;
-    color: #000000;
-    display: block;
-    font-size: medium;
-}
-
-/* Estilos para cambiar la apariencia cuando se pasa el ratón sobre las opciones del menú */
-.config-menu ul li a:hover {
-    background-color: #e425282a;
-    /* color de fondo al pasar el ratón */
 }
