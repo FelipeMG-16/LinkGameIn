@@ -40,17 +40,97 @@ document.addEventListener(
             `;
             configMenu.innerHTML = `
             <ul>
-                <li><a href="/pages/profile.html">Perfil</a></li> 
-                <li><a href="#">Notificaciónes</a></li> 
-                <li><a href="#">Publicaciónes</a></li> 
-                <li><a href="#">Tus juegos</a></li>  
-                <li><a href="#">Logros</a></li> 
-                <hr> 
-                <li><a href="#">Cuenta y seguridad</a></li> 
-                <li><a href="/pages/AboutUs.html">Acerca de nosotros</a></li>
-                <li><a href="/pages/Terminosycondiciones.html">Términos y condiciones</a></li>
-                <li><a href="/pages/contactanos.html">Contáctanos</a></li>
-                <li><a href="#">Cerrar sesión</a></li>
+                <li>
+                    <a href="/pages/profile.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/perfil.jpg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Perfil</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/notificaciones.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Notificaciones</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/publicaciones.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Publicaciones</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/logros.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Juegos y Logros</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/cuentayseguridad.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Cuenta y Seguridad</span>
+                        </div>
+                </li>
+                <a><hr></a>
+                <li>
+                    <a href="/pages/AboutUs.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/aboutUs.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Acerca de nosotros</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/Terminosycondiciones.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/terminos.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Términos y condiciones</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/contactanos.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/contactanos.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Contáctanos</span>
+                        </div>
+                </li>
+                <li>
+                    <a href="/pages/login.html">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2">
+                                <img src="../assets/images/cerrarsesion.svg" alt="">
+                            </div>
+                        <div class="col-10">
+                            <span>Cerrar sesión</span>
+                        </div>
+                </li>
             </ul>
             `;
         } else { // Opciones para usuarios sin sesión iniciada
