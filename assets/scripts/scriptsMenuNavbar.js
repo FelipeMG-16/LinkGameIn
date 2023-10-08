@@ -5,7 +5,7 @@ document.addEventListener(
         const configMenu = document.getElementById('configMenu');  // menú de configuración
         const logo = document.getElementById('containerLogo');
 
-        const isLoggedIn = false;    //Prueba de sesión de usuario
+        const isLoggedIn = true;    //Prueba de sesión de usuario
 
         // Eventos
         profileImg.addEventListener(    // Evento para mostrar menú de configuración
@@ -31,7 +31,7 @@ document.addEventListener(
         if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
             logo.innerHTML = `
             <a class="navbar-brand" href="./dashBoard.html">
-                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
+                <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
             profileImg.innerHTML = `
@@ -136,11 +136,11 @@ document.addEventListener(
         } else { // Opciones para usuarios sin sesión iniciada
             logo.innerHTML = `
             <a class="navbar-brand" href="/index.html">
-                <img src="../assets/images/Logo.svg" alt="logo" class="logo">
+            <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
             profileImg.innerHTML = `
-            <img src="../assets/images/usuario.png" alt="" class="perfil" id="profile-img">
+            <img src="/assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
             configMenu.innerHTML = `
             <ul>
