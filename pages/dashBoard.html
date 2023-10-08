@@ -10,8 +10,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Estilos personales CSS -->
     <link rel="stylesheet" href="/assets/styles/estilosDeDashBoard.css">
-    <!-- Modificadores Sass -->
-    <link rel="stylesheet" href="/assets/styles/Styles.scss">
+    <!--Googlefonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200;400;600&display=swap"
+        rel="stylesheet" />
     <title>LinkGameIn</title>
 </head>
 
@@ -30,89 +32,53 @@
         </div> <!-- Cierre div de menu -->
     </nav> <!-- Cierre de Barra de navegación -->
 
-    <div class="container text-center">
 
+    <div class="container-fluid">
         <div class="row">
+            <div class="col-md-2">
+                <div id="menudash"> <!--comienza columna izquierda-->
+                    <ul class="flex-column">
 
-            <!-- Cloumna de juegos -->
-            <div class="col-lg-3 borde d-none d-md-none d-lg-block" id="juegos">
-                <p> </p>
-            </div>
+                        </li>
+                        <li class="dash-item">
+                            <a class="link active" aria-current="page" href="#">
+                                <img src="../assets/images/Friend1.jpg" alt="" class="rounded-circle friend-img">Gamer
+                                01
+                                <!--imagen de perfil del amigo-->
 
-            <!-- Cloumna de dashboard  -->
-            <div class="col-md-12 col-lg-6" id="dash">
+                                <!--lo que está jugando (la idea es que la palabra jugando esté por defecto)-->
+                            </a>Jugando League of legends
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/Friend2.jpg" alt="" class="rounded-circle friend-img">
+                                Gamer 02
+                            </a>Jugando Minecraft
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/Friend3.jpg" alt="" class="rounded-circle friend-img">Gamer
+                                03
 
-                <!-- Container de barra superior para publicar -->
-                <div class="container" id="publi">
-                    <!-- zona de publicación -->
-                    <div class="row" id="publicar">
-                        <!-- Imagen de perfil -->
-                        <div class="col-lg-2">
-                            <a href="#"><img src="/assets/images/Cyberpunk 2077 icon.png" alt="imagen de perfil"
-                                    id="perfil"></a>
-                        </div> <!-- Cierre de imagen de perfil -->
-
-                        <!-- Zona para publicar -->
-                        <div class="col-lg-9 d-grid gap-2">
-                            <button class="btn btn-light" type="button">¿Que quieres publicar?</button>
-                        </div> <!-- Fin zona para publicar -->
-                    </div> <!-- Fin zona de publicaciones -->
-
-                    <!-- Zona de adjuntables -->
-                    <div class="row">
-                        <!-- Logo multimedia -->
-                        <div class="col" id="adjuntables">
-                            <a href="#"><img src="/assets/images/logo_multimedia.png" alt="imagen de perfil"
-                                    id="izq"></a>
-                        </div> <!-- Fin logo multimedia -->
-
-                        <!-- Logo logros -->
-                        <div class="col" id="adjuntables">
-                            <a href="#"><img src="/assets/images/logo_logros.png" alt="imagen de perfil" id="der"></a>
-                        </div> <!-- Fin logo logros -->
-                    </div> <!-- Fin adjuntables -->
-
-                </div> <!-- Fin de barra superior para publicar -->
-
-                <!-- Zona de publicaciones -->
-                <div class="container d-flex flex-column-flex justify-content-center align-items-center">
-                    <div>
-                        <div class="card text-bg-secondary mb-3 " id="historias">
-                            <div class="card-header"><img
-                                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
-                                    class="card-img-top" alt="..."></div>
-                            <div class="card-body">
-                                <h5><a href="#"><img src="/assets/images/perfil.jpg" alt="perfil usuario"
-                                            id="perfil"></a>Nickname Fulanito</h5>
-                                <p>Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
-                        </div> <!-- Fin tarjeta de publicaciones -->
-
-                        <!-- Tarjetas de publicaciones -->
-                        <div class="card text-bg-secondary mb-3 " id="historias">
-                            <div class="card-header"><img
-                                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-flyer-design-template-d0db241e56497cd3212d9173a27294f8_screen.jpg?ts=1673690008"
-                                    class="card-img-top" alt="..."></div>
-                            <div class="card-body">
-                                <h5 class="card-title">Secondary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
-                        </div> <!-- Fin tarjeta de publicaciones -->
-                    </div>
+                            </a>Jugando Valorant
+                        </li>
+                        <li class="dash-item">
+                            <a class="link" href="#">
+                                <img src="../assets/images/Friend4.jpg" alt="" class="rounded-circle friend-img">
+                                Gamer 04
+                            </a>Jugando Warzone
+                        </li>
+                        <li class="dash-item">
+                            <a class="nav-link" href="#">
+                                <img src="../assets/images/Friend5.jpg" alt="" class="rounded-circle friend-img">
+                                Gamer 05
+                            </a>Jugando TFT
+                        </li>
+                    </ul>
                 </div>
-                <!-- Tarjetas de publicaciones -->
-
-            </div>
-
-            <!-- Cloumna de amigos -->
-            <div class="col-md-6 col-lg-3 borde d-none d-md-none d-lg-block" id="amigos">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
+            </div> <!--fin de primera columna para menu-->
+        </div> <!--cierre row-->
+    </div><!--cierre de container -->
 
 
 

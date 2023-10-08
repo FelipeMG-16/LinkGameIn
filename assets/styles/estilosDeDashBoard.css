@@ -2,6 +2,9 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    background-color: #000000ef;
+}
 
 /* Barra de navegación */
 .custom-navbar {
@@ -71,62 +74,86 @@ html {
 /*termiman estilos de navbar*/
 
 
-.container-fluid{
-    background-color: #8a8a8a;
-}
+/* Estilos para los botones */
 
-body{
-    background-color: black;
-}
-
-#navbarSupportedContent{
+button{
+    height: 30px;
     text-align: center;
 }
 
-#dash{
-    background-color: black;
-    text-decoration: aliceblue;
+/* Estilos para las imágenes de perfil de amigos */
+.friend-img {
+    width: 50px; /* Ancho de las imágenes de perfil */
+    height: 50px; /* Altura de las imágenes de perfil */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc; /* Borde alrededor de las imágenes */
+    border-radius: 50%; /* Bordes redondeados para que sean circulares */
 }
 
-#juegos{
+/* Estilos para el contenedor de perfil */
+.containerProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio inferior entre el perfil y los botones */
 }
 
-#amigos{
-
+/* Estilos para el nombre de usuario en el perfil */
+#profile-img {
+    width: 50px; /* Tamaño de la imagen de perfil */
+    height: 50px; /* Tamaño de la imagen de perfil */
+    border: 2px solid #ccc; /* Borde alrededor de la imagen de perfil */
+    border-radius: 50%; /* Bordes redondeados para que sea circular */
+    margin-right: 10px; /* Espacio entre la imagen de perfil y el nombre de usuario */
 }
 
-.borde{
-    background-color: #8a8a8a;   
-    border-radius: 15px;
+/* Estilos para los elementos de la lista de amigos */
+.dash-item {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
 }
 
-#publi{
-    background-color: #8a8a8a;
-    border-radius: 10px ;
+.nick{  /*Estilos nombre de perdfil*/
+    color: #ffffff;
+}
+
+#menudash {
+    background-color: #000000; /* Color de fondo del navbar */
+    padding: 10px; /* Espacio interno del navbar */
+    width: 250px;
+    height: 100%;
+}
+
+
+#menudash ul li {
     padding: 10px;
-    margin-bottom: 50px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Montserrat';
 }
 
-#adjuntables{
-    padding-top: 25px;
+.dash-item a {
+    color: #8a8a8a;
+    font-family: 'Poppins';
 }
 
-#historias{
-    width: 450px;
-    margin-bottom: 30px;   
-}
-
-.publicaciones {
-    text-align: center;
-}
-
-h5{
-    text-align:left;
-}
-
-p{
-    text-align: justify;
+.nav-link:hover {
+    color: #e42527; /* Cambia el color del texto del enlace a rojo al pasar el mouse sobre él */
 }
 
 
+#cuadro-publicacion {
+    color: #8a8a8a;
+    text-align: right;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
 
+}
+
+#news-feed .publicacion {
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: black;
+    color: #ffffff;
+}
