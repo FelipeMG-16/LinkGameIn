@@ -66,14 +66,14 @@ html {
 }
 .config-menu ul hr {    /* color de fondo al pasar el ratón */
     margin: 5px 0;
-    border: solid 2px #000000;
+    border: solid 2px #141414;
     margin-inline: 10px 30px;
 }
 /*termiman estilos de navbar*/
 
 
 body { /*ESTILOS DE BODY*/
-    background-color: #000000ef;
+    background-color: #141414;
     overflow-x: hidden;
 }
 
@@ -177,7 +177,7 @@ a {
     font-size: 10pt;
     margin: 0;
     padding: 0;
-    color: #a8a8a8;
+    color: #8a8a8a;
 }
 
 .container .card .face.face2 .content a {
