@@ -4,16 +4,7 @@ html {
 }
 
 body {
-    /*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
-    background: linear-gradient(rgba(70, 70, 70, 0.803), rgba(73, 73, 73, 0.7)),
-        url("../images/Fondo2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    overflow-x: hidden;
-
+    background-color: #141414;
 }
 
 /* Barra de navegación */
@@ -83,7 +74,7 @@ body {
 }
 /*termiman estilos de navbar*/
 
-
+/*Estilos de tarjetas*/
 .profile-img {
     /* Estilo para el contenedor del perfil en la barra de navegación */
     margin: 5px;
@@ -92,75 +83,8 @@ body {
     border-radius: 50%
 }
 
-
-
-
-.TextosLanding {
-    text-align: center;
-    display: inline-block center;
-    margin-top: 25px;
-}
-
-.TextosLanding span.link {
-    color: black;
-    font-weight: 600;
-    -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
-    font-size: 10vw;
-    overflow: hidden;
-}
-
-.TextosLanding p {
-    font-size: 5vw;
-    color: #a8a8a8;
-}
-
-.TextosLanding span.p1 {
-    align-items: flex-start;
-}
-
-.TextosLanding span.p2 {
-    vertical-align: middle;
-}
-
-.TextosLanding span.p3 {
-    vertical-align: bottom;
-}
-
-.TextosLanding span.game {
-    font-weight: 600;
-    color: red;
-    font-size: 10vw;
-    -webkit-text-stroke-width: 0.5vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding span.gameRed {
-    color: red;
-    font-size: 8vw;
-    -webkit-text-stroke-width: 0.4vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding h2 {
-    font-size: 8vw;
-    color: black;
-    -webkit-text-stroke-width: 0.05vw;
-    -webkit-text-stroke-color: white;
-
-}
-
-.TextosLanding .textosFBlanco p {
-    font-weight: 700;
-    font-size: 4vw;
-    color: black;
-    -webkit-text-stroke-width: 0.08vw;
-    -webkit-text-stroke-color: white;
-
-}
-
 .card {
-    max-width: 800px;
+    max-width: 700px;
     /* Ancho de las tarjetas */
     height: auto;
     margin: 0 auto;
@@ -229,3 +153,35 @@ body {
     font-weight: bold;
 
 }
+
+
+/*Estilos textos y enlaces*/
+.gamers {
+    margin-top: 25px;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    text-shadow: 
+        0 0 10px #e4252846, /* Sombra de color rojo */
+        
+        0 0 10px #e42527; /* Sombra de color menos rojo :p */
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 450;
+    color: #8a8a8a; 
+    text-align: center; 
+}
+
+
+
+.container {
+    display:flex ;
+}
+
+
+
