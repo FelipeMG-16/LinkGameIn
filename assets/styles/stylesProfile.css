@@ -4,6 +4,7 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos para el body */
 body {
     background-color: #000000;
     overflow-x: hidden;
@@ -11,6 +12,12 @@ body {
     color: white;
 }
 
+/* Estilos para los títulos */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+}
 
 /* Barra de navegación */
 .custom-navbar {
@@ -84,7 +91,7 @@ body {
 /* Personal info */
 .contSuperior {
     margin-top: -55px;
-    height: 550px;
+    height: 575px;
     overflow: hidden;
     z-index: -1;
 }
@@ -100,17 +107,17 @@ body {
 }
 .contProfilePick {  /*Contenedor de la imagen de perfil*/
     position: absolute;
-    top: 350px;
+    top: 380px;
     left: 50px;
     z-index: 2;
 }
 .contProfilePick img {  /*Imagen de perfil*/
     border-radius: 50%;
-    width: 200px;
+    width: 190px;
 }
 .contNickname { /*Contenedor del nickname*/
     position: absolute;
-    top: 450px;
+    top: 460px;
     left: 260px;
     z-index: 2;
 }
@@ -121,36 +128,29 @@ body {
 }
 
 
-.row {
-    margin-top: 10px;
+.rowFather {
+    margin-top: 15px;
 }
-.containerJuegosLogros h2 {
+.colLeft {
+    padding-inline: 30px;
+}
+.containerJuegosLogros {
     margin-left: 50px;
 }
-.menuJuegos {
-    list-style-type: none;
-    padding: 0;
-    display: inline-block;
-    /* Muestra los elementos en línea */
-}
-
 .menuJuegos li {
-    display: inline-block;
-    /* Muestra los elementos en línea */
+    display: inline-block;  /* Muestra los elementos en línea */
+    padding: 0;
 }
-
 .juego {
     width: 180px;
     margin-inline: 20px;
 }
-
 .containerLogros {
     width: 180px;
     margin-top: -16px;
     margin-inline: 8px;
     justify-content: center;
 }
-
 .logro {
     margin: 0 6px;
     padding-inline: 0;
@@ -170,7 +170,6 @@ body {
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
-    margin-left: 30px;
     margin-top: 10px;
 }
 
