@@ -5,7 +5,17 @@ document.addEventListener(
         const configMenu = document.getElementById('configMenu');  // menú de configuración
         const logo = document.getElementById('containerLogo');
 
-        const isLoggedIn = false;    //Prueba de sesión de usuario
+        //Inicio de sesión usando los datos del localStorage
+        let isLoggedIn = true;
+        let userTest = JSON.parse( localStorage.getItem('user') );
+        
+        if (userTest == null){
+            isLoggedIn = false;
+        } else if ( (userTest.email == "user@gmail.com") && (userTest.password == "contraseña123") ){
+            isLoggedIn = true;
+        }   else {
+            isLoggedIn = false;
+        }
 
         // Eventos
         profileImg.addEventListener(    // Evento para mostrar menú de configuración
@@ -186,7 +196,7 @@ document.addEventListener(
                         </div>
                 </li>
                 <li>
-                    <a href="/pages/login.html">
+                    <a href="" id="logout">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
                                 <img src="../assets/images/cerrarsesion.svg" alt="">
@@ -198,5 +208,24 @@ document.addEventListener(
             </ul>
             `;
         }
+
+
+        const logout = document.getElementById('logout');
+
+        console.log("Aber si entra a la funcion");
+        console.log(isLoggedIn);
+        // Agrega un controlador de eventos para el evento de clic
+        logout.onclick('click', function (event) {
+            console.log("Si entra a la funcion");
+            event.preventDefault(); // Evita que el enlace siga el href
+
+            console.log(isLoggedIn);
+            isLoggedIn = false;
+
+            // Redirige al usuario a la página de inicio de sesión
+            window.location.href = "/pages/login.html";
+        });
+
+
     }
 );
