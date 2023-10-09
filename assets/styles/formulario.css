@@ -5,25 +5,14 @@ html {
 }
 
 body {
-    background-image: url("../images/fondoNegroConRojo.jpeg");
+    background-image: url("../images/hexagon_background_ref.png");
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(0, 0, 0);
     overflow-x: hidden;
-    
+    color: white;  
+    text-align: center; 
 }
-
-.background {
-    max-width: 600px;
-    min-height: 620px;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
-    margin: 20px auto;
-}
-
 
 /* Barra de navegación */
 .custom-navbar {
@@ -92,14 +81,42 @@ body {
 }
 /*termiman estilos de navbar*/
 
+/*Estilos para el formulario*/
+.container {
+    margin-top: 30px;
+}
+#login-form {
+    max-width: 600px;
+    min-height: 640px;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 20px auto;
+}
 
-
-
-/*Estilos para formulario*/
-.tarjeta {
-    background-color: black;
+#title-login {
+    font-weight: 600;
+    font-size: 30px;
     text-align: center;
-    padding: 10px 50px;
+    /* color: #ea2527; */
+    color: white;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #ea2527;
+    --bs-btn-border-color: #ea2527;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ea2527;
+    --bs-btn-hover-border-color: #ea2527;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ea2527;
+    --bs-btn-active-border-color: #ea2527;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ea2527;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ea2527;
+    --bs-gradient: none;
 }
 
 .sinContraseña {
@@ -122,7 +139,7 @@ body {
 }
 
 .linkRegistro {
-    color: #e42527;
+    color: #ea2527;
     text-decoration: none;
 }
 
