@@ -5,16 +5,13 @@ html {
 }
 
 body {
-    background-image: url("../images/img_registrarUX/BackImg_Dskp_Or.jpg");
+    background-image: url("../images/hexagon_background.png");
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    color: white;
     overflow-x: hidden;
+    color: white;
 }
-
-
 
 /* Barra de navegación */
 .custom-navbar {
@@ -83,16 +80,16 @@ body {
 }
 /*termiman estilos de navbar*/
 
-
-
+/*Estilos para el formulario*/
+.container {
+    margin-top: 30px;
+}
 #form-register-user {
-
     max-width: 600px;
-    min-height: 620px;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
+    min-height: 800px;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 30px 50px;
     margin: 20px auto;
 }
 
@@ -100,23 +97,23 @@ body {
     font-weight: 600;
     font-size: 30px;
     text-align: center;
-    color: #e42527;
+    color: #ea2527;
 }
 
 .btn-outline-danger {
-    --bs-btn-color: #e42527;
-    --bs-btn-border-color: #e42527;
+    --bs-btn-color: #ea2527;
+    --bs-btn-border-color: #ea2527;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #e42527;
-    --bs-btn-hover-border-color: #e42527;
+    --bs-btn-hover-bg: #ea2527;
+    --bs-btn-hover-border-color: #ea2527;
     --bs-btn-focus-shadow-rgb: 220, 53, 69;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #e42527;
-    --bs-btn-active-border-color: #e42527;
+    --bs-btn-active-bg: #ea2527;
+    --bs-btn-active-border-color: #ea2527;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #e42527;
+    --bs-btn-disabled-color: #ea2527;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #e42527;
+    --bs-btn-disabled-border-color: #ea2527;
     --bs-gradient: none;
 }
 
@@ -125,8 +122,8 @@ body {
 }
 
 .form-check-input:checked {
-    background-color: #e42527;
-    border-color: #e42527;
+    background-color: #ea2527;
+    border-color: #ea2527;
 }
 
 .form-floating label {
