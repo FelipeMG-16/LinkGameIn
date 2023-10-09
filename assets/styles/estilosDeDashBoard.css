@@ -1,78 +1,86 @@
-    #logo {
-        width: 150px;
+/* Fuentes para todo el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-#buscar {
-    width: 50%;
+/* Estilos para el body */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    color: white;
 }
 
-#perfil {
-    max-width: 30px;
-    border-radius: 90px;
-    margin-right: 15px;
-    /* position:fixed;
-    right: 15px;    
-    top: 15px; */
-}
-
-
-.container-fluid{
-    background-color: #8a8a8a;
-}
-
-body{
-    background-color: black;
-}
-
-#navbarSupportedContent{
+/* Estilos para los títulos */
+h1 {
+    color: white;
     text-align: center;
+    font-family: 'Poppins';
 }
 
-#dash{
-    background-color: black;
-    text-decoration: aliceblue;
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #8a8a8a80;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
-
-#juegos{
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
 }
-
-#amigos{
-
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
-.borde{
-    background-color: #8a8a8a;   
-    border-radius: 15px;
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
 }
-
-#publi{
-    background-color: #8a8a8a;
-    border-radius: 10px ;
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5d5d5dd0;
+    box-shadow: 0 0 10px #000000;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
-    margin-bottom: 50px;
+    text-align: left;
+    align-items: center;
 }
-
-#adjuntables{
-    padding-top: 25px;
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
 }
-
-#historias{
-    width: 450px;
-    margin-bottom: 30px;   
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
 }
-
-.publicaciones {
-    text-align: center;
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
 }
-
-h5{
-    text-align:left;
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
 }
-
-p{
-    text-align: justify;
-}
-
-
-
