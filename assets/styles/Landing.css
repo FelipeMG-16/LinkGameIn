@@ -95,88 +95,7 @@ body {
 
 /*termiman estilos de navbar*/
 
-/*Estilos de tarjetas*/
-.profile-img {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
-    margin: 5px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
-    /* Ancho de las tarjetas */
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
-    /* Centra las tarjetas horizontalmente */
-    background-color: #a8a8a8e0;
-    border-color: black;
-    padding: 10px;
-    border-radius: 5%;
-
-}
-
-.card-title {
-    font-size: 2rem;
-    /* Tamaño de fuente del título */
-    font-family: 'Poppins';
-    color: #a8a8a8;
-}
-
-.card-text {
-    font-size: 1rem;
-    /* Tamaño de fuente del texto */
-    font-family: 'Montserrat';
-    color: white;
-}
-
-.content-card {
-    font-size: 2rem;
-
-}
-
-.content-card img {
-    width: 100%;
-    max-height: 400px;
-    border-radius: 10%;
-    margin-right: 20px;
-}
-
-
-
-/* Estilo para los íconos de redes sociales */
-.social-icons {
-    margin-top: 20px;
-}
-
-.card .social-icon {
-    text-align: center;
-
-}
-
-.card .social-icon img {
-    text-align: center;
-    margin-top: 20px;
-    margin-inline: 55px;
-}
-
-/* Estilo para las imágenes de íconos de redes sociales */
-.social-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.links a {
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-weight: bold;
-
-}
 
 
 /*Estilos textos y enlaces*/
@@ -220,7 +139,83 @@ body {
     margin: 20px;
 }
 
-.card-body {
+
+
+/*Estilos de tarjetas*/
+.profile-img {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
+}
+
+.card {
     display: flex;
     flex-direction: column;
+    max-width: 700px;
+    /* Ancho de las tarjetas */
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* Centra las tarjetas horizontalmente */
+    background-color: #a8a8a8e0;
+    border-color: black;
+    padding: 10px;
+    border-radius: 5%;
+
+}
+
+.card-title {
+    font-size: 2rem;
+    /* Tamaño de fuente del título */
+    font-family: 'Poppins';
+    color: #a8a8a8;
+}
+
+.card-text {
+    font-size: 1rem;
+    /* Tamaño de fuente del texto */
+    font-family: 'Montserrat';
+    color: white;
+}
+
+
+
+.content-card img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+    margin-top: 20px;
+}
+
+.card .social-icon {
+    text-align: center;
+
+}
+
+.card .social-icon img {
+    text-align: center;
+    margin-top: 20px;
+    margin-inline: 55px;
+}
+
+/* Estilo para las imágenes de íconos de redes sociales */
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+
 }
