@@ -12,13 +12,6 @@ body {
     color: white;
 }
 
-/* Estilos para los títulos */
-h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Poppins';
-}
-
 /* Barra de navegación */
 .custom-navbar {
     background-color: #000000;
@@ -76,8 +69,9 @@ h1 {
     font-size: large;
 }
 .config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
-    height: 20px;
+    height: 25px;
     margin-bottom: 5px;
+    border-radius: 50%;
 }
 .config-menu ul hr {    /* color de fondo al pasar el ratón */
     margin: 5px 0;
@@ -90,14 +84,18 @@ h1 {
 
 /* Personal info */
 .contSuperior {
-    margin-top: -55px;
-    height: 575px;
+    height: 450px;
     overflow: hidden;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .contProfileBack {  /*Contenedor de la imagen de fondo*/
-    position: relative;
-    height: 450px;
+    width: 1440px;
+    height: 300px;
     z-index: 1;
 }
 .contProfileBack img {  /*Imagen de fondo*/
@@ -107,138 +105,166 @@ h1 {
 }
 .contProfilePick {  /*Contenedor de la imagen de perfil*/
     position: absolute;
-    top: 380px;
-    left: 50px;
+    top: 250px;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
     z-index: 2;
 }
 .contProfilePick img {  /*Imagen de perfil*/
     border-radius: 50%;
-    width: 190px;
+    width: 200px;
 }
 .contNickname { /*Contenedor del nickname*/
     position: absolute;
-    top: 460px;
-    left: 260px;
+    top: 450px;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
     z-index: 2;
 }
 .contNickname h1 {  /*Nickname*/
-    color: white;
     font-size: 40px;
     font-weight: bold;
 }
 
 
+/* PARTE DOS */
 .rowFather {
-    margin-top: 15px;
+    margin: 0;
 }
-.colLeft {
-    padding-inline: 30px;
+
+/* Columna izquierda */
+.colLeft{
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 200px;
 }
-.containerJuegosLogros {
-    margin-left: 50px;
+/* Scroll Juegos y Logros */
+.containerJuegosLogros{
+    width: 750px;
+    height: 300px;
+}
+.containerJuegosLogros h2{
+    position: relative;
+    left: 10px;
+}
+.scrollMenuJuegos {
+    height: 250px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 10px;
+    padding: 0;
+}
+.menuJuegos {
+    padding: 0;
+    margin: 0;
 }
 .menuJuegos li {
     display: inline-block;  /* Muestra los elementos en línea */
-    padding: 0;
+    margin-right: 25px;
+}
+.containerJuego {
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .juego {
     width: 180px;
-    margin-inline: 20px;
 }
 .containerLogros {
-    width: 180px;
-    margin-top: -16px;
-    margin-inline: 8px;
-    justify-content: center;
+    height: 40px;
+    position: relative;
+    top: -20px;
 }
 .logro {
-    margin: 0 6px;
-    padding-inline: 0;
+    margin-inline: 6px;
+    padding: 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: 1px solid #ffffff;
 }
-
 #verMasJuegos {
     width: 100px;
-    margin-inline: 20px;
     vertical-align: baseline;
     margin-bottom: 50%;
+    margin-inline: 0;
 }
-
-div.scrollmenu {
+/* Scroll Amigos */
+.containerAmigos {
+    width: 750px;
+    height: 200px;
+}
+.containerAmigos h2 {
+    position: relative;
+    left: 10px;
+}
+.scrollMenuAmigos {
     overflow: auto;
     white-space: nowrap;
     margin-top: 10px;
+    padding: 0 0 30px 0;
 }
-
-.containerAmigos {
-    margin-top: 15px;
+.menuAmigos {
+    padding: 0;
+    margin: 0;
+}
+.menuAmigos li {
+    display: inline-block;  /* Muestra los elementos en línea */
     margin-right: 20px;
 }
-
-.containerAmigos h2 {
-    margin-left: 50px;
-}
-
-.menuAmigos {
-    list-style-type: none;
-    padding: 0;
-    display: inline-block;
-    /* Muestra los elementos en línea */
-}
-
-.menuAmigos li {
-    display: inline-block;
-    /* Muestra los elementos en línea */
-}
-
 .menuAmigos img {
     width: 120px;
-    margin-inline: 20px;
     border-radius: 50%;
 }
-
 #verMasAmigos {
     border-radius: 10%;
     width: 100px;
-    margin-inline: 20px;
 }
 
-.containerMadePubli {
-    margin-inline: 50px;
-    width: 100%;
-    margin-right: 500px;
+/* Columna Derecha */
+.colRight{
+    margin-top: 10px;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-right: 200px;
 }
-
+.colRight .row {
+    width: 100%;
+}
+/* Publicaciones */
+.containerMadePubli {
+    padding: 0;
+    margin-top: 40px;
+}
 .containerMadePubli textarea {
+    width: 700px;
+    max-height: 200px;
+    min-height: 200px;
     background-color: #8a8a8a80;
-    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
 }
-
 .containerMadePubli textarea::placeholder {
     color: white;
-    margin: 50px;
+    font-size: 20px;
 }
-
-.containerMadePubli img {
-    width: 80px;
-    margin-top: -90px;
-    margin-left: 650px;
-    margin-bottom: 20px;
+.containerButtons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 520px;
+    bottom: 55px;
 }
-
-.containerMadePubli button {
-    margin-top: -90px;
-    margin-left: 760px;
-    margin-bottom: 60px;
-    padding: 15px 20px;
+.containerButtons img {
+    width: 50px;
 }
-
 .containerPubli {
-    background-color: white;
-    width: 100px;
-    margin-inline: 50px;
+    width: 700px;
 }
