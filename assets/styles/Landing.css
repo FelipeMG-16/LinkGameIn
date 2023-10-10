@@ -4,16 +4,7 @@ html {
 }
 
 body {
-    /*background: url(background-photo.jpg) center center cover no-repeat fixed;*/
-    background: linear-gradient(rgba(70, 70, 70, 0.803), rgba(73, 73, 73, 0.7)),
-        url("../images/Fondo2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    overflow-x: hidden;
-
+    background-color: #141414;
 }
 
 /* Barra de navegación */
@@ -23,22 +14,30 @@ body {
     top: 0;
     z-index: 1;
 }
-.logo { /* Estilo para el logo en la barra de navegación */
+
+.logo {
+    /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
 }
-.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
+
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
@@ -51,39 +50,98 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
-.config-menu ul {   /* Estilo para la lista del menú de configuración */
+
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
     width: 260px;
 }
-.config-menu ul li {    /* Estilo para los items del menú de configuración */
+
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
 }
-.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
 }
-.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
     text-decoration: none;
     color: #ffffff;
     font-size: large;
 }
-.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
     height: 20px;
     margin-bottom: 5px;
 }
-.config-menu ul hr {    /* color de fondo al pasar el ratón */
+
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
     margin: 5px 0;
     border: solid 2px #000000;
     margin-inline: 10px 30px;
 }
+
 /*termiman estilos de navbar*/
 
 
+
+
+/*Estilos textos y enlaces*/
+.gamers {
+    margin-top: 25px;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow:
+        0 0 10px #e4252846,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+    /* Sombra de color menos rojo :p */
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 450;
+    color: #8a8a8a;
+    text-align: center;
+}
+
+
+
+
+/*ESTILOS DEL CARRUSEL*/
+#cardCarousel {
+    padding: 20px;
+    /* Añade espaciado interior para separar el carrusel de otros elementos */
+}
+
+.container .card {
+    /* estilos para container */
+    z-index: 0;
+    /*Add this*/
+    position: relative;
+    margin: 20px;
+}
+
+
+
+/*Estilos de tarjetas*/
 .profile-img {
     /* Estilo para el contenedor del perfil en la barra de navegación */
     margin: 5px;
@@ -92,75 +150,10 @@ body {
     border-radius: 50%
 }
 
-
-
-
-.TextosLanding {
-    text-align: center;
-    display: inline-block center;
-    margin-top: 25px;
-}
-
-.TextosLanding span.link {
-    color: black;
-    font-weight: 600;
-    -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
-    font-size: 10vw;
-    overflow: hidden;
-}
-
-.TextosLanding p {
-    font-size: 5vw;
-    color: #a8a8a8;
-}
-
-.TextosLanding span.p1 {
-    align-items: flex-start;
-}
-
-.TextosLanding span.p2 {
-    vertical-align: middle;
-}
-
-.TextosLanding span.p3 {
-    vertical-align: bottom;
-}
-
-.TextosLanding span.game {
-    font-weight: 600;
-    color: red;
-    font-size: 10vw;
-    -webkit-text-stroke-width: 0.5vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding span.gameRed {
-    color: red;
-    font-size: 8vw;
-    -webkit-text-stroke-width: 0.4vw;
-    -webkit-text-stroke-color: black;
-}
-
-.TextosLanding h2 {
-    font-size: 8vw;
-    color: black;
-    -webkit-text-stroke-width: 0.05vw;
-    -webkit-text-stroke-color: white;
-
-}
-
-.TextosLanding .textosFBlanco p {
-    font-weight: 700;
-    font-size: 4vw;
-    color: black;
-    -webkit-text-stroke-width: 0.08vw;
-    -webkit-text-stroke-color: white;
-
-}
-
 .card {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
     /* Ancho de las tarjetas */
     height: auto;
     margin: 0 auto;
@@ -168,6 +161,7 @@ body {
     /* Centra las tarjetas horizontalmente */
     background-color: #a8a8a8e0;
     border-color: black;
+    padding: 10px;
     border-radius: 5%;
 
 }
@@ -186,10 +180,7 @@ body {
     color: white;
 }
 
-.content-card {
-    font-size: 2rem;
 
-}
 
 .content-card img {
     width: 100%;
@@ -197,7 +188,6 @@ body {
     border-radius: 10%;
     margin-right: 20px;
 }
-
 
 
 /* Estilo para los íconos de redes sociales */

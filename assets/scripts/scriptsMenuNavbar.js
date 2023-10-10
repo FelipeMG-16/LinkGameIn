@@ -7,13 +7,13 @@ document.addEventListener(
 
         //Inicio de sesión usando los datos del localStorage
         let isLoggedIn = true;
-        let userTest = JSON.parse( localStorage.getItem('user') );
-        
-        if (userTest == null){
+        let userTest = JSON.parse(localStorage.getItem('user'));
+
+        if (userTest == null) {
             isLoggedIn = false;
-        } else if ( (userTest.email == "user@gmail.com") && (userTest.password == "contraseña123") ){
+        } else if ((userTest.email == "user@gmail.com") && (userTest.password == "contraseña123")) {
             isLoggedIn = true;
-        }   else {
+        } else {
             isLoggedIn = false;
         }
 
