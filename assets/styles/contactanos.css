@@ -6,11 +6,12 @@ html {
 
 /* Estilos para el body */
 body {
-    background-image: url(../images/IMG_20230921_231755\ \(1\).png);
+    background-image: url("../images/hexagon_background.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     overflow-x: hidden;
+    color: white;
 }
 
 /* Estilos para los títulos */
@@ -111,23 +112,20 @@ h1 {
 
 
 /* Estilo para el formulario de contacto */
-#form-register-user {
+#form-contact-us {
     max-width: 600px;
-    height: auto;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
-    padding: 10px 50px;
+    min-height: 800px;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 30px 50px;
     margin: 20px auto;
 }
 
 #title-contact {
-    /* Estilo para el título del formulario */
     font-weight: 600;
     font-size: 30px;
     text-align: center;
-    color: #e42527;
-    margin: 20px 0;
+    color: #ea2527;
 }
 
 #input-comment {
@@ -135,6 +133,12 @@ h1 {
     height: auto;
     min-height: 50px;
     padding: 30px 12px 16px 12px;
+}
+
+
+.form-check-input:checked {
+    background-color: #ea2527;
+    border-color: #ea2527;
 }
 
 #btn-register {
