@@ -14,22 +14,30 @@ body {
     top: 0;
     z-index: 1;
 }
-.logo { /* Estilo para el logo en la barra de navegación */
+
+.logo {
+    /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
 }
-.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
+
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
@@ -42,36 +50,49 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
-.config-menu ul {   /* Estilo para la lista del menú de configuración */
+
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
     width: 260px;
 }
-.config-menu ul li {    /* Estilo para los items del menú de configuración */
+
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
 }
-.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
 }
-.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
     text-decoration: none;
     color: #ffffff;
     font-size: large;
 }
-.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
     height: 20px;
     margin-bottom: 5px;
 }
-.config-menu ul hr {    /* color de fondo al pasar el ratón */
+
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
     margin: 5px 0;
     border: solid 2px #000000;
     margin-inline: 10px 30px;
 }
+
 /*termiman estilos de navbar*/
 
 /*Estilos de tarjetas*/
@@ -84,6 +105,8 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     max-width: 700px;
     /* Ancho de las tarjetas */
     height: auto;
@@ -92,6 +115,7 @@ body {
     /* Centra las tarjetas horizontalmente */
     background-color: #a8a8a8e0;
     border-color: black;
+    padding: 10px;
     border-radius: 5%;
 
 }
@@ -161,27 +185,42 @@ body {
     font-size: 3rem;
     font-family: 'Poppins';
     font-weight: 700;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     text-align: center;
-    text-shadow: 
-        0 0 10px #e4252846, /* Sombra de color rojo */
-        
-        0 0 10px #e42527; /* Sombra de color menos rojo :p */
+    text-shadow:
+        0 0 10px #e4252846,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+    /* Sombra de color menos rojo :p */
 }
 
 .subtitle {
     font-size: 2rem;
     font-family: 'Montserrat';
     font-weight: 450;
-    color: #8a8a8a; 
-    text-align: center; 
+    color: #8a8a8a;
+    text-align: center;
 }
 
 
 
-.container {
-    display:flex ;
+
+/*ESTILOS DEL CARRUSEL*/
+#cardCarousel {
+    padding: 20px;
+    /* Añade espaciado interior para separar el carrusel de otros elementos */
 }
 
+.container .card {
+    /* estilos para container */
+    z-index: 0;
+    /*Add this*/
+    position: relative;
+    margin: 20px;
+}
 
-
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
