@@ -56,7 +56,9 @@
 
 
     <div class="row rowFather">
-        <div class="col-xl-6 colLeft"> <!-- Columna izquierda -->
+        <!-- Columna Izquierda -->
+        <div class="col-xl-6 colLeft">
+            <!-- Juegos y Logros -->
             <div class="row containerJuegosLogros">
                 <h2>
                     Juegos y Logros
@@ -124,15 +126,14 @@
                             </div>
                         </li>
                         <li>
-                            <div class="containerJuego">
-                                <a href="../pages/JuegosLogros">
-                                    <img src="../assets/images/ver mas.png" id="verMasJuegos">
-                                </a>
-                            </div>
+                            <a href="../pages/JuegosLogros">
+                                <img src="../assets/images/ver mas.png" id="verMasJuegos">
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> <!-- Cierra Juegos y Logros -->
+            <!-- Amigos -->
             <div class="row containerAmigos">
                 <h2>
                     Amigos
@@ -164,28 +165,27 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </div> <!-- Cierra Amigos -->
+        </div> <!-- Cierra Columna Izquierda -->
 
-        <div class="col-xl-6 colRight"> <!-- Columna derecha -->
-            <div class="row">
-                <div class="containerMadePubli">
-                    <textarea type="text" class="form-control" id="madePubliText" rows="10"
-                        placeholder="Publica algo $Nickname..."></textarea>
-                    <img src="../assets/images/picture.png" alt="" id="madePubliImg">
-                    <button type="button" class="btn btn-primary" id="btnMadePubli">
-                        PUBLICAR
-                    </button>
-                </div>
+        <!-- Columna Derecha -->
+        <div class="col-xl-6 colRight">
+            <div class="containerMadePubli">
+                <textarea type="text" class="form-control" id="madePubliText" rows="10"
+                    placeholder="Publica algo $Nickname..."></textarea>
+                    <div class="containerButtons">
+                        <img src="../assets/images/picture.png" alt="" id="madePubliImg">
+                        <button type="button" class="btn btn-primary" id="btnMadePubli">
+                            PUBLICAR
+                        </button>
+                    </div>
             </div>
-            <div class="row">
-                <div class="containerPubli">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus tempore architecto earum
-                    perferendis quo hic, sequi iure? Porro quasi facilis sapiente error quis rem minima aut ex pariatur
-                    obcaecati?
-                </div>
+            <div class="containerPubli">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus tempore architecto earum
+                perferendis quo hic, sequi iure? Porro quasi facilis sapiente error quis rem minima aut ex pariatur
+                obcaecati?
             </div>
-        </div>
+        </div> <!-- Cierra Columna Derecha -->
 
 
     </div>
