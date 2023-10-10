@@ -138,12 +138,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 200px;
 }
 /* Scroll Juegos y Logros */
 .containerJuegosLogros{
     width: 750px;
     height: 300px;
-    overflow: hidden;
 }
 .containerJuegosLogros h2{
     position: relative;
@@ -197,7 +197,6 @@ body {
 .containerAmigos {
     width: 750px;
     height: 200px;
-    overflow: hidden;
 }
 .containerAmigos h2 {
     position: relative;
@@ -233,6 +232,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 200px;
 }
 .colRight .row {
     width: 100%;
@@ -240,6 +240,7 @@ body {
 /* Publicaciones */
 .containerMadePubli {
     padding: 0;
+    margin-top: 40px;
 }
 .containerMadePubli textarea {
     width: 700px;
@@ -253,14 +254,17 @@ body {
     color: white;
     font-size: 20px;
 }
-.containerMadePubli img {
-    width: 50px;
+.containerButtons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    left: 620px;
-    bottom: 60px;
+    left: 520px;
+    bottom: 55px;
 }
-.containerMadePubli button {
-    position: relative;
-    left: 640px;
-    bottom: 60px;
+.containerButtons img {
+    width: 50px;
+}
+.containerPubli {
+    width: 700px;
 }
