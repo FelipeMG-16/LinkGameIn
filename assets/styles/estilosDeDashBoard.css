@@ -158,3 +158,56 @@ button{
     background-color: black;
     color: #ffffff;
 }
+
+.cont-photo-nick{
+
+    width: 150px;
+    overflow: hidden;
+   
+}
+
+.nickname-dash{
+   float: right;
+   justify-content: right;
+    
+    
+}
+
+.photo-perfil{
+    float: left;
+    justify-content: left;
+    width: 60px; /* Ancho de las imágenes de perfil */
+    height: 60px; /* Altura de las imágenes de perfil */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc; /* Borde alrededor de las imágenes */
+    border-radius: 50%; /* Bordes redondeados para que sean circulares */
+   
+}
+
+.cont-photo{
+    float: left;
+    justify-content: left;
+    top: 0%;
+}
+
+.cont-nickname {
+    margin-top: 20px;
+    text-align:right;
+    justify-content: center;
+    color: #ffffff;
+
+
+}
+
+
+#amigos-activos{
+    color: #ffffff;
+}
+
+.escribir-publicacion{
+    background-color: #000000;
+    width: 200px;
+    border-radius: 10px;
+   margin-top: 20px;
+   
+}
