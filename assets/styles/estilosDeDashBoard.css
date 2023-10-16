@@ -245,49 +245,34 @@ button {
     justify-content: center;
     color: #ffffff;
 
-
 }
-
 
 #amigos-activos {
     color: #ffffff;
 }
 
 .escribir-publicacion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 900px;
     background-color: #000000;
-    width: 400px;
-    height: 170px;
+    height: fit-content;
+    padding: 5px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    margin-top: 20px;
-
-    position: relative;
-    margin-left: 45%;
-
 }
-
-
 
 .text-content {
-    width: 300px;
-
+    margin: 20px;
+    width: 80%;
     border-radius: 20px;
     background-color: #5d5d5d;
-    right: 80%;
-    margin-bottom: 5%;
-    margin-left: 15%;
 
-}
-
-.img-perfil {
-    margin-left: 5%;
-    margin-top: 15%;
 }
 
 .bot1 {
-    float: right;
-    margin-right: 5%;
-    margin-bottom: 10%;
-
+    text-align: right;
 }
 
 .bot2 {
@@ -295,13 +280,12 @@ button {
     border-radius: 10px;
     border: none;
     color: #ffffff;
-
-
 }
 
-#img-bruja {
-    margin-top: 5%;
+.img-perfil h4 {
+    color: white;
 }
+
 
 
 
@@ -311,7 +295,7 @@ button {
     max-width: 900px;
     /* Ancho de las tarjetas */
     height: auto;
-    margin: 0 auto;
+    margin: 20px;
     margin-top: 50px;
     /* Centra las tarjetas horizontalmente */
     background-color: #000;

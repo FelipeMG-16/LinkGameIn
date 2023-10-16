@@ -81,7 +81,6 @@ body {
 /*termiman estilos de navbar*/
 
 
-
 /* Personal info */
 .contSuperior {
     height: 450px;
@@ -129,7 +128,7 @@ body {
 
 /* PARTE DOS */
 .rowFather {
-    margin: 0;
+    margin: 0 0 50px 0;
 }
 
 /* Columna izquierda */
@@ -197,6 +196,7 @@ body {
 .containerAmigos {
     width: 750px;
     height: 200px;
+    margin-top: 10px;
 }
 .containerAmigos h2 {
     position: relative;
@@ -237,7 +237,7 @@ body {
 .colRight .row {
     width: 100%;
 }
-/* Publicaciones */
+/* Crear Publicación*/
 .containerMadePubli {
     padding: 0;
     margin-top: 40px;
@@ -265,6 +265,59 @@ body {
 .containerButtons img {
     width: 50px;
 }
+/* Publicaciones */
 .containerPubli {
+    background-color: #343434;
     width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contPersonalInfo-Publi {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.contPersonalInfo-Publi img {
+    height: 50px;
+    border-radius: 50%;
+}
+#nicknamePrestige {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+}
+.contPersonalInfo-Publi span {
+    font-size: 20px;
+}
+.contPersonalInfo-Publi p {
+    font-size: 15px;
+    margin: 0;
+}
+.contText-Publi {
+    padding-inline: 15px;
+}
+.contText-Publi h3{
+    font-size: 25px;
+}
+.contText-Publi span{
+    font-size: 18px;
+}
+.contImg-Publi img{
+    margin-top: 10px;
+}
+.contImg-Publi img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contReactions {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 200px;
+}
+.contReactions img{
+    width: 40px;
 }
