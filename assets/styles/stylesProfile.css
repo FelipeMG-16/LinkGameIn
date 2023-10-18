@@ -12,7 +12,8 @@ body {
     color: white;
 }
 
-/* Barra de navegación */
+
+/* ~~ NavBar Styles ~~ */
 .custom-navbar {
     background-color: #000000;
     position: sticky;
@@ -53,9 +54,6 @@ body {
     margin: 0;
     width: 260px;
 }
-#logout {
-    cursor: pointer;
-}
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
@@ -71,12 +69,7 @@ body {
     margin-bottom: 5px;
     border-radius: 50%;
 }
-.config-menu ul hr {    /* color de fondo al pasar el ratón */
-    margin: 5px 0;
-    border: solid 2px #000000;
-    margin-inline: 10px 30px;
-}
-/*termiman estilos de navbar*/
+/* ~~ End NavBar Styles ~~ */
 
 
 /* Personal info */
