@@ -1,14 +1,14 @@
-document.addEventListener(
-    'DOMContentLoaded', () => {
-        // Elementos del DOM
-        const profileImg = document.getElementById('profileImg');  // imagen de perfil
-        const configMenu = document.getElementById('configMenu');  // menú de configuración
-        const logo = document.getElementById('containerLogo');
+document.addEventListener('DOMContentLoaded', () => {
+    // Elementos del DOM
+    const profileImg = document.getElementById('profileImg');  // imagen de perfil
+    const configMenu = document.getElementById('configMenu');  // menú de configuración
+    const logo = document.getElementById('containerLogo');
 
-        //Inicio de sesión usando los datos del localStorage
-        let isLoggedIn = true;
-        let userTest = JSON.parse(localStorage.getItem('user'));
+    //Inicio de sesión usando los datos del localStorage
+    let isLoggedIn = true;
+    let userTest = JSON.parse(localStorage.getItem('user'));
 
+    function loginComproved() {
         if (userTest == null) {
             isLoggedIn = false;
         } else if ((userTest.email == "user@gmail.com") && (userTest.password == "contraseña123")) {
@@ -16,216 +16,255 @@ document.addEventListener(
         } else {
             isLoggedIn = false;
         }
+    }
+    loginComproved();
 
-        // Eventos
-        profileImg.addEventListener(    // Evento para mostrar menú de configuración
-            'click', () => {
-                event.stopPropagation();    // Evitar que el evento se propague
-                if (configMenu.style.display === 'block') {   // Si el menú está visible, se oculta
-                    configMenu.style.display = 'none';
-                } else {    // Si el menú está oculto, se muestra
-                    configMenu.style.display = 'block';
-                }
-            }
-        );
+    // Eventos //
+    // Evento para mostrar menú de configuración
+    profileImg.addEventListener('click', () => {
+        event.stopPropagation();    // Evitar que el evento se propague
+        if (configMenu.style.display === 'block') {   // Si el menú está visible, se oculta
+            configMenu.style.display = 'none';
+        } else {    // Si el menú está oculto, se muestra
+            configMenu.style.display = 'block';
+        }
+    }
+    );
 
-        // Evento para cerrar el menú de configuración haciendo clic afuera
-        document.addEventListener(
-            'click', (e) => {
-                if (e.target !== profileImg && e.target !== configMenu) {
-                    configMenu.style.display = 'none';
-                }
-            }
-        );
+    // Evento para cerrar el menú de configuración haciendo clic afuera
+    document.addEventListener('click', (e) => {
+        if (e.target !== profileImg && e.target !== configMenu) {
+            configMenu.style.display = 'none';
+        }
+    }
+    );
 
-        if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
-            logo.innerHTML = `
+    if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
+        logo.innerHTML = `
             <a class="navbar-brand" href="./dashBoard.html">
                 <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
-            profileImg.innerHTML = `
+        profileImg.innerHTML = `
             <img src="../assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
             <span class="position-absolute bottom-0 start-0 p-2 bg-success border border-dark rounded-circle"></span>
             `;
-            configMenu.innerHTML = `
+        configMenu.innerHTML = `
             <ul>
-                <li>
-                    <a href="/pages/profile.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/perfil.jpg" alt="">
-                            </div>
+                <li id="profile" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/perfil.jpg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Perfil</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/notificaciones.svg" alt="">
-                            </div>
+                <li id="notify" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/notificaciones.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Notificaciones</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/publicaciones.svg" alt="">
-                            </div>
+                <li id="publis" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/publicaciones.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Publicaciones</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/logros.svg" alt="">
-                            </div>
+                <li id="games" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/logros.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Juegos y Logros</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/cuentayseguridad.svg" alt="">
-                            </div>
+                <li id="config" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/cuentayseguridad.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Cuenta y Seguridad</span>
                         </div>
+                    </div>
                 </li>
-                <a><hr></a>
-                <li>
-                    <a href="/pages/AboutUs.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
-                            </div>
+                <li id="aboutUs" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/aboutUs.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Acerca de nosotros</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/Terminosycondiciones.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/terminos.svg" alt="">
-                            </div>
+                <li id="termsConds" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/terminos.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Términos y condiciones</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/contactanos.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/contactanos.svg" alt="">
-                            </div>
+                <li id="contactUs" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/contactanos.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Contáctanos</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/login.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/cerrarsesion.svg" alt="">
-                            </div>
+                <li id="logout" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/cerrarsesion.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Cerrar sesión</span>
                         </div>
+                    </div>
                 </li>
             </ul>
             `;
-        } else { // Opciones para usuarios sin sesión iniciada
-            logo.innerHTML = `
+            const profile = document.getElementById('profile');
+            profile.addEventListener('click', function (event) {
+                window.location.href = "/pages/profile.html";
+            });
+            const notify = document.getElementById('notify');
+            notify.addEventListener('click', function (event) {
+                window.location.href = "/pages/dashBoard.html";
+            });
+            const publis = document.getElementById('publis');
+            publis.addEventListener('click', function (event) {
+                window.location.href = "/pages/dashBoard.html";
+            });
+            const games = document.getElementById('games');
+            games.addEventListener('click', function (event) {
+                window.location.href = "/pages/dashBoard.html";
+            });
+            const config = document.getElementById('config');
+            config.addEventListener('click', function (event) {
+                window.location.href = "/pages/dashBoard.html";
+            });
+            const aboutUs = document.getElementById('aboutUs');
+            aboutUs.addEventListener('click', function (event) {
+                window.location.href = "/pages/AboutUs.html";
+            });
+            const termsConds = document.getElementById('termsConds');
+            termsConds.addEventListener('click', function (event) {
+                window.location.href = "/pages/Terminosycondiciones.html";
+            });
+            const contactUs = document.getElementById('contactUs');
+            contactUs.addEventListener('click', function (event) {
+                window.location.href = "/pages/contactanos.html";
+            });
+            const logout = document.getElementById('logout');
+            logout.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = "/pages/login.html";
+                localStorage.removeItem('user');
+                loginComproved();
+            });
+    } else { // Opciones para usuarios sin sesión iniciada
+        logo.innerHTML = `
             <a class="navbar-brand" href="/index.html">
             <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
-            profileImg.innerHTML = `
+        profileImg.innerHTML = `
             <img src="/assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
-            configMenu.innerHTML = `
+        configMenu.innerHTML = `
             <ul>
-                <li>
-                    <a href="/pages/AboutUs.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/aboutUs.svg" alt="">
-                            </div>
-                        <div class="col-10">
-                            <span>Acerca de nosotros</span>
+                <li id="aboutUs" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/aboutUs.svg" alt="">
                         </div>
+                    <div class="col-10">
+                        <span>Acerca de nosotros</span>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/Terminosycondiciones.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/terminos.svg" alt="">
-                            </div>
+                <li id="termsConds" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/terminos.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Términos y condiciones</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/contactanos.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/contactanos.svg" alt="">
-                            </div>
+                <li id="contactUs" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/contactanos.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Contáctanos</span>
                         </div>
                 </li>
-                <a><hr></a>
-                <li>
-                    <a href="/pages/registrarUsuario.html">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/publicaciones.svg" alt="">
-                            </div>
+                <li id="register" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/publicaciones.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Registrarse</span>
                         </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="/pages/login.html" id="logout">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-2">
-                                <img src="../assets/images/cerrarsesion.svg" alt="">
-                            </div>
+                <li id="login" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/cerrarsesion.svg" alt="">
+                        </div>
                         <div class="col-10">
                             <span>Iniciar sesión</span>
                         </div>
+                    </div>
                 </li>
             </ul>
             `;
-        }
-
-
-        const logout = document.getElementById('logout');
-
-        console.log("Aber si entra a la funcion");
-        console.log(isLoggedIn);
-        // Agrega un controlador de eventos para el evento de clic
-        logout.onclick('click', function (event) {
-            login();
-            console.log("Si entra a la funcion");
-            event.preventDefault(); // Evita que el enlace siga el href
-
-            console.log(isLoggedIn);
-            isLoggedIn = false;
-
-            // Redirige al usuario a la página de inicio de sesión
-            window.location.href = "/pages/login.html";
-        });
-
+            const aboutUs = document.getElementById('aboutUs');
+            aboutUs.addEventListener('click', function (event) {
+                window.location.href = "/pages/AboutUs.html";
+            });
+            const termsConds = document.getElementById('termsConds');
+            termsConds.addEventListener('click', function (event) {
+                window.location.href = "/pages/Terminosycondiciones.html";
+            });
+            const contactUs = document.getElementById('contactUs');
+            contactUs.addEventListener('click', function (event) {
+                window.location.href = "/pages/contactanos.html";
+            });
+            const register = document.getElementById('register');
+            register.addEventListener('click', function (event) {
+                window.location.href = "/pages/registrarUsuario.html";
+            });
+            const login = document.getElementById('login');
+            login.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = "/pages/login.html";
+            });
     }
-);
+
+});
+

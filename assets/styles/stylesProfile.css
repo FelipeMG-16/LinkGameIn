@@ -53,6 +53,9 @@ body {
     margin: 0;
     width: 260px;
 }
+#logout {
+    cursor: pointer;
+}
 .config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
@@ -62,11 +65,6 @@ body {
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
-}
-.config-menu ul li a {  /* Estilo para los links del menú de configuración */
-    text-decoration: none;
-    color: #ffffff;
-    font-size: large;
 }
 .config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
     height: 25px;
