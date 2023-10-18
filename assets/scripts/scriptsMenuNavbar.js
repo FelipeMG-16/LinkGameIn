@@ -196,7 +196,7 @@ document.addEventListener(
                         </div>
                 </li>
                 <li>
-                    <a href="" id="logout">
+                    <a href="/pages/login.html" id="logout">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
                                 <img src="../assets/images/cerrarsesion.svg" alt="">
