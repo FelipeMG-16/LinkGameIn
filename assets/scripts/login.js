@@ -12,8 +12,9 @@
     //Bootstrap nos proporciona esta funcion para validar el formulario y detener la acción por default de envio y la propagación en caso de que la validez no se cumpla
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
+            event.preventDefault();
+            
             if (!form.checkValidity()) {
-                event.preventDefault();
                 event.stopPropagation();
                 
             } else {//si se cumple la validez rescatamos los datos dados por el usuario en sus respectivas variables
@@ -23,7 +24,7 @@
                 if (email === userTest.email && password === userTest.password) {
                     localStorage.setItem('user', JSON.stringify(userTest));
                     setTimeout(function () {
-                        window.location.href = "dashBoard.html";
+                        window.location.href = "/pages/dashBoard.html";
                     }, 300);
                 }
             }

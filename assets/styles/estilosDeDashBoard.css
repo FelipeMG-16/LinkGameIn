@@ -2,6 +2,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     background-color: #141414
 }
@@ -13,22 +14,29 @@ body {
     top: 0;
     z-index: 1;
 }
-.logo { /* Estilo para el logo en la barra de navegación */
+
+.logo {
+    /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
+
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
@@ -41,42 +49,54 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
-.config-menu ul {   /* Estilo para la lista del menú de configuración */
+
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
     width: 260px;
 }
-.config-menu ul li {    /* Estilo para los items del menú de configuración */
+
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
 }
-.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
-    margin: 5px;
 }
-.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
     text-decoration: none;
     color: #ffffff;
     font-size: large;
 }
-.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
     height: 20px;
     margin-bottom: 5px;
 }
-.config-menu ul hr {    /* color de fondo al pasar el ratón */
+
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
     margin: 5px 0;
     border: solid 2px #000000;
     margin-inline: 10px 30px;
 }
+
 /*termiman estilos de navbar*/
 
 
 /* Estilos para los botones */
 
-button{
+button {
     height: 30px;
     text-align: center;
     font-family: 'Poppins';
@@ -84,43 +104,65 @@ button{
 
 /* Estilos para las imágenes de perfil de amigos */
 .friend-img {
-    width: 50px; /* Ancho de las imágenes de perfil */
-    height: 50px; /* Altura de las imágenes de perfil */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    border: 2px solid #ccc; /* Borde alrededor de las imágenes */
-    border-radius: 50%; /* Bordes redondeados para que sean circulares */
+    width: 50px;
+    /* Ancho de las imágenes de perfil */
+    height: 50px;
+    /* Altura de las imágenes de perfil */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc;
+    /* Borde alrededor de las imágenes */
+    border-radius: 50%;
+    /* Bordes redondeados para que sean circulares */
 }
 
 /* Estilos para el contenedor de perfil */
 .containerProfile {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Espacio inferior entre el perfil y los botones */
+    margin-bottom: 20px;
+    /* Espacio inferior entre el perfil y los botones */
 }
 
 /* Estilos para el nombre de usuario en el perfil */
 #profile-img {
-    width: 50px; /* Tamaño de la imagen de perfil */
-    height: 50px; /* Tamaño de la imagen de perfil */
-    border: 2px solid #ccc; /* Borde alrededor de la imagen de perfil */
-    border-radius: 50%; /* Bordes redondeados para que sea circular */
-    margin-right: 10px; /* Espacio entre la imagen de perfil y el nombre de usuario */
+    width: 50px;
+    /* Tamaño de la imagen de perfil */
+    height: 50px;
+    /* Tamaño de la imagen de perfil */
+    border: 2px solid #ccc;
+    /* Borde alrededor de la imagen de perfil */
+    border-radius: 50%;
+    /* Bordes redondeados para que sea circular */
+    margin-right: 10px;
+    /* Espacio entre la imagen de perfil y el nombre de usuario */
 }
 
 /* Estilos para los elementos de la lista de amigos */
 .dash-item {
-    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    margin-bottom: 10px;
+    /* Espacio entre elementos de la lista */
 }
 
-.nick{  /*Estilos nombre de perdfil*/
+.nick {
+    /*Estilos nombre de perdfil*/
     color: #ffffff;
 }
 
+.menudash {
+    height: fit-content;
+    position: sticky;
+    top: 0;
+}
+
 #menudash {
-    background-color: #000000; /* Color de fondo del navbar */
-    padding: 10px; /* Espacio interno del navbar */
+    background-color: #000000;
+    /* Color de fondo del navbar */
+    padding: 10px;
+    /* Espacio interno del navbar */
     width: 250px;
     height: 100%;
+    float: left;
 }
 
 
@@ -130,6 +172,7 @@ button{
     align-items: center;
     color: #ffffff;
     font-family: 'Montserrat';
+    height: 150%;
 }
 
 .dash-item a {
@@ -138,7 +181,8 @@ button{
 }
 
 .nav-link:hover {
-    color: #e42527; /* Cambia el color del texto del enlace a rojo al pasar el mouse sobre él */
+    color: #e42527;
+    /* Cambia el color del texto del enlace a rojo al pasar el mouse sobre él */
 }
 
 
@@ -157,4 +201,170 @@ button{
     margin-top: 20px;
     background-color: black;
     color: #ffffff;
+}
+
+.cont-photo-nick {
+
+    width: 150px;
+    overflow: hidden;
+
+}
+
+.nickname-dash {
+    float: right;
+    justify-content: right;
+
+
+}
+
+.photo-perfil {
+    float: left;
+    justify-content: left;
+    width: 60px;
+    /* Ancho de las imágenes de perfil */
+    height: 60px;
+    /* Altura de las imágenes de perfil */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc;
+    /* Borde alrededor de las imágenes */
+    border-radius: 50%;
+    /* Bordes redondeados para que sean circulares */
+
+}
+
+.cont-photo {
+    float: left;
+    justify-content: left;
+    top: 0%;
+}
+
+.cont-nickname {
+    margin-top: 20px;
+    text-align: right;
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+#amigos-activos {
+    color: #ffffff;
+}
+
+.escribir-publicacion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 900px;
+    background-color: #000000;
+    height: fit-content;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.text-content {
+    margin: 20px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #5d5d5d;
+
+}
+
+.bot1 {
+    text-align: right;
+}
+
+.bot2 {
+    background-color: #e42527;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+}
+
+.img-perfil h4 {
+    color: white;
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    /* Ancho de las tarjetas */
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+    /* Centra las tarjetas horizontalmente */
+    background-color: #000;
+    border-color: black;
+    padding: 10px;
+    border-radius: 5%;
+
+}
+
+.card-title {
+    font-size: 2rem;
+    /* Tamaño de fuente del título */
+    font-family: 'Poppins';
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 1rem;
+    /* Tamaño de fuente del texto */
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.containerprofile h4,
+p {
+    color: white;
+}
+
+.content-card p {
+    color: white;
+}
+
+.content-card img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.card .social-icon {
+    text-align: center;
+
+}
+
+.card .social-icon img {
+    text-align: center;
+    margin-top: 20px;
+    margin-inline: 55px;
+}
+
+.containerprofile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.profile-img {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
 }

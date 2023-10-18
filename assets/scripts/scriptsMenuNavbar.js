@@ -6,20 +6,16 @@ document.addEventListener(
         const logo = document.getElementById('containerLogo');
 
         //Inicio de sesión usando los datos del localStorage
-        let isLoggedIn = false;
-        let userTest = JSON.parse( localStorage.getItem('user') );
-        
-        function login() {
-            if (userTest == null){
-                isLoggedIn = false;
-            } else if ( (userTest.email == "user@gmail.com") && (userTest.password == "contraseña123") ){
-                isLoggedIn = true;
-            }   else {
-                isLoggedIn = false;
-            }
-        }
+        let isLoggedIn = true;
+        let userTest = JSON.parse(localStorage.getItem('user'));
 
-        login();
+        if (userTest == null) {
+            isLoggedIn = false;
+        } else if ((userTest.email == "user@gmail.com") && (userTest.password == "contraseña123")) {
+            isLoggedIn = true;
+        } else {
+            isLoggedIn = false;
+        }
 
         // Eventos
         profileImg.addEventListener(    // Evento para mostrar menú de configuración

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    option:checked,
+    option:hover {
+        background-color: lime;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="fonts"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200;400;600&display=swap" />
+    <title>LinkGameIn - Personaliza tu perfil</title>
+    <link rel="icon" href="../assets/images/img_registrarUX/Letra G en rojo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/personalizaRegistro.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Barra de navegación -->
+    <nav class="custom-navbar d-flex justify-content-between">
+        <!-- Contenedor Logo -->
+        <div id="containerLogo">
+        </div> <!-- Cierre de contenedor logo -->
+        <!-- Contenedor de Imagen Login/Logout -->
+        <div class="containerProfile position-relative" id="profileImg">
+        </div> <!-- Cierre de contenedor de Imagen Login/Logout -->
+        <!-- Contenedor Menu Config -->
+        <div class="config-menu" id="configMenu">
+        </div> <!-- Cierre div de menu -->
+    </nav> <!-- Cierre de Barra de navegación -->
+
+
+    <div class="container align-items-center">
+        <form class="row" id="form-register2">
+            <div class="col" id="title-register2">
+                Personaliza tu perfil
+            </div>
+            <div class="container-hijo col-12 mb-3 d-flex flex-column">
+                <div class="image-preview d-flex justify-content-center align-items-center">
+                    <img id="image-preview" class="profile-image" src="../assets/images/modo-retrato.svg" alt="Preview">
+                </div>
+                <label for="input-profile-picture">Imagen de perfil</label>
+                <input type="file" name="input-profile-picture" class="form-control" id="input-profile-picture"
+                    accept="image/*">
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <select name="input-game-category" class="form-select" id="input-game-category" required
+                        style="option:hover{background-color: antiquewhite;}">
+                        <option id="options" value="" disabled selected>Selecciona una categoría de juegos</option>
+                        <option id="options" value="Deportes">Deportes</option>
+                        <option id="options" value="Estrategia">Estrategia</option>
+                        <option id="options" value="RPG">RPG</option>
+                        <option id="options" value="Aventura">Aventura</option>
+                        <option id="options" value="Acción">Acción</option>
+                        <option id="options" value="Arcade">Arcade</option>
+                        <option id="options" value="Juegos de mesa">Juegos de mesa</option>
+                        <option id="options" value="Juegos musicales">Juegos musicales</option>
+                        <option id="options" value="Simulación">Simulación</option>
+                        <option id="options" value="Peleas">Peleas</option>
+                        <option id="options" value="Habilidad">Habilidad</option>
+                        <option id="options" value="FPS">FPS</option>
+                        <option id="options" value="Shooters">Shooters</option>
+                        <!-- Agrega más categorías aquí -->
+                    </select>
+                    <label for="input-game-category">Categoría de juegos</label>
+                    <div class="invalid-tooltip">
+                        Selecciona una categoría de juegos
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="form-floating">
+                    <select name="input-player-type" class="form-select" id="input-player-type" required>
+                        <option value="" disabled selected>Selecciona tu tipo de jugador</option>
+                        <option value="casual">Jugador casual</option>
+                        <option value="profesional">Jugador profesional</option>
+                        <option value="profesional">Streamer / creador de contenido</option>
+                        <!-- Agrega más tipos de jugador aquí -->
+                    </select>
+                    <label for="input-player-type">Tipo de jugador</label>
+                    <div class="invalid-tooltip">
+                        Selecciona tu tipo de jugador
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-12 mx-auto" id="btn-register">
+                <button type="submit" id="button-register" class="btn btn-outline-danger  btn-lg">Registrarse</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="../assets/scripts/personalizaRegistro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
+
+</body>
+
+</html>
