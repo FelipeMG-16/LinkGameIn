@@ -196,7 +196,7 @@ document.addEventListener(
                         </div>
                 </li>
                 <li>
-                    <a href="" id="logout">
+                    <a href="/pages/login.html" id="logout">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2">
                                 <img src="../assets/images/cerrarsesion.svg" alt="">
@@ -216,6 +216,7 @@ document.addEventListener(
         console.log(isLoggedIn);
         // Agrega un controlador de eventos para el evento de clic
         logout.onclick('click', function (event) {
+            login();
             console.log("Si entra a la funcion");
             event.preventDefault(); // Evita que el enlace siga el href
 
@@ -225,7 +226,6 @@ document.addEventListener(
             // Redirige al usuario a la página de inicio de sesión
             window.location.href = "/pages/login.html";
         });
-
 
     }
 );

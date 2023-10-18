@@ -143,27 +143,30 @@ body {
 
 /* Clor del label */
 .form-floating label {
-    color: #5d5d5d; 
+    color: #5d5d5d;
 }
 
 /* Color de la línea al seleccionar el input */
-.form-select:focus {
-    border: 2px solid #e42527;
+option:checked,
+option:hover {
+    background-color: red !important;
+}
+
+#options:focus {
+    background-color: #e42527;
 }
 
 /* Color del texto en las opciones */
 .form-select option {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 /* Color del fondo de las opciones al pasar el mouse */
-.form-select
-
-#input-game-category {
-background-color: #5d5d5d;
+.form-select #input-game-category {
+    background-color: #5d5d5d;
 }
 
 option {
-    background-color: #000000; 
+    background-color: #000000;
     text-decoration: none;
 }

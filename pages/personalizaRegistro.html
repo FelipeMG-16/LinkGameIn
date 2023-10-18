@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    option:checked,
+    option:hover {
+        background-color: lime;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +41,7 @@
             <div class="col" id="title-register2">
                 Personaliza tu perfil
             </div>
-            <div class="container-hijo col-12 mb-3 ">
+            <div class="container-hijo col-12 mb-3 d-flex flex-column">
                 <div class="image-preview d-flex justify-content-center align-items-center">
                     <img id="image-preview" class="profile-image" src="../assets/images/modo-retrato.svg" alt="Preview">
                 </div>
@@ -45,21 +51,22 @@
             </div>
             <div class="col-12 mb-3">
                 <div class="form-floating">
-                    <select name="input-game-category" class="form-select" id="input-game-category" required>
-                        <option value="" disabled selected>Selecciona una categoría de juegos</option>
-                        <option value="Deportes">Deportes</option>
-                        <option value="Estrategia">Estrategia</option>
-                        <option value="RPG">RPG</option>
-                        <option value="Aventura">Aventura</option>
-                        <option value="Acción">Acción</option>
-                        <option value="Arcade">Arcade</option>
-                        <option value="Juegos de mesa">Juegos de mesa</option>
-                        <option value="Juegos musicales">Juegos musicales</option>
-                        <option value="Simulación">Simulación</option>
-                        <option value="Peleas">Peleas</option>
-                        <option value="Habilidad">Habilidad</option>
-                        <option value="FPS">FPS</option>
-                        <option value="Shooters">Shooters</option>
+                    <select name="input-game-category" class="form-select" id="input-game-category" required
+                        style="option:hover{background-color: antiquewhite;}">
+                        <option id="options" value="" disabled selected>Selecciona una categoría de juegos</option>
+                        <option id="options" value="Deportes">Deportes</option>
+                        <option id="options" value="Estrategia">Estrategia</option>
+                        <option id="options" value="RPG">RPG</option>
+                        <option id="options" value="Aventura">Aventura</option>
+                        <option id="options" value="Acción">Acción</option>
+                        <option id="options" value="Arcade">Arcade</option>
+                        <option id="options" value="Juegos de mesa">Juegos de mesa</option>
+                        <option id="options" value="Juegos musicales">Juegos musicales</option>
+                        <option id="options" value="Simulación">Simulación</option>
+                        <option id="options" value="Peleas">Peleas</option>
+                        <option id="options" value="Habilidad">Habilidad</option>
+                        <option id="options" value="FPS">FPS</option>
+                        <option id="options" value="Shooters">Shooters</option>
                         <!-- Agrega más categorías aquí -->
                     </select>
                     <label for="input-game-category">Categoría de juegos</label>
