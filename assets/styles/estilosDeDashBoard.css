@@ -141,6 +141,7 @@ button {
 /* Estilos para los elementos de la lista de amigos */
 .dash-item {
     margin-bottom: 10px;
+    list-style: none;
     /* Espacio entre elementos de la lista */
 }
 
