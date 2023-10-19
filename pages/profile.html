@@ -169,6 +169,7 @@
 
         <!-- Modal de publicación -->
         <div id="modal" class="modal">
+            <form id="post-form">
             <div class="modal-content">
                 <button id="close-modal">X</button>
                 <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
@@ -177,9 +178,10 @@
                         <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
                         <input type="file" id="image-input" multiple accept="image/*">
                     </div>
-                    <button id="post-button">Publicar</button>
+                    <button type="submit" id="post-button">Publicar</button>
                 </div>
             </div>
+            </form>
         </div> <!-- Cierra Modal de publicación -->
         <!-- Overlay para cuando se abre el modal -->
         <div class="overlay"></div>
@@ -252,7 +254,7 @@
 
     <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
     <script src="../assets/scripts/publications.js"></script>
-
+    <script src="../assets/scripts/crearPublicación.js"></script>
 </body>
 
 </html>
