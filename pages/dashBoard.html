@@ -105,18 +105,32 @@
             <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
 
 
-                <div class="escribir-publicacion">
+                <div class="escribir-publicacion" >
+                    
 
                     <div class="img-perfil d-flex">
                         <img src="../assets/images/perfil.jpg" class="rounded-circle friend-img" id="img-bruja">
                         <div>
-                            <h4>Aaron</h4>
+                            <h4>Nickname</h4>
                         </div>
                     </div><!--cierre div imagen-->
 
                     <div><!--inicio de mi div textcontent-->
-                        <p> <input class="text-content" type="text" name="Escribir publicacion"
-                                placeholder="¿Hay algo que quieras compartir?"></p>
+
+                        <div class="containerMadePubli">
+                            <button type="button" class="open-modal" id="madePubliBtn">
+                                Publica algo $Nickname...
+                            </button>
+                            <div class="containerButtons open-modal" id="contButtons">
+                                <img src="../assets/images/picture.png" alt="" id="madePubliImg">
+                                
+                            </div>
+                        </div>
+                        
+
+                        
+
+                               
 
 
                     </div><!--cierre Div textcontent-->
@@ -127,12 +141,32 @@
 
                 </div><!--cierre de mi div escribir publicacion-->
 
+                <!-- Modal de publicación -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button id="close-modal">X</button>
+                <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
+                <div class="containerButtonsModal">
+                    <div class="custom-file-input">
+                        <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
+                        <input type="file" id="image-input" multiple accept="image/*">
+                    </div>
+                    <button id="post-button">Publicar</button>
+                </div>
+            </div>
+        </div> <!-- Cierra Modal de publicación -->
+        <!-- Overlay para cuando se abre el modal -->
+        <div class="overlay"></div>
+
+        <div id="contenedorDePublicaciones" class="card custom-card ">
+
+        </div>
 
 
                 <div class="card custom-card ">
                     <div class="containerprofile d-flex"><img class="profile-img" src="../assets/images/timbers.png"
                             alt="" srcset="">
-                        <div>
+                        <div >
                             <h4>NoSoyTimbers</h4>
                             <p>Fortnite Esports</p>
                         </div>
@@ -181,6 +215,7 @@
     <script src="../assets/scripts/scriptsMenuNavbar.js"></script>
     <!-- Script local -->
     <script src="/assets/scripts/dashBoard.js"></script>
+    <script src="../assets/scripts/publications.js"></script>
 </body>
 
 </html>
