@@ -50,7 +50,7 @@
         </div>
         <div class="contNickname">
             <h1>
-                Nickname
+                Kalahazy
             </h1>
         </div>
     </div>
@@ -160,7 +160,7 @@
                             <img src="../assets/images/Friend6.jpg">
                         </li>
                         <li>
-                            <a href="./listaAmigos.html">
+                            <a href="../pages/listaAmigos.html">
                                 <img src="../assets/images/ver mas.png" id="verMasAmigos">
                             </a>
                         </li>
@@ -175,6 +175,8 @@
                 <div class="modal-content">
                     <button id="close-modal">X</button>
                     <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
+                    <!-- Etiqueta de imagen para la previsualización -->
+                    <img id="imagePreview" src="" alt="">
                     <div class="containerButtonsModal">
                         <div class="custom-file-input">
                             <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
@@ -195,7 +197,7 @@
                 <button type="button" class="open-modal" id="madePubliBtn">
                     Publica algo $Nickname...
                 </button>
-                <div class="containerButtons open-modal" id="contButtons">
+                <div class="containerButtons open-modal" id="contButtons" style="cursor: pointer">
                     <img src="../assets/images/picture.png" alt="" id="madePubliImg">
                     <button type="button" class="btn btn-primary" id="btnMadePubli">
                         PUBLICAR
@@ -203,49 +205,9 @@
                 </div>
             </div> <!-- Cierra Contenedor Crear Publicación -->
             <!-- Publicaciones -->
-            <div class="containerPubli">
-                <div class="contPersonalInfo-Publi">
-                    <img src="../assets/images/perfil.jpg" alt="">
-                    <div id="nicknamePrestige">
-                        <span>Nickname</span>
-                        <p>Warzone Pro</p>
-                    </div>
-                </div>
-                <div class="contText-Publi">
-                    <h3>Jugando en el torneo nacional de #Warzone en CDMX</h3>
-                    <span>#LATAM #proplayer</span>
-                </div>
-                <div class="contImg-Publi">
-                    <img src="../assets/images/COD_Game.avif" alt="">
-                </div>
-                <div class="contReactions">
-                    <img src="../assets/images/like.png" alt="">
-                    <img src="../assets/images/comment.png" alt="">
-                    <img src="../assets/images/share.svg" alt="">
-                </div>
-            </div>
-            <div class="containerPubli">
-                <div class="contPersonalInfo-Publi">
-                    <img src="../assets/images/perfil.jpg" alt="">
-                    <div id="nicknamePrestige">
-                        <span>Nickname</span>
-                        <p>Warzone Pro</p>
-                    </div>
-                </div>
-                <div class="contText-Publi">
-                    <h3>Jugando en el torneo nacional de #Warzone en CDMX</h3>
-                    <span>#LATAM #proplayer</span>
-                </div>
-                <div class="contImg-Publi">
-                    <img src="../assets/images/COD_Game.avif" alt="">
-                </div>
-                <div class="contReactions">
-                    <img src="../assets/images/like.png" alt="">
-                    <img src="../assets/images/comment.png" alt="">
-                    <img src="../assets/images/share.svg" alt="">
-                </div>
-            </div>
-
+            <div class="publications">
+                <!-- Publicación -->
+            </div><!-- Cierra Publicaciones -->
         </div> <!-- Cierra Columna Derecha -->
     </div>
 
