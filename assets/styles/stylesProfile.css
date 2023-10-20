@@ -58,16 +58,26 @@ body {
     padding: 10px;
     text-align: left;
     align-items: center;
+    color: #ffffff;
 }
 .config-menu ul li:hover {    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
 }
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff ;
+    font-size: large;
+}
 .config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
-    height: 25px;
+    height: 20px;
     margin-bottom: 5px;
-    border-radius: 50%;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
 }
 /* ~~ End NavBar Styles ~~ */
 

@@ -14,30 +14,22 @@ body {
     top: 0;
     z-index: 1;
 }
-
-.logo {
-    /* Estilo para el logo en la barra de navegación */
+.logo { /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-
-.containerProfile {
-    /* Estilo para el contenedor del perfil en la barra de navegación */
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-    display: flex;
 }
-
-.perfil {
-    /* Estilo para la imagen de perfil en la barra de navegación */
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
-
 /* Estilo para el menú de configuración */
 .config-menu {
     display: none;
@@ -50,49 +42,37 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
-
-.config-menu ul {
-    /* Estilo para la lista del menú de configuración */
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
     width: 260px;
 }
-
-.config-menu ul li {
-    /* Estilo para los items del menú de configuración */
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
+    color: #ffffff;
 }
-
-.config-menu ul li:hover {
-    /* color de fondo al pasar el ratón */
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
 }
-
-.config-menu ul li a {
-    /* Estilo para los links del menú de configuración */
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff ;
     font-size: large;
 }
-
-.config-menu ul li img {
-    /* Estilo para los iconos del menú de configuración */
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
     height: 20px;
     margin-bottom: 5px;
 }
-
-.config-menu ul hr {
-    /* color de fondo al pasar el ratón */
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
     margin: 5px 0;
-    border: solid 2px #000000;
+    border: solid 2px #141414;
     margin-inline: 10px 30px;
 }
-
 /*termiman estilos de navbar*/
 
 
