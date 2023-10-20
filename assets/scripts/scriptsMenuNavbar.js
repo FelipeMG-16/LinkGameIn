@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loginComproved();
 
-    // Eventos //
     // Evento para mostrar menú de configuración
     profileImg.addEventListener('click', () => {
         event.stopPropagation();    // Evitar que el evento se propague
@@ -28,16 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {    // Si el menú está oculto, se muestra
             configMenu.style.display = 'block';
         }
-    }
-    );
+    });
 
     // Evento para cerrar el menú de configuración haciendo clic afuera
     document.addEventListener('click', (e) => {
         if (e.target !== profileImg && e.target !== configMenu) {
             configMenu.style.display = 'none';
         }
-    }
-    );
+    });
 
     if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
         logo.innerHTML = `
@@ -267,4 +264,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
-
