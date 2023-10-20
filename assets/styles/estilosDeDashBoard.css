@@ -369,3 +369,99 @@ p {
     height: 45px;
     border-radius: 50%
 }
+
+
+
+
+/*Inicio Modal prueba*/
+.modal {
+    display: none;
+    position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
+    top: 50%; /* Alineado verticalmente en el centro */
+    left: 50%; /* Alineado horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Centra el modal */
+    width: 750px;
+    border-radius: 10px;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+}
+.modal-content #close-modal {
+    width: 5%;
+    padding: 0;
+    position: relative;
+    left: 98%;
+    transform: translate(-100%);
+    margin: 10px 0 10px 0;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+}
+.modal-content #close-modal:hover {
+    background-color: #ff000074;
+    border-color: #000000b7;
+}
+.modal-content #post-text {
+    width: 90%;
+    max-height: 200px; /* Altura máxima */
+    min-height: 200px; /* Altura mínima */
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+    color: white;
+    font-size: 20px;
+}
+.containerButtonsModal {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%);
+}
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.custom-file-input img {
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+.custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px; /* Esto puede variar según tus preferencias */
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.containerButtonsModal #post-button {
+    height: 40px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none; /* Inicialmente oculto */
+}
+/*Fin Modal prueba*/
+
+.containerButtons img {
+    width: 50px;
+}
