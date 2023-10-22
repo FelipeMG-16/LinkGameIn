@@ -4,12 +4,12 @@ html {
 }
 
 body {
-    background-color: #141414;
+    background-color: #000000;
 }
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -139,10 +139,11 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     /* Centra las tarjetas horizontalmente */
-    background-color: #5d5d5d;
-    border-color: black;
+    background-color: #141414;
+    box-shadow: 0 0 10px #5d5d5d;
     padding: 10px;
     border-radius: 5%;
+    color: #fff;
 
 }
 

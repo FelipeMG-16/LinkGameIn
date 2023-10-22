@@ -6,8 +6,8 @@ html {
 
 /* Estilos para el body */
 body {
-    background-image: url("../images/hexagon_background_rotated.png");
-    background-size: cover;
+    /*background-image: url("../images/hexagon_background_rotated.png");
+    background-size: cover;*/
     background-attachment: fixed;
     background-position: center;
     background-color: #000000;
@@ -15,7 +15,7 @@ body {
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -91,13 +91,15 @@ body {
     border-radius: 20px;
     padding: 30px 50px;
     margin: 20px auto;
+    box-shadow: 0 0 10px #e42527;
+    margin-top: 50px;
 }
 
 #title-register2 {
     font-weight: 600;
     font-size: 30px;
     text-align: center;
-    color: #ea2527;
+    color: #a8a8a8;
 }
 
 /* Estilo para el contenedor de la imagen de perfil */
