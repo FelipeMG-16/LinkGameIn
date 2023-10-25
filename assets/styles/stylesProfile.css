@@ -12,7 +12,6 @@ body {
     color: white;
 }
 
-
 /* ~~ NavBar Styles ~~ */
 .custom-navbar {
     background-color: #000000;
@@ -20,19 +19,22 @@ body {
     top: 0;
     z-index: 1;
 }
-.logo { /* Estilo para el logo en la barra de navegación */
+.logo {
+    /* Estilo para el logo en la barra de navegación */
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 150px;
     text-align: left;
 }
-.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
     width: 45px;
     border-radius: 50%
 }
@@ -48,33 +50,39 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
-.config-menu ul {   /* Estilo para la lista del menú de configuración */
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
     list-style: none;
     padding: 0;
     margin: 0;
     width: 260px;
 }
-.config-menu ul li {    /* Estilo para los items del menú de configuración */
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
     padding: 10px;
     text-align: left;
     align-items: center;
     color: #ffffff;
 }
-.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
     background-color: #e4252846;
     border-radius: 5px;
     margin: 5px;
 }
-.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
     text-decoration: none;
-    color: #ffffff ;
+    color: #ffffff;
     font-size: large;
 }
-.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
     height: 20px;
     margin-bottom: 5px;
 }
-.config-menu ul hr {    /* color de fondo al pasar el ratón */
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
     margin: 5px 0;
     border: solid 2px #141414;
     margin-inline: 10px 30px;
@@ -91,37 +99,41 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
 }
-.contProfileBack {  /*Contenedor de la imagen de fondo*/
+.contProfileBack {/*Contenedor de la imagen de fondo*/
     width: 1440px;
     height: 300px;
     z-index: 1;
 }
-.contProfileBack img {  /*Imagen de fondo*/
+.contProfileBack img {/*Imagen de fondo*/
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.contProfilePick {  /*Contenedor de la imagen de perfil*/
+.contProfilePick {/*Contenedor de la imagen de perfil*/
     position: absolute;
     top: 250px;
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar horizontalmente */
     z-index: 2;
 }
-.contProfilePick img {  /*Imagen de perfil*/
+.contProfilePick img {/*Imagen de perfil*/
     border-radius: 50%;
     width: 200px;
+    border: 2px solid rgb(0, 0, 0);
 }
-.contNickname { /*Contenedor del nickname*/
+.contNickname {/*Contenedor del nickname*/
     position: absolute;
     top: 450px;
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar horizontalmente */
     z-index: 2;
 }
-.contNickname h1 {  /*Nickname*/
+.contNickname h1 {/*Nickname*/
     font-size: 40px;
     font-weight: bold;
 }
@@ -131,125 +143,136 @@ body {
 .rowFather {
     margin: 0 0 50px 0;
 }
-
 /* Columna izquierda */
-.colLeft{
+.colLeft {
     padding-inline: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 200px;
+    padding: 0;
 }
+
 /* Scroll Juegos y Logros */
-.containerJuegosLogros{
-    width: 750px;
-    height: 300px;
+.containerJuegosLogros {
+    width: 92%;
 }
-.containerJuegosLogros h2{
+
+.containerJuegosLogros h2 {
     position: relative;
     left: 10px;
 }
+
 .scrollMenuJuegos {
-    height: 250px;
     overflow: auto;
     white-space: nowrap;
-    margin-top: 10px;
     padding: 0;
 }
+
+.scrollMenuJuegos::-webkit-scrollbar {
+    height: 0;
+    /* Ancho de la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+}
+
 .menuJuegos {
     padding: 0;
     margin: 0;
 }
+
 .menuJuegos li {
-    display: inline-block;  /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
     margin-right: 25px;
 }
+
 .containerJuego {
     width: 180px;
-    height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .juego {
     width: 180px;
 }
+
 .containerLogros {
     height: 40px;
     position: relative;
     top: -20px;
 }
+
 .logro {
     margin-inline: 6px;
     padding: 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid #aaaaaa;
 }
+
 #verMasJuegos {
     width: 100px;
     vertical-align: baseline;
     margin-bottom: 50%;
     margin-inline: 0;
 }
+
 /* Scroll Amigos */
 .containerAmigos {
-    width: 750px;
-    height: 200px;
+    width: 92%;
     margin-top: 10px;
 }
+
 .containerAmigos h2 {
     position: relative;
     left: 10px;
 }
+
 .scrollMenuAmigos {
     overflow: auto;
     white-space: nowrap;
-    margin-top: 10px;
-    padding: 0 0 30px 0;
+    padding: 0;
+    padding-bottom: 15px;
 }
+
+.scrollMenuAmigos::-webkit-scrollbar {
+    height: 0;
+    /* Ancho de la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+}
+
 .menuAmigos {
     padding: 0;
     margin: 0;
 }
+
 .menuAmigos li {
-    display: inline-block;  /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Muestra los elementos en línea */
     margin-right: 20px;
 }
+
 .menuAmigos img {
     width: 120px;
     border-radius: 50%;
 }
+
 #verMasAmigos {
     border-radius: 10%;
     width: 100px;
 }
 
-/* Columna Derecha */
-.colRight{
-    margin-top: 10px;
-    padding-inline: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 200px;
-}
-.colRight .row {
-    width: 100%;
-}
-/* Crear Publicación*/
-.containerMadePubli {
-    padding: 0;
-    margin-top: 40px;
-}
+
+
 /*Inicio Modal*/
 .modal {
     display: none;
     /*position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
-    top: 50%; /* Alineado verticalmente en el centro */
-    left: 50%; /* Alineado horizontalmente en el centro */
-    transform: translate(-50%, -50%); /* Centra el modal */
+    top: 50%;
+    /* Alineado verticalmente en el centro */
+    left: 50%;
+    /* Alineado horizontalmente en el centro */
+    transform: translate(-50%, -50%);
+    /* Centra el modal */
     width: 700px;
 }
 .modal-content {
@@ -278,8 +301,10 @@ body {
 }
 .modal-content #post-text {
     width: 95%;
-    max-height: 200px; /* Altura máxima */
-    min-height: 200px; /* Altura mínima */
+    max-height: 200px;
+    /* Altura máxima */
+    min-height: 200px;
+    /* Altura mínima */
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
@@ -325,7 +350,8 @@ body {
     right: 0;
     margin: 0;
     padding: 0;
-    font-size: 20px; /* Esto puede variar según tus preferencias */
+    font-size: 20px;
+    /* Esto puede variar según tus preferencias */
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -342,37 +368,73 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
 }
 /*Fin Modal*/
 
+
+
+/* Columna Derecha */
+.colRight {
+    margin-top: 10px;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.colRight .row {
+    width: 100%;
+}
+/* Crear Publicación*/
+.containerMadePubli {
+    padding: 0;
+    margin-top: 40px;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    position: relative; /* Importante para posicionar elementos absolutos */
+}
 #madePubliBtn {
-    background-color: #8a8a8a80; /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: #8a8a8a80;
+    color: white;
     font-size: 20px;
-    border: none; /* Sin borde */
-    border-radius: 10px; /* Borde redondeado */
-    padding: 10px 20px; /* Espacio interno */
-    text-align: left; /* Alineación del texto a la izquierda */
-    width: 700px; /* Ancho */
-    height: 100px; /* Alto */
-    margin: 0 auto; /* Centrar horizontalmente */
-    display: flex; /* Habilitar el modelo de caja flexible */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    position: relative; /* Importante para posicionar elementos hijos */
+    display: flex;
+    justify-content: space-between; /* Alinea .containerButtons a la derecha */
+    margin: 0 auto; /* Centra horizontalmente */
 }
 #madePubliBtn:hover {
-    background-color: #8a8a8ae3; /* Cambia el fondo del botón a rojo al pasar el mouse */
-    color: white; /* Cambia el color del texto a blanco al pasar el mouse */
+    background-color: #8a8a8ae3;
+    /* Cambia el fondo del botón a rojo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto a blanco al pasar el mouse */
 }
 .containerButtons {
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    left: 520px;
-    bottom: 55px;
+    width: 160px;
+    position: absolute; /* Posición absoluta para la esquina inferior derecha*/
+    bottom: 10%;
+    right: 8%;
+    display: flex; /* Alinear contenido dentro de este container */
+    justify-content: space-between; /* Espacio entre los contenidos */
 }
 .containerButtons img {
     width: 50px;
+}
+@media (max-width: 450px) {
+    .containerButtons {
+        height: 35px;
+    }
+    .containerButtons img {
+        width: 40px;
+    }
 }
 /* Publicaciones */
 .containerPubli {
@@ -398,7 +460,7 @@ body {
     left: 20px;
     bottom: 5px;
 }
-.nicknamePubli{
+.nicknamePubli {
     font-size: 20px;
 }
 .prestigePubli {
@@ -413,15 +475,15 @@ body {
     height: max-content;
 }
 /*.contTextPubli {
-    padding-inline: 15px;
+padding-inline: 15px;
 }*/
-.textPubli{
+.textPubli {
     font-size: 25px;
 }
-.contImgPubli{
+.contImgPubli {
     margin-top: 10px;
 }
-.imgPubli{
+.imgPubli {
     width: 100%;
     border-radius: 5px;
 }
@@ -431,6 +493,6 @@ body {
     justify-content: space-between;
     margin: 10px 0 0 200px;
 }
-.contReactions img{
+.contReactions img {
     width: 40px;
 }
