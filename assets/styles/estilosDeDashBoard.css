@@ -358,15 +358,14 @@ p {
 
 
 
-/*Inicio Modal prueba*/
+/*Inicio Modal*/
 .modal {
     display: none;
-    position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
+    /*position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
     top: 50%; /* Alineado verticalmente en el centro */
     left: 50%; /* Alineado horizontalmente en el centro */
     transform: translate(-50%, -50%); /* Centra el modal */
-    width: 750px;
-    border-radius: 10px;
+    width: 700px;
 }
 .modal-content {
     position: absolute;
@@ -374,6 +373,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1a1a1a;
+    max-height: 390px;
+    border-radius: 15px;
 }
 .modal-content #close-modal {
     width: 5%;
@@ -382,6 +383,7 @@ p {
     left: 98%;
     transform: translate(-100%);
     margin: 10px 0 10px 0;
+    border-radius: 20%;
     background-color: #5d5d5d;
     border-color: #000000b7;
 }
@@ -390,7 +392,7 @@ p {
     border-color: #000000b7;
 }
 .modal-content #post-text {
-    width: 90%;
+    width: 95%;
     max-height: 200px; /* Altura máxima */
     min-height: 200px; /* Altura mínima */
     margin: 0 auto;
@@ -401,16 +403,27 @@ p {
     color: white;
     font-size: 20px;
 }
+#imagePreview {
+    max-height: 120px;
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 40px;
+}
 .containerButtonsModal {
     width: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     padding: 0 10px;
     position: relative;
     left: 100%;
-    transform: translate(-100%);
+    bottom: 50%;
+    transform: translate(-110%);
+}
+/* Cambiar la posición cuando haya una imagen previa */
+.with-image {
+    bottom: 90px;
 }
 .custom-file-input {
     position: relative;
@@ -433,6 +446,7 @@ p {
     filter: alpha(opacity=0);
 }
 .containerButtonsModal #post-button {
+    border-radius: 10px;
     height: 40px;
 }
 .overlay {
@@ -445,12 +459,43 @@ p {
     z-index: 1000;
     display: none; /* Inicialmente oculto */
 }
-/*Fin Modal prueba*/
+/*Fin Modal*/
 
+.containerMadePubli {
+    height: 120px;
+}
+#madePubliBtn {
+    background-color: #8a8a8a80; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 20px;
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 90%; /* Ancho */
+    height: 100px; /* Alto */
+    margin: 10px auto; /* Centrar horizontalmente */
+    display: flex; /* Habilitar el modelo de caja flexible */
+}
+#madePubliBtn:hover {
+    background-color: #8a8a8ae3; /* Cambia el fondo del botón a rojo al pasar el mouse */
+    color: white; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+.containerButtons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 520px;
+    bottom: 55px;
+}
 .containerButtons img {
     width: 50px;
 }
 
+#contenedorDePublicaciones {
+    margin-top: 20px;
+}
 #chat-button-container {
     position: fixed;
     bottom: 20px;
@@ -461,6 +506,5 @@ p {
 #cahtbut{
     text-decoration: none;
 }
-
 
 

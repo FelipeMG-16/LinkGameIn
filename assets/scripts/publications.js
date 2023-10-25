@@ -75,61 +75,13 @@ imageInput.addEventListener('change', function () {
 });
 
 
-// Manejar la publicación de contenido
+/// Manejar la publicación de contenido
 postButton.addEventListener('click', () => {
-    // Obtén la imagen seleccionada por el usuario
-    const selectedImage = imageInput.files[0];
-    
-    // Comprueba si se seleccionó una imagen
-    if (selectedImage) {
-        // Utiliza FileReader para leer la imagen como datos Base64
-        const reader = new FileReader();
-        reader.onload = function (event) {
-            // Cuando se complete la lectura de la imagen
-            const imageBase64 = event.target.result;
+    const contenido = postText.value;
 
-            // Crear un objeto de publicación que incluya el texto, la fecha y la imagen
-            const publicacion = {
-                contenido: postText.value,
-                fecha: new Date().toLocaleDateString(
-                    'es-ES', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                        hour: '2-digit',
-                        minute: '2-digit'
-                    }
-                ),
-                imagen: imageBase64 // Aquí guardamos la imagen como datos Base64
-            };
-            
-            // Generar una clave única para la publicación (puedes usar un contador, por ejemplo)
-            const claveUnica = 'publicacion' + Date.now(); // Usando una marca de tiempo como clave única
-
-            // Convertir la publicación a una cadena JSON
-            const publicacionJSON = JSON.stringify(publicacion);
-
-            // Guardar la publicación en el localStorage con la clave única
-            localStorage.setItem(claveUnica, publicacionJSON);
-
-            // Limpia el contenido del modal
-            postText.value = '';
-            imageInput.value = '';
-            imagePreview.src = '';
-
-            // Luego, cierra el modal
-            modal.style.display = 'none';
-            overlay.style.display = 'none'; // Oculta el overlay
-
-            // Restablecer el desplazamiento de la página
-            document.body.style.overflow = 'auto';
-        };
-        // Lee la imagen como datos Base64
-        reader.readAsDataURL(selectedImage);
-    } else {
-        // Si no se seleccionó una imagen, crea un objeto de publicación sin imagen
+    if (contenido || imageInput.files.length > 0) {
         const publicacion = {
-            contenido: postText.value,
+            contenido: contenido,
             fecha: new Date().toLocaleDateString(
                 'es-ES', {
                     year: 'numeric',
@@ -141,31 +93,39 @@ postButton.addEventListener('click', () => {
             )
         };
 
-        // Generar una clave única para la publicación (puedes usar un contador, por ejemplo)
-        const claveUnica = 'publicacion' + Date.now(); // Usando una marca de tiempo como clave única
+        if (imageInput.files.length > 0) {
+            const selectedImage = imageInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                const imageBase64 = event.target.result;
+                publicacion.imagen = imageBase64;
 
-        // Convertir la publicación a una cadena JSON
-        const publicacionJSON = JSON.stringify(publicacion);
-
-        // Guardar la publicación en el localStorage con la clave única
-        localStorage.setItem(claveUnica, publicacionJSON);
+                guardarPublicacion(publicacion);
+            };
+            reader.readAsDataURL(selectedImage);
+        } else {
+            guardarPublicacion(publicacion);
+        }
 
         // Limpia el contenido del modal
         postText.value = '';
         imageInput.value = '';
         imagePreview.src = '';
 
-        // Luego, cierra el modal
-        modal.style.display = 'none';   // Oculta el modal
-        overlay.style.display = 'none'; // Oculta el overlay
-
-        // Restablecer el desplazamiento de la página
+        // Cierra el modal y realiza otras acciones necesarias
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
-
-    // Recarga la página
-    location.reload();
 });
+
+function guardarPublicacion(publicacion) {
+    const claveUnica = 'publicacion' + Date.now();
+    const publicacionJSON = JSON.stringify(publicacion);
+    localStorage.setItem(claveUnica, publicacionJSON);
+    location.reload();
+}
+
 
 // Ocultar la superposición y el modal al hacer clic en el botón de cerrar
 closeModal.addEventListener('click', () => {
