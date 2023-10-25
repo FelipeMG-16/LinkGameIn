@@ -86,7 +86,7 @@ body {
 }
 #form-register-user {
     max-width: 600px;
-    min-height: 800px;
+    min-height: 805px;
     background-color: #141414;
     border-radius: 20px;
     padding: 30px 50px;
@@ -116,10 +116,7 @@ body {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #ea2527;
     --bs-gradient: none;
-}
 
-#btn-register {
-    margin-top: 20px;
 }
 
 .form-check-input:checked {
@@ -136,3 +133,13 @@ body {
 
 }
 
+#checked-btn {
+    margin-top: 10px;
+
+}
+
+#conditions {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
