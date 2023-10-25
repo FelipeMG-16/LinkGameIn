@@ -5,17 +5,16 @@ html {
 }
 
 body {
-    background-image: url("../images/hexagon_background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    /*background-image: url("../images/hexagon_background.png");
+    background-size: cover;*/
     overflow-x: hidden;
     color: white;
+    background-color: #000
 }
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -87,18 +86,19 @@ body {
 }
 #form-register-user {
     max-width: 600px;
-    min-height: 800px;
+    min-height: 805px;
     background-color: #141414;
     border-radius: 20px;
     padding: 30px 50px;
     margin: 20px auto;
+    box-shadow: 0 0 10px #e42527;
 }
 
 #title-register {
     font-weight: 600;
     font-size: 30px;
     text-align: center;
-    color: #ea2527;
+    color: #a8a8a8;
 }
 
 .btn-outline-danger {
@@ -116,10 +116,7 @@ body {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #ea2527;
     --bs-gradient: none;
-}
 
-#btn-register {
-    margin-top: 20px;
 }
 
 .form-check-input:checked {
@@ -131,5 +128,18 @@ body {
     color: black;
 }
 
+.login-image{
+    text-align: center;
 
+}
 
+#checked-btn {
+    margin-top: 10px;
+
+}
+
+#conditions {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}

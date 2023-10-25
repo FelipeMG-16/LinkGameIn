@@ -5,18 +5,21 @@ html {
 }
 
 body {
-    background-image: url("../images/hexagon_background_ref.png");
-    background-size: cover;
+    /*background-image: url("../images/hexagon_background_ref.png");
+    background-size: cover;*/
     background-attachment: fixed;
     background-position: center;
     overflow-x: hidden;
     color: white;  
     text-align: center; 
+    background-color: #000;
 }
+
+
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -88,11 +91,12 @@ body {
 }
 #login-form {
     max-width: 600px;
-    min-height: 640px;
+    min-height: 535px;
     background-color: #141414;
     border-radius: 20px;
     padding: 30px 50px;
     margin: 20px auto;
+    box-shadow: 0 0 10px #e42527;
 }
 
 #title-login {
@@ -100,7 +104,7 @@ body {
     font-size: 30px;
     text-align: center;
     /* color: #ea2527; */
-    color: white;
+    color: #a8a8a8;
 }
 
 .btn-outline-danger {
@@ -150,6 +154,7 @@ body {
 
 .form-floating label {
     color: black;
+    
 }
 
 

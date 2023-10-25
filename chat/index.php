@@ -17,9 +17,9 @@ function loginForm()
 	echo '
 	<div id="loginform" class="container">
     <form action="index.php" method="post">
-        <p>Coloca tu Nickname para continuar:</p>
+        <p>¡Únete a nuestro chat en vivo, y encuentra amigos para jugar! <br> Coloca tu Nickname para continuar:</p>
         <div class="mb-3">
-            <label for="name" class="form-label">Nickname</label>
+            <label for="name" class="form-label"></label>
             <input type="text" name="name" id="name" class="form-control" />
         </div>
         <button type="submit" name="enter" id="enter" class="btn btn-outline-danger">Enviar</button>
@@ -42,6 +42,8 @@ if (isset($_POST['enter'])) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<!--Icono de pestania-->
+	<link rel="icon" href="../assets/images/img_registrarUX/Letra G en rojo.ico">
 	<title>LinkGameIn-Chat</title>
 	<link rel="stylesheet" href="style.css" />
 

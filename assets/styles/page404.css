@@ -7,7 +7,7 @@ html {
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -76,13 +76,13 @@ html {
 
 /*ESTILOS DE BODY*/
 body { 
-    background-color: #141414;
-    background-image: url(../images/abstract-red-light-silver-grey-metal-black-cyber-futuristic-technology-geometric-on-hexagon-mesh-design-modern-background-vector-transformed\ \(1\).jpeg);
+    background-color: #000000;
+    /*background-image: url(/assets/images/backdash.png);*/
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-position: center;
+    /*background-position: center;
     /*background-image: url(../images/nes\(1\)\ \(1\).jpg);*/
     background-size: cover; /*Ajusta el tamaño de fondo para cubrir completamente el elemento padre*/
     /*background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
@@ -94,6 +94,8 @@ body {
     font-size: 90px;
     color: #ffffff;
     font-family: 'Poppins';
+    text-align: center;
+    align-items: center;
 }
 
 .conten-description {
@@ -102,14 +104,14 @@ body {
 
 .error {
     font-size: 50px;
-    color: #a8a8a8;
+    color: #ffffff;
     font-family: 'Poppins';
     margin-top: 50px;
 }
 
 .conten-error {
     font-size: 22px;
-    color: #ffffff;
+    color: #8a8a8a;
     font-family: 'Montserrat';
     margin-top: 90px;
 }
@@ -141,17 +143,24 @@ body {
     top: 65px;
     width: 100%;
     text-align: center;
-    }
+    }*/
 
 .conten-number{
-    position: absolute;
     font-size: 5.5rem;
     font-family: 'Poppins';
     font-weight: 700;
     top: 10rem;
-    color: #ffffff;
+    color: #000;
+    text-shadow:
+        0 0 10px #e42527,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+    /* Sombra de color menos rojo :p */
+    animation: parpadeo 2s linear infinite;
 
 }
+/*
 .conten-error{
         color: #a8a8a8;
         width: 50%;
@@ -182,16 +191,16 @@ body {
 }*/
 
 
-/*@keyframes parpadeo {
+@keyframes parpadeo {
     0% {
         background-color: transparent; /* Estado inicial sin fondo */
-   /* } 
+    } 
     50% { 
-        background-color: rgb(19, 18, 18); /* Cambia el fondo a un color brillante en la mitad de la animación */
-  /*  }
+        color: #e42527; /* Cambia el fondo a un color brillante en la mitad de la animación */
+   }
     100% {
         background-color: transparent; /* Vuelve al estado inicial sin fondo al final */
- /*   }
-/*}
+    }
+}
 
 
