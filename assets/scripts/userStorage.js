@@ -11,13 +11,10 @@ let linkGamers = [];
         let email = document.getElementById('input-email').value;
         let password = document.getElementById('input-password').value;
         let confirmPwrd = document.getElementById('input-password-confirm').value;
-        let getSupport = document.getElementById('check-get-support').checked;
-        let giveSupport = document.getElementById('check-give-support').checked;
         let legalAge = document.getElementById('check-legal-age').checked;
-        let termsConditions = document.getElementById('check-terms-conditions').checked;
 
         //Para evitar que se guarden arrays con campos vacíos
-        if (name.trim() === '' || lastName.trim() === '' || nickName.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPwrd.trim() === '' || !legalAge || !termsConditions) {
+        if (name.trim() === '' || lastName.trim() === '' || nickName.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPwrd.trim() === '' || !legalAge) {
             return;
         }
 
@@ -34,10 +31,7 @@ let linkGamers = [];
             email: email,
             password: password,
             confirm_password: confirmPwrd,
-            get_support: getSupport,
-            give_support: giveSupport,
-            legal_age: legalAge,
-            terms_conditions: termsConditions
+            legal_age: legalAge
         };
 
         linkGamers.push(userData);
@@ -58,8 +52,6 @@ document.getElementById('button-register').addEventListener('click', (e) => {
     const email = document.getElementById('input-email').value;
     const password = document.getElementById('input-password').value;
     const confirm_pass = document.getElementById('input-password-confirm').value;
-    let getSupport = document.getElementById('check-get-support').checked;
-    let giveSupport = document.getElementById('check-give-support').checked;
     let legalAge = document.getElementById('check-legal-age').checked;
     let termsConditions = document.getElementById('check-terms-conditions').checked;
 

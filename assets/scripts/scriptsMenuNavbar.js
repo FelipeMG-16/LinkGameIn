@@ -58,46 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 </li>
-                <li id="notify" style="cursor: pointer;">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-2">
-                            <img src="../assets/images/notificaciones.svg" alt="">
-                        </div>
-                        <div class="col-10">
-                            <span>Notificaciones</span>
-                        </div>
-                    </div>
-                </li>
-                <li id="publis" style="cursor: pointer;">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-2">
-                            <img src="../assets/images/publicaciones.svg" alt="">
-                        </div>
-                        <div class="col-10">
-                            <span>Publicaciones</span>
-                        </div>
-                    </div>
-                </li>
-                <li id="games" style="cursor: pointer;">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-2">
-                            <img src="../assets/images/logros.svg" alt="">
-                        </div>
-                        <div class="col-10">
-                            <span>Juegos y Logros</span>
-                        </div>
-                    </div>
-                </li>
-                <li id="config" style="cursor: pointer;">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-2">
-                            <img src="../assets/images/cuentayseguridad.svg" alt="">
-                        </div>
-                        <div class="col-10">
-                            <span>Cuenta y Seguridad</span>
-                        </div>
-                    </div>
-                </li>
+                
                 <li id="aboutUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
@@ -128,6 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 </li>
+                <li id="chat" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/contactanos.svg" alt="">
+                        </div>
+                        <div class="col-10">
+                            <span>Chat</span>
+                        </div>
+                    </div>
+                </li>
                 <li id="logout" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
@@ -143,22 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const profile = document.getElementById('profile');
             profile.addEventListener('click', function (event) {
                 window.location.href = "/pages/profile.html";
-            });
-            const notify = document.getElementById('notify');
-            notify.addEventListener('click', function (event) {
-                window.location.href = "/pages/dashBoard.html";
-            });
-            const publis = document.getElementById('publis');
-            publis.addEventListener('click', function (event) {
-                window.location.href = "/pages/dashBoard.html";
-            });
-            const games = document.getElementById('games');
-            games.addEventListener('click', function (event) {
-                window.location.href = "/pages/dashBoard.html";
-            });
-            const config = document.getElementById('config');
-            config.addEventListener('click', function (event) {
-                window.location.href = "/pages/dashBoard.html";
             });
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
@@ -178,6 +133,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = "/pages/login.html";
                 localStorage.removeItem('user');
                 loginComproved();
+            });
+            const chat = document.getElementById('chat');
+            chat.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = "/chat/index.php";
             });
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
