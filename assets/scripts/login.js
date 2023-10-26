@@ -1,3 +1,4 @@
+/*
 (() => {//creamos una función autoinvocada
     'use strict'
 
@@ -33,3 +34,41 @@
         }, false)
     })
 })()
+*/
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('login-form');
+
+    window.addEventListener('load', function() {
+        loginForm.reset();
+    });
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById('input-email').value;
+        const password = document.getElementById('input-password').value;
+        // const password = document.getElementById('input-password');
+        // const url = `http://localhost:8080/users/byEmail?email=${email}&byPass?password=${password}`;
+        const url = `http://localhost:8080/users/byEmail?email=${email}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(userDataLogin => {
+                if (userDataLogin.password == password) {
+                    localStorage.setItem('log', "ok");
+                    window.location.href = "/pages/dashBoard.html";
+                }
+                else {
+                    alert("Usuario o contraseña incorrectos");
+                }
+            })
+            .catch(error => { 
+                alert("Usuario no registrado");
+                console.error(error);
+            });
+
+        loginForm.reset();
+    });
+});

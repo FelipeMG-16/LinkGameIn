@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Inicio de sesión usando los datos del localStorage
     let isLoggedIn = true;
-    let userTest = JSON.parse(localStorage.getItem('user'));
+    let login = localStorage.getItem('log');
 
     function loginComproved() {
-        if (userTest == null) {
+        if (login == null) {
             isLoggedIn = false;
-        } else if ((userTest.email == "user@gmail.com") && (userTest.password == "contraseña123")) {
+        } else if (login == "ok") {
             isLoggedIn = true;
         } else {
             isLoggedIn = false;
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             logout.addEventListener('click', function (event) {
                 event.preventDefault();
                 window.location.href = "/pages/login.html";
-                localStorage.removeItem('user');
+                localStorage.removeItem('log');
                 loginComproved();
             });
             

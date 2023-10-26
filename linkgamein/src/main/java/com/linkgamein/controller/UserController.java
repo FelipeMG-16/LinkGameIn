@@ -38,6 +38,11 @@ public class UserController {
 		User newUser = clientContrFromServ.getUserByEmail(email);
 		return new ResponseEntity<>(newUser, HttpStatus.OK);
 	}
+	@GetMapping(path = "byPass")
+	public ResponseEntity<User> getUserByPassword(@RequestParam String password) {
+		User newUserPass = clientContrFromServ.getUserByPassword(password);
+		return new ResponseEntity<>(newUserPass, HttpStatus.OK);
+	}
 	
 	//Método para crear nuevos usuarios desde el Service
 	@PostMapping
