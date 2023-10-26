@@ -4,12 +4,12 @@ html {
 }
 
 body {
-    background-color: #141414
+    background-color: #000
 }
 
 /* Barra de navegación */
 .custom-navbar {
-    background-color: #000000;
+    background-color: #141414;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -139,7 +139,7 @@ button {
 }
 
 #menudash {
-    background-color: #000000;
+    background-color: #141414;
     /* Color de fondo del navbar */
     padding: 10px;
     /* Espacio interno del navbar */
@@ -175,6 +175,7 @@ button {
     align-items: center;
     margin-right: 40px;
     margin-top: 20px;
+    background-color: #5d5d5d;
 
 }
 
@@ -182,7 +183,7 @@ button {
     align-items: center;
     margin-right: 40px;
     margin-top: 20px;
-    background-color: black;
+    background-color: #141414;
     color: #ffffff;
 }
 
@@ -239,11 +240,12 @@ button {
     flex-direction: column;
     margin: 20px;
     max-width: 900px;
-    background-color: #000000;
+    background-color: #353535;
     height: fit-content;
     padding: 5px;
     padding-bottom: 10px;
     border-radius: 10px;
+	box-shadow: 0 0 10px #e42527;
 }
 
 .text-content {
@@ -281,12 +283,13 @@ button {
     margin: 20px;
     margin-top: 50px;
     /* Centra las tarjetas horizontalmente */
-    background-color: #000;
-    border-color: black;
+    background-color: #141414;
+    border-color: #a8a8a8;
     padding: 10px;
     border-radius: 5%;
+	border:2px solid #141414; 
+	box-shadow: 0 0 10px #5d5d5d;}
 
-}
 
 .card-title {
     font-size: 2rem;
@@ -493,3 +496,15 @@ p {
 #contenedorDePublicaciones {
     margin-top: 20px;
 }
+#chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#cahtbut{
+    text-decoration: none;
+}
+
+

@@ -104,6 +104,7 @@
 
             <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
 
+
                 <!-- Contenedor Crear Publicación -->
             <div class="containerMadePubli">
                 <button type="button" class="open-modal" id="madePubliBtn">
@@ -118,6 +119,9 @@
             </div> <!-- Cierra Contenedor Crear Publicación -->
                 <!--
                 <div class="escribir-publicacion">
+
+
+
                     <div class="img-perfil d-flex">
                         <img src="../assets/images/perfil.jpg" class="rounded-circle friend-img" id="img-bruja">
                         <div>
@@ -140,26 +144,6 @@
                 </div>cierre de mi div escribir publicacion-->
 
 
-                <!-- Modal de publicación -->
-                <div id="modal" class="modal">
-                    <form id="post-form">
-                        <div class="modal-content">
-                            <button id="close-modal">X</button>
-                            <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
-                            <!-- Etiqueta de imagen para la previsualización -->
-                            <img id="imagePreview" src="" alt="">
-                            <div class="containerButtonsModal">
-                                <div class="custom-file-input">
-                                    <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
-                                    <input type="file" id="image-input" multiple accept="image/*">
-                                </div>
-                                <button type="submit" id="post-button">Publicar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div> <!-- Cierra Modal de publicación -->
-                <!-- Overlay para cuando se abre el modal -->
-                <div class="overlay"></div>
 
 
                 <div id="contenedorDePublicaciones" class="card custom-card ">
@@ -205,6 +189,11 @@
             </div>
         </div>
     </div>
+
+    <div id="chat-button-container">
+        <a id="chatbut" href="/chat/index.php" target="_blank" class="btn btn-outline-danger btn-lg">LinkGameIn Chat</a>
+    </div>
+
 
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
