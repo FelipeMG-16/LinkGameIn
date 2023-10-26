@@ -229,12 +229,8 @@ body {
 .linking {
     text-align: center;
     color: #5d5d5d;
-    font-size: x-large;
-    position: fixed;
-    bottom: 10px; /* vertical */
-    left: 50%; /* Centra horizontalmente el texto */
-    transform: translateX(-50%); /* Centra horizontalmente el texto */
-    padding: 10px;
+    padding-top: 50px;
+    font-size: 25px;
 }
 
 
