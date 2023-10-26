@@ -116,7 +116,7 @@ button {
 .containerProfile {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    
     /* Espacio inferior entre el perfil y los botones */
 }
 
