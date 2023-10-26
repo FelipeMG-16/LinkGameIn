@@ -105,19 +105,41 @@
             <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
 
 
-                <!-- Contenedor Crear Publicación -->
-                <div class="containerMadePubli">
-                    <button type="button" class="open-modal" id="madePubliBtn">
-                        Publica algo $Nickname...
+
+        <!--    <div class="containerMadePubli">
+                <button type="button" class="open-modal" id="madePubliBtn">
+                    Publica algo $Nickname...
+                </button>
+                <div class="containerButtons open-modal" id="contButtons" style="cursor: pointer">
+                    <img src="../assets/images/picture.png" alt="" id="madePubliImg">
+                    <button type="button" class="btn btn-primary" id="btnMadePubli">
+                        PUBLICAR
                     </button>
-                    <div class="containerButtons open-modal" id="contButtons" style="cursor: pointer">
-                        <img src="../assets/images/picture.png" alt="" id="madePubliImg">
-                        <button type="button" class="btn btn-primary" id="btnMadePubli">
-                            PUBLICAR
-                        </button>
+                </div>
+            </div> <!-- Cierra Contenedor Crear Publicación -->
+
+             <!-- Modal de publicación -->
+        <div id="modal" class="modal">
+            <form id="post-form">
+                <div class="modal-content">
+                    <button id="close-modal">X</button>
+                    <textarea id="post-text" placeholder="Escribe tu publicación..."></textarea>
+                    <!-- Etiqueta de imagen para la previsualización -->
+                    <img id="imagePreview" src="" alt="">
+                    <div class="containerButtonsModal">
+                        <div class="custom-file-input">
+                            <img src="../assets/images/picture.png" alt="Seleccionar imagen" id="image-button">
+                            <input type="file" id="image-input" multiple accept="image/*">
+                        </div>
+                        <button type="submit" id="post-button">Publicar</button>
                     </div>
-                </div> <!-- Cierra Contenedor Crear Publicación -->
-                <!--
+                </div>
+            </form>
+        </div> <!-- Cierra Modal de publicación -->
+        <!-- Overlay para cuando se abre el modal -->
+        <div class="overlay"></div>
+        
+               
                 <div class="escribir-publicacion">
 
 
@@ -127,8 +149,9 @@
                         <div>
                             <h4>Nickname</h4>
                         </div>
-                    </div>cierre div imagen
-                    <div>inicio de mi div textcontent
+                    </div><!--cierre div imagen-->
+                    
+                    <div><!--inicio de mi div textcontent-->
                         <div class="containerMadePubli">
                             <button type="button" class="open-modal" id="madePubliBtn">
                                 Publica algo $Nickname...
@@ -137,11 +160,11 @@
                                 <img src="../assets/images/picture.png" alt="" id="madePubliImg">
                             </div>
                         </div>
-                    </div>cierre Div textcontent
+                    </div><!--cierre Div textcontent-->
                     <div class="bot1">
                         <button class="bot2">Publicar</button>
                     </div>
-                </div>cierre de mi div escribir publicacion-->
+                </div><!--cierre de mi div escribir publicacion-->
 
 
 
