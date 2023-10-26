@@ -206,13 +206,13 @@ function mostrarPublicaciones() {
             contReactions.className = 'contReactions';
                 const like = document.createElement('img');
                 like.className = 'like';
-                like.src = '../assets/images/like.png';
+                like.src = '../assets/images/likeWhites.png';
                 const comment = document.createElement('img');
                 comment.className = 'comment';
-                comment.src = '../assets/images/comment.png';
+                comment.src = '../assets/images/commentWhite.png';
                 const share = document.createElement('img');
                 share.className = 'share';
-                share.src = '../assets/images/share.svg';
+                share.src = '../assets/images/shareWhite.png';
         
                 // Agrega los elementos de nicknamePrestige
                 nicknamePrestige.appendChild(nicknamePubli);
