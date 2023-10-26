@@ -14,7 +14,7 @@ let linkGamers = [];
         let legalAge = document.getElementById('check-legal-age').checked;
 
         //Para evitar que se guarden arrays con campos vacíos
-        if (name.trim() === '' || lastName.trim() === '' || nickName.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPwrd.trim() === '' || !legalAge) {
+        if (name.trim() === '' || lastName.trim() === '' || nickName.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPwrd.trim() === '' || !legalAge || !termsConditions) {
             return;
         }
 
@@ -31,7 +31,10 @@ let linkGamers = [];
             email: email,
             password: password,
             confirm_password: confirmPwrd,
-            legal_age: legalAge
+            get_support: getSupport,
+            give_support: giveSupport,
+            legal_age: legalAge,
+            terms_conditions: termsConditions
         };
 
         linkGamers.push(userData);
