@@ -26,6 +26,9 @@ public class UserService {
 	public User getUserByEmail(String email) {
 		return userServFromRepo.getByEmail(email);
 	}
+	public User getUserByPassword(String password) {
+		return userServFromRepo.getByPassword(password);
+	}
 	
 	//Método POST
 	public void addUser(User newUser) {

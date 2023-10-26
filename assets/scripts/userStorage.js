@@ -40,12 +40,16 @@ let linkGamers = [];
 
     }
 */
+const form_register_user = document.getElementById('form-register-user');
+
+window.addEventListener('load', function() {
+    form_register_user.reset();
+});
 
 document.getElementById('button-register').addEventListener('click', (e) => {
     e.preventDefault();
 
     // Obtener los valores del formulario
-    const form_register_user = document.getElementById('form-register-user');
     const first_name = document.getElementById('input-name').value;
     const last_name = document.getElementById('input-last-name').value;
     const nickname = document.getElementById('input-nickname').value;
@@ -81,11 +85,11 @@ document.getElementById('button-register').addEventListener('click', (e) => {
     //Funcion validar password y confirm_pass sean iguales
     const validarConfirmPassword = (password, confirm_pass) => {
         return password === confirm_pass ? true : false;
-    }    
-    
+    }
+
     //Funcion validar todos los campos
     if (validarNombre(first_name) && validarApellido(last_name) && validarNickname(nickname) && validarEmail(email) && validarPassword(password) && validarConfirmPassword(password, confirm_pass)) {
-        const userData = {
+        const userDataRegister = {
             first_name: first_name,
             last_name: last_name,
             nickname: nickname,
@@ -100,26 +104,39 @@ document.getElementById('button-register').addEventListener('click', (e) => {
         const headers = {
             "Content-Type": "application/json"
         };
-        const body = JSON.stringify(userData);
+        const body = JSON.stringify(userDataRegister);
         fetch(url, {
             method: method,
             headers: headers,
-            body: body        
+            body: body
         })
-        .then(response => response.text()) //Convierte la respuesta del servidor en un objeto JSON || "Si encuentra el servidor"
-        .then(userData => { //Datos que se reciben del servidor || "Si te encontré, entonces te mando la información"
-            console.log("Todo fine", userData); //Muestra los datos que se reciben del servidor en consola
-            window.location.href = "/pages/personalizaRegistro.html";
-        })
-        .catch(error => {   //Error que se recibe del servidor || Por si no sucede
-            console.error("Aqui hay un error", error);    //Muestra el error en consola
-        })
-    }
-    else {
-        console.log(first_name + ": " + validarNombre(first_name) + "\n" + last_name + ": " + validarApellido(last_name) + "\n" + nickname + ": " + validarNickname(nickname) + "\n" + email + ": " + validarEmail(email) + "\n" + password + ": " + validarPassword(password) + "\n" + confirm_pass + ": " + validarConfirmPassword(password, confirm_pass));
-        alert("Verificar los campos");
-    }
+            .then(response => response.text()) //Convierte la respuesta del servidor en un objeto JSON || "Si encuentra el servidor"
+            .then(userDataRegister => { //Datos que se reciben del servidor || "Si te encontré, entonces te mando la información"
+                console.log("Todo fine", userDataRegister); //Muestra los datos que se reciben del servidor en consola
+                window.location.href = "/pages/personalizaRegistro.html";
+            })
+            .catch(error => {   //Error que se recibe del servidor || Por si no sucede
+                console.error(error);    //Muestra el error en consola
+            })
 
-    form_register_user.reset(); //Limpia los campos del formulario
+        form_register_user.reset(); //Limpia los campos del formulario
+    }
+    else { // Código si alguna de las validaciones falla
+        if ( !validarNombre(first_name) ) {
+            alert("Nombre no válido");
+        } else if ( !validarApellido(last_name) ) {
+            alert("Apellido no válido");
+        } else if ( !validarNickname(nickname) ) {
+            alert("Nickname no válido");
+        } else if ( !validarEmail(email) ) {
+            alert("Email no válido");
+        } else if (!validarPassword(password)) {
+            alert("Contraseña no válida");
+        } else if (!validarConfirmPassword(password, confirm_pass)){
+            alert("Las contraseñas no coinciden");
+        } else {
+            alert("Verifica que todos los campos estén llenos");
+        }
+    }
 
 });
