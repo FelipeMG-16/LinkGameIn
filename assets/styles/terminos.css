@@ -120,7 +120,8 @@ h5{
 .container{
     border-radius: 30px;
 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 
     background-color: #141414;
     box-shadow: 0 0 10px #5d5d5d;

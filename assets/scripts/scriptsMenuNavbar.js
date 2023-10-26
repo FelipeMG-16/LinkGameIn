@@ -89,6 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 </li>
+                <li id="chat" style="cursor: pointer;">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-2">
+                            <img src="../assets/images/contactanos.svg" alt="">
+                        </div>
+                        <div class="col-10">
+                            <span>Chat</span>
+                        </div>
+                    </div>
+                </li>
                 <li id="logout" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
@@ -123,6 +133,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = "/pages/login.html";
                 localStorage.removeItem('user');
                 loginComproved();
+            });
+            const chat = document.getElementById('chat');
+            chat.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = "/chat/index.php";
             });
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
