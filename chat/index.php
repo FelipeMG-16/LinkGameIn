@@ -43,8 +43,6 @@ if (isset($_POST['enter'])) {
 
 <head>
 	<!--Icono de pestania-->
-	<!-- icono -->
-	<link rel="icon" href="../assets/images/img_registrarUX/Letra G en rojo.ico">
 	<link rel="icon" href="./assets/images/img_registrarUX/Letra G en rojo.ico">
 	<title>LinkGameIn-Chat</title>
 	<link rel="stylesheet" href="style.css" />
