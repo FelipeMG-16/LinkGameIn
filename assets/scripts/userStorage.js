@@ -123,19 +123,98 @@ document.getElementById('button-register').addEventListener('click', (e) => {
     }
     else { // Código si alguna de las validaciones falla
         if ( !validarNombre(first_name) ) {
-            alert("Nombre no válido");
+            const nameField = document.getElementById('input-name');
+            const existingAlert = nameField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+        
+            nameField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Nombre no válido
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         } else if ( !validarApellido(last_name) ) {
-            alert("Apellido no válido");
+            const lastNameField = document.getElementById('input-last-name');
+            const existingAlert = lastNameField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            lastNameField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Apellido no válido
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
+            
         } else if ( !validarNickname(nickname) ) {
-            alert("Nickname no válido");
+            const nicknameField = document.getElementById('input-nickname');
+            const existingAlert = nicknameField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            nicknameField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Nickname no válido
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         } else if ( !validarEmail(email) ) {
-            alert("Email no válido");
+            const emailField = document.getElementById('input-email');
+            const existingAlert = emailField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            emailField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Email no válido
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         } else if (!validarPassword(password)) {
-            alert("Contraseña no válida");
+            const passField = document.getElementById('input-password');
+            const existingAlert = passField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            passField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Contraseña no válida
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         } else if (!validarConfirmPassword(password, confirm_pass)){
-            alert("Las contraseñas no coinciden");
+            const confPassField = document.getElementById('input-password-confirm');
+            const existingAlert = confPassField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            confPassField.parentElement.insertAdjacentHTML(
+                "beforeend",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    La contraseña no coincide
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         } else {
-            alert("Verifica que todos los campos estén llenos");
+            const randomField = document.getElementById('btn-register');
+            const existingAlert = randomField.parentElement.querySelector(".alert.alert-danger");
+            if (existingAlert) {
+                existingAlert.remove();
+            }
+            randomField.parentElement.insertAdjacentHTML(
+                "afterbegin",
+                `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Asegúrate de llenar todos los campos
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+            )
         }
     }
 
