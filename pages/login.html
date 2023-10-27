@@ -31,40 +31,27 @@
     </nav> <!-- Cierre de Barra de navegación -->
 
     <div class="container">
-        <form class="row needs-validation" method="post" id="login-form" novalidate>
+        <form class="row" method="post" id="login-form" novalidate>
             <div class="col-12" id="title-login">
                 Inicio de sesión
             </div>
             <div class="login-image">
                 <img src="../assets/images/GRoja.svg" width="80px" height="130px" alt="">
             </div>
-            <div class="col-12 mb-3 position-relative">
+            <div class="col-12 mb-3">
                 <div class="form-floating">
                     <input type="email" class="form-control" id="input-email" placeholder="correo@ejemplo.com" required>
                     <label for="input-email">correo@ejemplo.com</label>
-                    <div class="valid-tooltip">
-                        Correcto
-                    </div>
-                    <div class="invalid-tooltip">
-                        Es necesario añadir un correo
-                    </div>
                 </div>
             </div>
-            <div class="col-12 mb-3 position-relative">
+            <div class="col-12 mb-3">
                 <div class="form-floating">
                     <input type="password" class="form-control" id="input-password" placeholder="Contraseña" required>
                     <label for="input-password">Contraseña</label>
-                    <div class="valid-tooltip">
-                        Correcto
-                    </div>
-                    <div class="invalid-tooltip">
-                        Es necesario añadir una contraseña
-                    </div>
                 </div>
             </div>
-
             <div class="d-grid gap-2 col-12 mx-auto" id="btn-login">
-                <button type="submit" class="btn btn-outline-danger btn-lg">Iniciar sesión</button>
+                <button type="submit" class="btn btn-outline-danger btn-lg" id="button-login">Iniciar sesión</button>
             </div>
             <div class="col-12">
                 <div class="registro">

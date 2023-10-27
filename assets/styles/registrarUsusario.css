@@ -143,3 +143,18 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
+.alert {
+    position: relative;
+    padding: 5px;
+    background-color: #ef6668;
+    border: 2px solid #ea2527;
+}
+
+.alert button {
+    padding: 0;
+}
+.alert .btn-close {
+    padding: 0;
+    margin: 10px 5px;
+}

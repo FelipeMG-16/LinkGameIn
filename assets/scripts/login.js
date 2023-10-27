@@ -61,12 +61,34 @@ document.addEventListener('DOMContentLoaded', function () {
                     window.location.href = "/pages/dashBoard.html";
                 }
                 else {
-                    alert("Usuario o contraseña incorrectos");
+                    const buttonField = document.getElementById('button-login');
+                    const existingAlert = buttonField.parentElement.querySelector(".alert.alert-danger");
+                    if (existingAlert) {
+                        existingAlert.remove();
+                    }
+                    buttonField.parentElement.insertAdjacentHTML(
+                        "afterbegin",
+                        `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        Usuario o contraseña incorrectos
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>`
+                    )
+
                 }
             })
-            .catch(error => {
-                alert("Usuario no registrado");
-                console.error(error);
+            .catch(error => { 
+                const buttonField = document.getElementById('button-login');
+                    const existingAlert = buttonField.parentElement.querySelector(".alert.alert-danger");
+                    if (existingAlert) {
+                        existingAlert.remove();
+                    }
+                    buttonField.parentElement.insertAdjacentHTML(
+                        "afterbegin",
+                        `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        Usuario no registrado
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>`
+                    )
             });
 
         loginForm.reset();
