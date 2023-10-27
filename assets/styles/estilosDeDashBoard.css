@@ -150,9 +150,9 @@ button {
 
 #menudash {
     background-color: #141414;
-    /* Color de fondo del navbar */
+    /* Color de fondo del navbar /
     padding: 10px;
-    /* Espacio interno del navbar */
+    / Espacio interno del navbar */
     width: 250px;
     height: 100%;
     float: left;
@@ -164,8 +164,52 @@ button {
     text-align: left;
     align-items: center;
     color: #ffffff;
-    font-family: 'Montserrat';
     height: 150%;
+    font-family: 'Poppins';
+    color: #8a8a8a;
+}
+
+#news-section {
+    background-color: #141414;
+    padding: 10px; /* Reduce el relleno para que se parezca al menú */
+    position: sticky;
+    top: 0;
+
+}
+
+#noticias {
+    color: #ffffff;
+}
+
+.noticia {
+    margin: 10px 0; 
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #000000; /* Color de fondo similar al menú */
+
+} 
+
+.noticia h4 {
+    font-size: 1.2rem;
+    color: #8b1a1b;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #5d5d5d;
+}
+
+#noti{
+    color: #8a8a8a;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px; /* Agrega espacio interno para que se parezca al menú */
+}
+
+a{
+    text-decoration: none;
+    color: #8a8a8a;
+
 }
 
 .dash-item a {
@@ -375,7 +419,7 @@ p {
     top: 50%; /* Alineado verticalmente en el centro */
     left: 50%; /* Alineado horizontalmente en el centro */
     transform: translate(-50%, -50%); /* Centra el modal */
-    width: 700px;
+    max-width: 700px;
 }
 .modal-content {
     position: absolute;
@@ -515,6 +559,82 @@ p {
 
 #cahtbut{
     text-decoration: none;
+}
+
+
+/* Publicaciones */
+.containerPubli {
+    background-color: #141414;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contPersonalInfoPubli {
+   /* display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    padding-left: 10px;*/
+    display:flex;
+    justify-content: space-between;
+
+}
+.imgPerfilPubli {
+    height: 50px;
+    border-radius: 50%;
+}
+.nicknamePrestige {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    flex:1;
+}
+.nicknamePubli {
+    font-size: 20px;
+    color: #ffffff;
+}
+.prestigePubli {
+    font-size: 15px;
+    margin: 0;
+   
+}
+.deletePubli {
+    /*position: relative;
+    left: 450px;
+    bottom: 0;
+    width: 40px;
+    height: max-content;*/
+    /*margin-left: 60%;*/
+    width: 40px;
+    height: max-content;
+}
+/*.contTextPubli {
+padding-inline: 15px;
+}*/
+.textPubli {
+    font-size: 25px;
+    color: #ffffff;
+}
+.contImgPubli {
+    margin-top: 10px;
+}
+.imgPubli {
+    width: 100%;
+    border-radius: 5px;
+}
+.contReactions {
+   /* width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 200px; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contReactions img {
+    width: 30px;
+    height: 30px;
 }
 
 
