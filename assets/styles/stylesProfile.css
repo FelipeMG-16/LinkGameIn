@@ -437,21 +437,37 @@ body {
     }
 }
 /* Publicaciones */
-.containerPubli {
-    background-color: #141414;
+.card {
+    /*background-color: #141414;
     width: 700px;
     height: auto;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    /* Ancho de las tarjetas */
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+    /* Centra las tarjetas horizontalmente */
+    background-color: #141414;
+    border-color: #a8a8a8;
+    padding: 10px;
+    border-radius: 5%;
+	border:2px solid #141414; 
+	box-shadow: 0 0 10px #5d5d5d;
 }
 .contPersonalInfoPubli {
-    display: flex;
+    /*display: flex;
     justify-content: left;
     margin-bottom: 5px;
-    padding-left: 10px;
+    padding-left: 10px;*/
+    display: flex;
+    justify-content: space-between;
 }
-.imgPerfilPubli {
+.profile-img {
     height: 50px;
     border-radius: 50%;
 }
@@ -459,26 +475,35 @@ body {
     position: relative;
     left: 20px;
     bottom: 5px;
+    flex:1;
 }
 .nicknamePubli {
     font-size: 20px;
+    color: #ffffff;
 }
 .prestigePubli {
     font-size: 15px;
     margin: 0;
+    color: #ffffff;
+}
+
+.datePubli{
+    color: #ffffff;
 }
 .deletePubli {
-    position: relative;
+   /* position: relative;
     left: 450px;
-    bottom: 0;
+    bottom: 0;*/
     width: 40px;
     height: max-content;
+    
 }
 /*.contTextPubli {
 padding-inline: 15px;
 }*/
 .textPubli {
     font-size: 25px;
+    color: #ffffff;
 }
 .contImgPubli {
     margin-top: 10px;
@@ -488,10 +513,12 @@ padding-inline: 15px;
     border-radius: 5px;
 }
 .contReactions {
-    width: 300px;
+    /*width: 300px;
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 0 200px;
+    margin: 10px 0 0 200px;*/
+    display: flex;
+    justify-content: space-evenly;
 }
 .contReactions img {
     width: 40px;

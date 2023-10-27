@@ -168,11 +168,11 @@ function mostrarPublicaciones() {
 
         // Crea elementos HTML dinámicamente y muestra las publicaciones
         const containerPubli = document.createElement('div');
-        containerPubli.className = 'containerPubli';
+        containerPubli.className = 'card custom-card';
             const contPersonalInfoPubli = document.createElement('div');
             contPersonalInfoPubli.className = 'contPersonalInfoPubli';
                 const imgPerfilPubli = document.createElement('img');
-                imgPerfilPubli.className = 'imgPerfilPubli';
+                imgPerfilPubli.className = 'profile-img';
                 imgPerfilPubli.src = '../assets/images/perfil.jpg';
                 const nicknamePrestige = document.createElement('div');
                 nicknamePrestige.className = 'nicknamePrestige';
@@ -203,6 +203,7 @@ function mostrarPublicaciones() {
             datePubli.className = 'datePubli';
             datePubli.textContent = publicacion.fecha.split(', ')[0] + ' a las ' + publicacion.fecha.split(', ')[1];
             const contReactions = document.createElement('div');
+            
             contReactions.className = 'contReactions';
                 const like = document.createElement('img');
                 like.className = 'like';
