@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Usuario o contraseña incorrectos");
                 }
             })
-            .catch(error => { 
+            .catch(error => {
                 alert("Usuario no registrado");
                 console.error(error);
             });

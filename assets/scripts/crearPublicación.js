@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Agregar un evento de envío de formulario
     const form = document.getElementById("post-form");
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe de manera predeterminada
 
         // Obtener el valor del campo de texto
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Guardar la publicación en el Local Storage
         const postData = {
             text: postText
-          
+
         };
         localStorage.setItem("nuevaPublicacion", JSON.stringify(postData));
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const publicacionGuardada = localStorage.getItem("nuevaPublicacion");
         if (publicacionGuardada) {
             const postData = JSON.parse(publicacionGuardada);
-        
+
             const nuevaPublicacion = crearElementoPublicacion(postData);
             // Agregamos nuevaPublicacion al contenedor de publicaciones
             const contenedorPublicaciones = document.getElementById("contenedor-publicaciones");
@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-  
-    }
+
+}
 );
